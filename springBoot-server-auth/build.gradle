@@ -1,0 +1,90 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.4.3'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	// Spring Boot Core Dependencies
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-validation' // Thêm Validation
+	
+	// Database
+	implementation("org.postgresql:postgresql:42.7.1")  // Đảm bảo phiên bản mới nhất
+    implementation("com.zaxxer:HikariCP:5.1.0")  // Pooling database connection
+
+	// JWT Authentication
+	 implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    implementation 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    implementation 'io.jsonwebtoken:jjwt-jackson:0.11.5' // hoặc jjwt-gson
+
+	// Lombok
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	// DevTools for Hot Reload
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	// Testing
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	 // Xử lý CORS
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+	// MapStruct for Object Mapping
+	implementation 'org.mapstruct:mapstruct:1.5.3.Final'  // Kiểm tra phiên bản mới nhất nếu cần
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.3.Final'  // Cần thiết cho annotation processing
+
+	    // Swagger annotations
+    implementation 'io.swagger.core.v3:swagger-annotations:2.2.1'
+
+    // SpringDoc for OpenAPI integration with Spring Boot
+    implementation 'org.springdoc:springdoc-openapi-ui:1.6.9'
+
+    // Spring HATEOAS
+	implementation 'org.springframework.data:spring-data-commons:3.4.3'
+    implementation 'org.springframework.hateoas:spring-hateoas:2.1.1'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+springBoot {
+    mainClass = 'com.example.demo.DemoApplication'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs += "--enable-preview"
+}
+
+tasks.withType(JavaExec).configureEach {
+    jvmArgs += "--enable-preview"
+}
+
+tasks.named("bootRun") {
+    doFirst {
+        jvmArgs += "--enable-preview"
+    }
+}
