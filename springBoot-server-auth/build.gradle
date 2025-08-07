@@ -72,7 +72,7 @@ tasks.named('test') {
 }
 
 springBoot {
-    mainClass = 'com.example.demo.DemoApplication'
+    mainClass = 'com.chatbot.ChatbotApplication'
 }
 
 tasks.withType(JavaCompile).configureEach {
