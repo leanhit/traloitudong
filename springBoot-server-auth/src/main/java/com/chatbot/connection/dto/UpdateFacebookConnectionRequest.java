@@ -12,6 +12,5 @@ public class UpdateFacebookConnectionRequest {
     private String appSecret;
     private String pageAccessToken;
     private String verifyToken;
-    private String urlCallback;
     private Boolean isEnabled;
 }

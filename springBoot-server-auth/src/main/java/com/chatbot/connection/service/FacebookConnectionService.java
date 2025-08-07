@@ -69,6 +69,8 @@ public class FacebookConnectionService {
         dto.setBotName(connection.getBotName());
         dto.setPageId(connection.getPageId());
         dto.setAppSecret(connection.getAppSecret());
+        dto.setPageAccessToken(connection.getPageAccessToken());
+        dto.setVerifyToken(connection.getVerifyToken());
         dto.setFanpageUrl(connection.getFanpageUrl());
         dto.setUrlCallback(connection.getUrlCallback());
         dto.setEnabled(connection.isEnabled());
@@ -91,6 +93,9 @@ public class FacebookConnectionService {
         }
         if (request.getFanpageUrl() != null) {
             connection.setFanpageUrl(request.getFanpageUrl());
+        }
+        if (request.getVerifyToken() != null) {
+            connection.setVerifyToken(request.getVerifyToken());
         }
         if (request.getIsEnabled() != null) {
             connection.setEnabled(request.getIsEnabled());
