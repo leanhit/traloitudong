@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>Traloitudong Config</title>
+        <meta content="Admin Dashboard" name="description" />
+        <meta content="Mannatthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js"></script>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId: '737203945892070', // THAY THẾ BẰNG ID ỨNG DỤNG CỦA BẠN
+              cookie: true,
+              xfbml: true,
+              version: 'v18.0'
+            });
+            FB.AppEvents.logPageView();
+          };
+        </script>
+
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href="/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">
+        <link href="/plugins/fullcalendar/vanillaCalendar.css" rel="stylesheet" type="text/css"  />
+        
+        <link href="/plugins/morris/morris.css" rel="stylesheet">
+
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+
+    <body class="fixed-left">
+        <div id="vue-app">
+            <RouterView />
+        </div>
+
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/popper.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/modernizr.min.js"></script>
+        <script src="/js/detect.js"></script>
+        <script src="/js/fastclick.js"></script>
+        <script src="/js/jquery.blockUI.js"></script>
+        <script src="/js/waves.js"></script>
+        <script src="/js/jquery.nicescroll.js"></script>
+
+        <script src="/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+        <script src="/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+        
+        <script src="/plugins/skycons/skycons.min.js"></script>
+        <script src="/plugins/fullcalendar/vanillaCalendar.js"></script>
+        
+        <script src="/plugins/raphael/raphael-min.js"></script>
+        <script src="/plugins/morris/morris.min.js"></script>   
+
+        <script type="module" src="/src/main.ts"></script>
+        </body>
+</html>
