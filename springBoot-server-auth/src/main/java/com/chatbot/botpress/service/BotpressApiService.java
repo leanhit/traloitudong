@@ -3,11 +3,13 @@ package com.chatbot.botpress.service;
 import com.chatbot.botpress.dto.BotpressCreateBotRequest;
 import com.chatbot.botpress.dto.BotpressUpdateBotRequest;
 import com.chatbot.botpress.dto.BotpressResponse;
+import com.chatbot.botpress.dto.BotpressTemplateRequest;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Service
 public class BotpressApiService {
@@ -20,6 +22,8 @@ public class BotpressApiService {
 
     private final RestTemplate restTemplate;
 
+    private static final String WORKSPACE_ID = "default";
+
     public BotpressApiService(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
@@ -28,6 +32,7 @@ public class BotpressApiService {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.setBearerAuth(botpressAdminToken);
+        headers.add("X-BP-Workspace", WORKSPACE_ID);
         return headers;
     }
 
@@ -35,10 +40,17 @@ public class BotpressApiService {
         String url = String.format("%s/api/v1/admin/bots", botpressApiUrl);
         HttpHeaders headers = createHeaders();
         
-        BotpressCreateBotRequest request = new BotpressCreateBotRequest(botId, botName);
+        BotpressTemplateRequest template = new BotpressTemplateRequest("builtin", "empty-bot"); // Giả định moduleId là "builtin"
+    
+        BotpressCreateBotRequest request = new BotpressCreateBotRequest(botId, botName, template);
         HttpEntity<BotpressCreateBotRequest> entity = new HttpEntity<>(request, headers);
 
+
         try {
+            
+        // Thêm dòng này để kiểm tra JSON
+System.out.println("Gửi yêu cầu JSON: " + new ObjectMapper().writeValueAsString(request));
+
             ResponseEntity<BotpressResponse> response = restTemplate.exchange(url, HttpMethod.POST, entity, BotpressResponse.class);
             if (response.getStatusCode().is2xxSuccessful() && response.getBody() != null) {
                 System.out.println("Bot created on Botpress successfully.");

@@ -1,6 +1,6 @@
 // src/main/java/com/chatbot/connection/dto/FacebookConnectionResponse.java
 
-package com.chatbot.connection.dto;
+package com.chatbot.webHub.facebook.connection.dto;
 
 import lombok.Data;
 import java.time.LocalDateTime;

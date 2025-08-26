@@ -43,178 +43,53 @@
                 <div class="col-lg-12">
                     <div class="card-body pt-0">
                         <div class="table-responsive rounded card-table">
-                            <table
-                                class="table table-striped table-head-fixed table-borderless w-100 fixed-table">
-                                <thead>
-                                    <tr>
-                                        <th style="width: 5% text-nowrap">
-                                            {{ t('Index') }}
-                                        </th>
-                                        <th style="width: 10% text-nowrap">
-                                            {{ t('Bot ID') }}
-                                        </th>
-                                        <th style="width: 20% text-nowrap">
-                                            {{ t('Bot Name') }}
-                                        </th>
-                                        <th style="width: 20% text-nowrap">
-                                            {{ t('Bot Description') }}
-                                        </th>
-                                        <th style="width: 10% text-nowrap">
-                                            {{ t('Created At') }}
-                                        </th>
-                                        <th style="width: 10% text-nowrap">
-                                            {{ t('Action') }}
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody v-if="listItems && listItems.length > 0">
-                                    <tr
-                                        v-for="(
-                                            itemData, itemIndex
-                                        ) in listItems"
-                                        :key="itemIndex">
-                                        <td class="text-left">
-                                            {{ itemIndex + 1 }}
-                                        </td>
-                                        <td
-                                            class="text-left text-truncate"
-                                            :title="itemData.botId">
-                                            <span class="truncate-text">{{
-                                                itemData.botId
-                                            }}</span>
-                                        </td>
-                                        <td
-                                            class="text-left text-truncate"
-                                            :title="itemData.botName">
-                                            <span class="truncate-text">{{
-                                                itemData.botName
-                                            }}</span>
-                                        </td>
-                                        <td
-                                            class="text-left text-truncate"
-                                            :title="itemData.appSecret">
-                                            <span class="truncate-text">{{
-                                                itemData.bot_description
-                                            }}</span>
-                                        </td>
-                                        <td
-                                            class="text-left text-truncate"
-                                            :title="itemData.created_at">
-                                            <span class="truncate-text">{{
-                                                formatDateTime(
-                                                    itemData.created_at
-                                                )
-                                            }}</span>
-                                        </td>
-                                        <td class="text-left">
-                                            <el-dropdown
-                                                trigger="click"
-                                                class="px-1">
-                                                <el-button type="primary">
-                                                    <el-icon
-                                                        :size="15"
-                                                        style="
-                                                            vertical-align: middle;
-                                                        ">
-                                                        <More />
-                                                    </el-icon>
-                                                </el-button>
-                                                <template #dropdown>
-                                                    <el-dropdown-menu>
-                                                        <table>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <el-button
-                                                                            class="border-0 mx-1 my-1"
-                                                                            size="small"
-                                                                            :disabled="
-                                                                                !itemData
-                                                                            "
-                                                                            @click="
-                                                                                $emit(
-                                                                                    'onChangeView',
-                                                                                    {
-                                                                                        viewName:
-                                                                                            'EditBot',
-                                                                                        data: itemData,
-                                                                                    }
-                                                                                )
-                                                                            ">
-                                                                            <el-icon
-                                                                                :size="
-                                                                                    15
-                                                                                "
-                                                                                style="
-                                                                                    vertical-align: middle;
-                                                                                ">
-                                                                                <Edit />
-                                                                            </el-icon>
-                                                                            <span
-                                                                                class="ml-1"
-                                                                                >{{
-                                                                                    t(
-                                                                                        'Edit Bot'
-                                                                                    )
-                                                                                }}</span
-                                                                            >
-                                                                        </el-button>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <el-button
-                                                                            class="border-0 ml-1"
-                                                                            size="small"
-                                                                            :disabled="
-                                                                                !itemData
-                                                                            "
-                                                                            @click="
-                                                                                deleteBot(
-                                                                                    itemData.id
-                                                                                )
-                                                                            ">
-                                                                            <el-icon
-                                                                                :size="
-                                                                                    15
-                                                                                "
-                                                                                class="text-danger"
-                                                                                style="
-                                                                                    vertical-align: middle;
-                                                                                ">
-                                                                                <Delete />
-                                                                            </el-icon>
-                                                                            <span
-                                                                                class="ml-1 mr-1"
-                                                                                >{{
-                                                                                    t(
-                                                                                        'Delete Bot'
-                                                                                    )
-                                                                                }}</span
-                                                                            >
-                                                                        </el-button>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </el-dropdown-menu>
-                                                </template>
-                                            </el-dropdown>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody v-else>
-                                    <tr>
-                                        <td
-                                            class="text-center py-5"
-                                            colspan="11">
-                                            <strong>{{
-                                                t('There are no item')
-                                            }}</strong>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                             <table class="table table-striped table-borderless w-100 fixed-table">
+            <thead>
+              <tr>
+                <th style="width:10%">{{ t('Index') }}</th>
+                <th style="width:15%">{{ t('Bot ID') }}</th>
+                <th style="width:20%">{{ t('Bot Name') }}</th>
+                <th style="width:25%">{{ t('Bot Description') }}</th>
+                <th style="width:15%">{{ t('Created At') }}</th>
+                <th style="width:15%">{{ t('Action') }}</th>
+              </tr>
+            </thead>
+            <tbody v-if="listItems && listItems.length > 0">
+              <tr v-for="(itemData, itemIndex) in listItems" :key="itemIndex">
+                <td class="text-truncate">{{ itemIndex + 1 }}</td>
+                <td class="text-truncate" :title="itemData.botId">{{ itemData.botId }}</td>
+                <td class="text-truncate" :title="itemData.botName">{{ itemData.botName }}</td>
+                <td class="text-truncate" :title="itemData.bot_description">{{ itemData.bot_description }}</td>
+                <td class="text-truncate" :title="itemData.created_at">{{ formatDateTime(itemData.created_at) }}</td>
+                <td>
+                  <el-dropdown trigger="click">
+                    <el-button type="primary">
+                      <el-icon :size="15"><More /></el-icon>
+                    </el-button>
+                    <template #dropdown>
+                      <el-dropdown-menu>
+                        <el-dropdown-item>
+                          <el-button size="small" @click="$emit('onChangeView', { viewName: 'EditBot', data: itemData })">
+                            <el-icon :size="15"><Edit /></el-icon> {{ t('Edit Bot') }}
+                          </el-button>
+                        </el-dropdown-item>
+                        <el-dropdown-item>
+                          <el-button size="small" type="danger" @click="deleteBot(itemData.id)">
+                            <el-icon :size="15"><Delete /></el-icon> {{ t('Delete Bot') }}
+                          </el-button>
+                        </el-dropdown-item>
+                      </el-dropdown-menu>
+                    </template>
+                  </el-dropdown>
+                </td>
+              </tr>
+            </tbody>
+            <tbody v-else>
+              <tr>
+                <td class="text-center py-5" colspan="6"><strong>{{ t('There are no item') }}</strong></td>
+              </tr>
+            </tbody>
+          </table>
                         </div>
                     </div>
                 </div>

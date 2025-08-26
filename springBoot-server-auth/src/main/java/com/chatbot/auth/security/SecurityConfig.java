@@ -54,7 +54,7 @@ public class SecurityConfig {
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
-        config.addAllowedOrigin("http://localhost:3003"); // Thêm URL frontend của bạn
+        config.addAllowedOrigin("https://cwsv.traloitudong.com"); // Thêm URL frontend của bạn
         config.addAllowedMethod("*"); // Cho phép tất cả các phương thức
         config.addAllowedHeader("*"); // Cho phép tất cả các header
         config.setAllowCredentials(true);
@@ -68,6 +68,7 @@ public class SecurityConfig {
             .csrf(AbstractHttpConfigurer::disable)
             .cors(cors -> {}) // Sử dụng CorsFilter đã cấu hình
             .authorizeHttpRequests(auth -> auth
+                .requestMatchers("/webhooks/facebook/botpress/**").permitAll() 
                 .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                 .anyRequest().authenticated()
             )

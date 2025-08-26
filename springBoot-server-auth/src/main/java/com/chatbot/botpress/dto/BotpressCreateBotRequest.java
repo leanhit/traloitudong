@@ -14,4 +14,8 @@ public class BotpressCreateBotRequest {
     
     @JsonProperty("name")
     private String botName;
+
+    // Thêm trường template để chỉ định template
+    @JsonProperty("template")
+    private BotpressTemplateRequest  template;
 }

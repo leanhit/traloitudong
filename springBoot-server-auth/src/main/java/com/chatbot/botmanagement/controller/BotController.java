@@ -69,20 +69,20 @@ public class BotController {
         }
     }
 
-    // @GetMapping
-    // public ResponseEntity<List<BotResponse>> getBots(Principal principal) {
-    //     String ownerId = principal.getName();
-    //     List<Bot> bots = botService.getBotsByOwnerId(ownerId);
-        
-    //     List<BotResponse> botResponses = bots.stream()
-    //         .map(bot -> new BotResponse(bot.getBotId(), bot.getBotName(), bot.getOwnerId(), "Success"))
-    //         .collect(Collectors.toList());
-        
-    //     return ResponseEntity.ok(botResponses);
-    // }
-
     @GetMapping
-    public ResponseEntity<List<BotEnums>> getAllBots(Principal principal) {
-        return ResponseEntity.ok(botService.getAllBots());
+    public ResponseEntity<List<BotResponse>> getBots(Principal principal) {
+        String ownerId = principal.getName();
+        List<Bot> bots = botService.getBotsByOwnerId(ownerId);
+        
+        List<BotResponse> botResponses = bots.stream()
+            .map(bot -> new BotResponse(bot.getBotId(), bot.getBotName(), bot.getOwnerId(), "Success"))
+            .collect(Collectors.toList());
+        
+        return ResponseEntity.ok(botResponses);
     }
+
+    // @GetMapping
+    // public ResponseEntity<List<BotEnums>> getAllBots(Principal principal) {
+    //     return ResponseEntity.ok(botService.getAllBots());
+    // }
 }

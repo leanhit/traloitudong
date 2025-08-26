@@ -8,6 +8,7 @@ import { AxiosError } from 'axios';
 // Hàm xử lý lỗi chung cho các request
 const handleApiError = (error: AxiosError) => {
     if (error.response && error.response.status === 401) {
+        alert('Phiên đăng nhập của bạn đã hết hạn. Vui lòng đăng nhập lại.');
         console.error('Lỗi xác thực: Token không hợp lệ hoặc đã hết hạn.');
         // Chuyển hướng người dùng đến trang đăng nhập
         router.push('/login');

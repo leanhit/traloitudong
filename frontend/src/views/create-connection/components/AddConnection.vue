@@ -1,6 +1,6 @@
 <script
     lang="ts"
-    src="@/scripts/create-connection/components/AddConnection.ts"></script>
+    src="@/scripts/create-connection/components/addConnection.ts"></script>
 
 <template>
     <div class="flex-fill d-flex flex-column w-100 p-2" v-loading="isLoading">

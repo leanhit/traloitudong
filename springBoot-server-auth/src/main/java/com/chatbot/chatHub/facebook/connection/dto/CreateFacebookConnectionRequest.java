@@ -1,6 +1,6 @@
 // src/main/java/com/chatbot/connection/dto/CreateFacebookConnectionRequest.java
 
-package com.chatbot.connection.dto;
+package com.chatbot.webHub.facebook.connection.dto;
 
 import lombok.Data;
 import jakarta.validation.constraints.NotBlank;

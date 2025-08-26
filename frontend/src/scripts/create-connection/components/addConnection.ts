@@ -42,7 +42,7 @@ export default {
             appSecret: '',
             pageAccessToken: '',
             urlCallback: 'https://bot.traloitudong.com/webhooks/facebook/botpress',
-            verifyToken: 'botpress_verifyToken',
+            verifyToken: 'botpress_verify_token_new',
             isEnabled: true,
             createdAt: '',
             lastUpdatedAt: '',

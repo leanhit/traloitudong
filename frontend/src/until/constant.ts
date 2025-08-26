@@ -16,12 +16,12 @@ const currentLanguage = localStorage.getItem('restaurentLocale');
 const taxPercent = 10.5;
 
 const BOT_TEMPLATES = [
-    { id: 'empty-bot', name: 'Empty Bot (Bot Trống)' },
-    { id: 'welcome-bot', name: 'Welcome Bot (Bot Chào mừng)' },
-    // Thêm các template khác mà bạn muốn hỗ trợ ở đây
-    // Ví dụ: { id: 'faq-bot', name: 'FAQ Bot (Bot Hỏi đáp)' },
-    // { id: 'ecommerce-bot', name: 'E-commerce Bot (Bot Thương mại điện tử)' },
-];
+  { id: 'welcome-bot', name: 'Welcome Bot', desc: "Basic bot that showcases some of the bot's functionality" },
+  { id: 'small-talk', name: 'Small Talk', desc: 'Includes basic smalltalk examples' },
+  { id: 'empty-bot', name: 'Empty Bot', desc: 'Start fresh with a clean flow' },
+  { id: 'learn-botpress', name: 'Learn Botpress Basics', desc: 'Learn Botpress basic features' }
+]
+;
 
 export {
     supportedLocales,

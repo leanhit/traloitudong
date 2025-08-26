@@ -1,6 +1,6 @@
 // src/main/java/com/chatbot/connections/models/FacebookConnection.java
 
-package com.chatbot.connection.model;
+package com.chatbot.webHub.facebook.connection.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

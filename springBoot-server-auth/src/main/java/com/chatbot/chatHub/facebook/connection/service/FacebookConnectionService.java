@@ -1,12 +1,12 @@
 // src/main/java/com/chatbot/connection/service/FacebookConnectionService.java
 
-package com.chatbot.connection.service;
+package com.chatbot.webHub.facebook.connection.service;
 
-import com.chatbot.connection.dto.CreateFacebookConnectionRequest;
-import com.chatbot.connection.dto.FacebookConnectionResponse;
-import com.chatbot.connection.dto.UpdateFacebookConnectionRequest;
-import com.chatbot.connection.model.FacebookConnection;
-import com.chatbot.connection.repository.FacebookConnectionRepository;
+import com.chatbot.webHub.facebook.connection.dto.CreateFacebookConnectionRequest;
+import com.chatbot.webHub.facebook.connection.dto.FacebookConnectionResponse;
+import com.chatbot.webHub.facebook.connection.dto.UpdateFacebookConnectionRequest;
+import com.chatbot.webHub.facebook.connection.model.FacebookConnection;
+import com.chatbot.webHub.facebook.connection.repository.FacebookConnectionRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
@@ -88,6 +88,9 @@ public class FacebookConnectionService {
         if (request.getBotName() != null) {
             connection.setBotName(request.getBotName());
         }
+        if (request.getBotId() != null) {
+            connection.setBotId(request.getBotId());
+        }
         if (request.getPageAccessToken() != null) {
             connection.setPageAccessToken(request.getPageAccessToken());
         }
@@ -96,6 +99,12 @@ public class FacebookConnectionService {
         }
         if (request.getVerifyToken() != null) {
             connection.setVerifyToken(request.getVerifyToken());
+        }
+        if (request.getAppSecret() != null) {
+            connection.setAppSecret(request.getAppSecret());
+        }
+        if (request.getPageId() != null) {
+            connection.setPageId(request.getPageId());
         }
         if (request.getIsEnabled() != null) {
             connection.setEnabled(request.getIsEnabled());

@@ -1,8 +1,8 @@
 // src/main/java/com/chatbot/connections/repositories/FacebookConnectionRepository.java
 
-package com.chatbot.connection.repository;
+package com.chatbot.webHub.facebook.connection.repository;
 
-import com.chatbot.connection.model.FacebookConnection;
+import com.chatbot.webHub.facebook.connection.model.FacebookConnection;
 import org.springframework.data.domain.Page; // Thêm dòng này
 import org.springframework.data.domain.Pageable; // Thêm dòng này
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -27,6 +27,9 @@ export default defineConfig({
     server: {
         port: 3003, // 🔥 Đổi cổng thành 3001 hoặc số khác
         strictPort: true, // Nếu cổng bị chiếm, không tự động đổi
-        host: '0.0.0.0', // Cho phép truy cập từ mạng LAN
+        host: '0.0.0.0', // Cho phép truy cập từ mạng LAN      
+        watch: {
+            ignored: ['**/node_modules/**', '**/dist/**']
+        }
     },
 });
