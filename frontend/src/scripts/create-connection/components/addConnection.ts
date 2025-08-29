@@ -41,7 +41,7 @@ export default {
             fanpageUrl: '',
             appSecret: '',
             pageAccessToken: '',
-            urlCallback: 'https://bot.traloitudong.com/webhooks/facebook/botpress',
+            urlCallback: 'https://chat.traloitudong.com/webhooks/facebook/botpress',
             verifyToken: 'botpress_verify_token_new',
             isEnabled: true,
             createdAt: '',
@@ -134,8 +134,10 @@ export default {
             delete data.createdAt;
             delete data.lastUpdatedAt;
 
+            const datas = [data]; // Đóng gói data vào mảng
+
             fbConnectionApi
-                .AddConnection(data)
+                .addConnections(datas)
                 .then((response: any) => {
                     if (response.data) {
                         ElMessage({

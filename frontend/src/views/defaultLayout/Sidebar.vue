@@ -44,7 +44,7 @@
                             <span class="float-right"></span>
                         </router-link>
                     </li>
-                    <li class="has_sub">
+                    <!-- <li class="has_sub">
                         <router-link to="/create-fb-connection">
                             <i class="mdi mdi-food-variant"></i>
                             <span>
@@ -52,7 +52,7 @@
                             </span>
                             <span class="float-right"></span>
                         </router-link>
-                    </li>
+                    </li>-->
                     <li class="has_sub">
                         <router-link to="/generate-embed-code">
                             <i class="mdi mdi-seat-recline-normal"></i>

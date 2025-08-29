@@ -20,15 +20,12 @@ export default {
             botId: 'Bot ID',
             pageId: 'Page ID',
             fanpageUrl: 'Fanpage URL',
-            appSecret: 'App Secret',
             pageAccessToken: 'Page Access Token',
-            urlCallback: 'URL Callback',
-            verifyToken: 'Verify Token',
         };
 
         // Các trường chỉ hiển thị khi ở chế độ Sửa
         const editOnlyFields = {
-            isEnabled: 'Enabled',
+            //isEnabled: 'Enabled',
             createdAt: 'Created At',
             lastUpdatedAt: 'Last Updated At',
         };
@@ -39,10 +36,7 @@ export default {
             botName: '',
             pageId: '',
             fanpageUrl: '',
-            appSecret: '',
             pageAccessToken: '',
-            urlCallback: 'https://bot.traloitudong.com/webhooks/facebook/botpress',
-            verifyToken: 'botpress_verifyToken',
             isEnabled: true,
             createdAt: '',
             lastUpdatedAt: '',
@@ -95,12 +89,29 @@ export default {
                 itemModel.value.id = '';
                 itemModel.value.createdAt = '';
                 itemModel.value.lastUpdatedAt = '';
+                // Giữ nguyên các giá trị mặc định khác như isEnabled: true
             } else if (
                 viewName.value === 'EditConnection' ||
                 viewName.value === 'CloneConfig'
             ) {
-                // Gán dữ liệu từ props khi ở chế độ chỉnh sửa
-                Object.assign(itemModel.value, props.viewSettings.dataItem);
+                // Ánh xạ dữ liệu từ props khi ở chế độ chỉnh sửa hoặc sao chép
+                const dataFromApi = props.viewSettings.dataItem;
+
+                // Tạo một đối tượng mới để gán, ánh xạ thủ công 'enabled' sang 'isEnabled'
+                const mappedData = {
+                    ...dataFromApi,
+                    isEnabled: dataFromApi.enabled
+                };
+
+                Object.assign(itemModel.value, mappedData);
+
+                // Xóa ID và ngày tháng nếu ở chế độ 'Clone'
+                if (viewName.value === 'CloneConfig') {
+                    itemModel.value.id = '';
+                    itemModel.value.createdAt = '';
+                    itemModel.value.lastUpdatedAt = '';
+                }
+
             } else {
                 console.log('Something went wrong')!;
             }
@@ -117,6 +128,11 @@ export default {
                     if (viewName.value === 'AddConnection') {
                         actionAddData(data);
                     } else if (viewName.value === 'EditConnection') {
+                        // Tạo một đối tượng mới để gán, ánh xạ thủ công 'enabled' sang 'isEnabled'
+                        const mappedData = {
+                            ...data,
+                            isEnabled: data.enabled
+                        };
                         actionEditData(data);
                     } else {
                         console.log(viewName.value);
@@ -134,8 +150,10 @@ export default {
             delete data.createdAt;
             delete data.lastUpdatedAt;
 
+            const datas = [data]; // Đóng gói data vào mảng
+
             fbConnectionApi
-                .AddConnection(data)
+                .addConnections(datas)
                 .then((response: any) => {
                     if (response.data) {
                         ElMessage({

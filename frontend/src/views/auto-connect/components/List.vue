@@ -2,14 +2,11 @@
 
 <template>
     <div class="flex-fill d-flex flex-column w-100 p-2" v-loading="isLoading">
-        <!-- header -->
         <div class="d-flex align-items-center justify-content-between">
             <div class="page-titles">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item active">
-                        <a href="javascript:void(0)">{{
-                            viewSettings.title
-                        }}</a>
+                        <a href="javascript:void(0)">{{ viewSettings.title }}</a>
                     </li>
                 </ol>
             </div>
@@ -19,12 +16,7 @@
                         class="border-0 mx-1 my-1"
                         size="default"
                         type="primary"
-                        @click="
-                            $emit('onChangeView', {
-                                viewName: 'AddConnection',
-                                data: null,
-                            })
-                        ">
+                        @click="showFacebookLoginModal()">
                         <span class="ml-1">{{ t('Add Connection') }}</span>
                     </el-button>
                     <el-button
@@ -36,8 +28,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- body -->
         <div class="card">
             <div class="row">
                 <div class="col-lg-12">
@@ -47,54 +37,32 @@
                                 class="table table-striped table-head-fixed table-borderless w-100 fixed-table">
                                 <thead>
                                     <tr>
-                                        <th
-                                            style="width: 5%"
-                                            class="text-nowrap">
+                                        <th style="width: 5%" class="text-nowrap">
                                             {{ t('Index') }}
                                         </th>
-                                        <th
-                                            style="width: 10%"
-                                            class="text-nowrap">
+                                        <th style="width: 10%" class="text-nowrap">
                                             {{ t('BotID') }}
                                         </th>
-                                        <th
-                                            style="width: 20%"
-                                            class="text-nowrap">
+                                        <th style="width: 20%" class="text-nowrap">
                                             {{ t('Connection Name') }}
                                         </th>
-                                        <th
-                                            style="width: 15%"
-                                            class="text-nowrap">
-                                            {{ t('PageID') }}
+                                        <th style="width: 15%" class="text-nowrap">
+                                            {{ t('Fanpage url') }}
                                         </th>
-                                        <th
-                                            style="width: 20%"
-                                            class="text-nowrap">
-                                            {{ t('App Secret') }}
-                                        </th>
-                                        <th
-                                            style="width: 10%"
-                                            class="text-nowrap">
+                                        <th style="width: 10%" class="text-nowrap">
                                             {{ t('Status') }}
                                         </th>
-                                        <th
-                                            style="width: 10%"
-                                            class="text-nowrap">
+                                        <th style="width: 10%" class="text-nowrap">
                                             {{ t('Created At') }}
                                         </th>
-                                        <th
-                                            style="width: 10%"
-                                            class="text-nowrap">
+                                        <th style="width: 10%" class="text-nowrap text-center">
                                             {{ t('Action') }}
                                         </th>
                                     </tr>
                                 </thead>
-
                                 <tbody v-if="listItems && listItems.length > 0">
                                     <tr
-                                        v-for="(
-                                            itemData, itemIndex
-                                        ) in listItems"
+                                        v-for="(itemData, itemIndex) in listItems"
                                         :key="itemIndex">
                                         <td class="text-left">
                                             {{ itemIndex + 1 }}
@@ -115,33 +83,23 @@
                                         </td>
                                         <td
                                             class="text-left text-truncate"
-                                            :title="itemData.pageId">
-                                            <span class="truncate-text">{{
-                                                itemData.pageId
-                                            }}</span>
-                                        </td>
-                                        <td
-                                            class="text-left text-truncate"
-                                            :title="itemData.appSecret">
-                                            <span class="truncate-text">{{
-                                                itemData.appSecret
-                                            }}</span>
+                                            :title="itemData.fanpageUrl">
+                                            <span class="truncate-text">
+                                                <a :href="itemData.fanpageUrl">{{ itemData.fanpageUrl }}</a>
+                                            </span>
                                         </td>
                                         <td
                                             class="text-left text-truncate"
                                             :title="
-                                                itemData.enabled
+                                                itemData.isEnabled
                                                     ? t('Enabled')
                                                     : t('Disabled')
                                             ">
-                                            <el-form-item
-                                                class="text-nowrap pt-3">
+                                            <el-form-item class="text-nowrap pt-3">
                                                 <el-button
                                                     size="default"
                                                     :type="
-                                                        itemData.enabled
-                                                            ? 'success'
-                                                            : 'danger'
+                                                        itemData.enabled ? 'success' : 'danger'
                                                     "
                                                     @click="
                                                         toggleStatus(
@@ -157,110 +115,45 @@
                                                 </el-button>
                                             </el-form-item>
                                         </td>
-
                                         <td
                                             class="text-left text-truncate"
                                             :title="itemData.created_at">
                                             <span class="truncate-text">{{
-                                                formatDateTime(
-                                                    itemData.created_at
-                                                )
+                                                formatDateTime(itemData.created_at)
                                             }}</span>
                                         </td>
-                                        <td class="text-left">
-                                            <el-dropdown
-                                                trigger="click"
-                                                class="px-1">
-                                                <el-button type="primary">
-                                                    <el-icon
-                                                        :size="15"
-                                                        style="
-                                                            vertical-align: middle;
-                                                        ">
-                                                        <More />
-                                                    </el-icon>
-                                                </el-button>
-                                                <template #dropdown>
-                                                    <el-dropdown-menu>
-                                                        <table>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <el-button
-                                                                            class="border-0 mx-1 my-1"
-                                                                            size="small"
-                                                                            :disabled="
-                                                                                !itemData
-                                                                            "
-                                                                            @click="
-                                                                                $emit(
-                                                                                    'onChangeView',
-                                                                                    {
-                                                                                        viewName:
-                                                                                            'EditConnection',
-                                                                                        data: itemData,
-                                                                                    }
-                                                                                )
-                                                                            ">
-                                                                            <el-icon
-                                                                                :size="
-                                                                                    15
-                                                                                "
-                                                                                style="
-                                                                                    vertical-align: middle;
-                                                                                ">
-                                                                                <Edit />
-                                                                            </el-icon>
-                                                                            <span
-                                                                                class="ml-1"
-                                                                                >{{
-                                                                                    t(
-                                                                                        'Edit Connection'
-                                                                                    )
-                                                                                }}</span
-                                                                            >
-                                                                        </el-button>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <el-button
-                                                                            class="border-0 ml-1"
-                                                                            size="small"
-                                                                            :disabled="
-                                                                                !itemData
-                                                                            "
-                                                                            @click="
-                                                                                deleteConfig(
-                                                                                    itemData.id
-                                                                                )
-                                                                            ">
-                                                                            <el-icon
-                                                                                :size="
-                                                                                    15
-                                                                                "
-                                                                                class="text-danger"
-                                                                                style="
-                                                                                    vertical-align: middle;
-                                                                                ">
-                                                                                <Delete />
-                                                                            </el-icon>
-                                                                            <span
-                                                                                class="ml-1 mr-1"
-                                                                                >{{
-                                                                                    t(
-                                                                                        'Delete Config'
-                                                                                    )
-                                                                                }}</span
-                                                                            >
-                                                                        </el-button>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </el-dropdown-menu>
-                                                </template>
-                                            </el-dropdown>
+                                        <td class="text-left text-nowrap">
+                                        <div class="d-flex gap-0">
+                                            <el-button
+                                            class="border-0"
+                                            size="small"
+                                            :disabled="!itemData"
+                                            @click="
+                                                $emit('onChangeView', {
+                                                viewName: 'EditConnection',
+                                                data: itemData,
+                                                })
+                                            "
+                                            >
+                                            <el-icon :size="15" style="vertical-align: middle;">
+                                                <Edit />
+                                            </el-icon>
+                                            </el-button>
+                                            <el-button
+                                            class="border-0"
+                                            size="small"
+                                            :disabled="!itemData"
+                                            @click="deleteConfig(itemData.id)"
+                                            >
+                                            <el-icon
+                                                :size="15"
+                                                class="text-danger"
+                                                style="vertical-align: middle;"
+                                            >
+                                                <Delete />
+                                            </el-icon>
+                                            </el-button>
+                                        </div>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -281,8 +174,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- pagination -->
         <div class="mt-2 d-flex justify-content-end">
             <el-pagination
                 v-model:current-page="pagePagination.currentPage"
@@ -293,6 +184,14 @@
                 @size-change="handleSizeChange"
                 @current-change="handleCurrentChange" />
         </div>
+
+        <FanpageSelectionModal
+            v-if="isShowModal"
+            :pages="pages"
+            @close="isShowModal = false"
+            @connect-page="handleConnectPage"
+            @connect-all-pages="handleConnectAllPages" 
+            @connect-success="refreshDataFn" />
     </div>
 </template>
 

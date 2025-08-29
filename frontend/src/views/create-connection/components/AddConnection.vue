@@ -104,7 +104,7 @@
                                         v-model="itemModel[key]"
                                         size="large"
                                         :placeholder="label"
-                                        :disabled="key === 'urlCallback'" />
+                                        />
                                 </el-form-item>
                             </div>
 
