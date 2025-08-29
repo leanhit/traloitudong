@@ -79,8 +79,12 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <button @click="connectPage(page)" class="connect-button">
-                                Kết nối
+                            <button
+                                @click="connectPage(page)"
+                                class="connect-button"
+                                :disabled="isPageConnected(page.pageId)">
+                                <span v-if="isPageConnected(page.pageId)">Đã kết nối</span>
+                                <span v-else>Kết nối</span>
                             </button>
                         </div>
                     </div>
@@ -92,8 +96,12 @@
             </div>
 
             <div v-if="pages && pages.length > 0" class="modal-footer">
-                <button @click="connectAllPages" class="connect-all-button">
-                    Kết nối tất cả Fanpage
+                <button
+                    @click="connectAllPages"
+                    class="connect-all-button"
+                    :disabled="pages.every(page => isPageConnected(page.pageId))">
+                    <span v-if="pages.every(page => isPageConnected(page.pageId))">Tất cả đã được kết nối</span>
+                    <span v-else>Kết nối tất cả Fanpage chưa kết nối</span>
                 </button>
             </div>
         </div>
@@ -103,235 +111,245 @@
 <style scoped>
 /* Modal Overlay và Container */
 .modal-overlay {
- position: fixed;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- background-color: rgba(0, 0, 0, 0.6);
- display: flex;
- justify-content: center;
- align-items: center;
- z-index: 1000;
- backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
 }
 .modal-container {
- background: #ffffff;
- border-radius: 12px;
- box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
- width: 95%;
- max-width: 900px;
- overflow: hidden;
- display: flex;
- flex-direction: column;
- animation: fadeIn 0.3s ease-out;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 95%;
+    max-width: 900px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.3s ease-out;
 }
 
 /* Modal Header */
 .modal-header {
- display: flex;
- justify-content: space-between;
- align-items: center;
- padding: 16px 20px;
- border-bottom: 1px solid #e0e0e0;
- background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f7f7f7;
 }
 
 .modal-title {
- font-size: 20px;
- font-weight: 700;
- color: #333;
- margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
 }
 
 .close-btn {
- background: none;
- border: none;
- cursor: pointer;
- padding: 5px;
- border-radius: 50%;
- transition: background-color 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
 }
 .close-btn:hover {
- background-color: #e0e0e0;
+    background-color: #e0e0e0;
 }
 .close-btn svg {
- width: 24px;
- height: 24px;
- color: #666;
+    width: 24px;
+    height: 24px;
+    color: #666;
 }
 
 /* Modal Body */
 .modal-body {
- padding: 20px;
- max-height: 70vh;
- overflow-y: auto;
+    padding: 20px;
+    max-height: 70vh;
+    overflow-y: auto;
 }
 
 .modal-description {
- font-size: 15px;
- color: #555;
- margin-bottom: 20px;
- line-height: 1.5;
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 /* Page Grid (New Layout) */
 .page-grid {
- display: grid;
- grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
- gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
 }
 
 .page-card {
- background: #f9f9f9;
- border: 1px solid #e0e0e0;
- border-radius: 8px;
- overflow: hidden;
- display: flex;
- flex-direction: column;
- transition: box-shadow 0.2s;
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s;
 }
 
 .page-card:hover {
- box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .card-header {
- display: flex;
- align-items: center;
- padding: 15px;
- border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .page-thumbnail {
- width: 50px;
- height: 50px;
- border-radius: 50%;
- margin-right: 15px;
- object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
 }
 
 .page-info {
- flex-grow: 1;
+    flex-grow: 1;
 }
 
 .page-name {
- font-size: 16px;
- font-weight: 600;
- margin: 0 0 4px 0;
- color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: #333;
 }
 
 .page-id {
- font-size: 12px;
- color: #777;
+    font-size: 12px;
+    color: #777;
 }
 
 .card-body {
- padding: 15px;
- display: flex;
- flex-direction: column;
- gap: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .info-row {
- display: flex;
- align-items: center;
- font-size: 14px;
- color: #555;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
 }
 
 .token-text {
- background-color: #e9ebee;
- padding: 4px 8px;
- border-radius: 4px;
- font-family: monospace;
- margin-right: 10px;
+    background-color: #e9ebee;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: monospace;
+    margin-right: 10px;
 }
 
 .copy-btn {
- background: #f0f2f5;
- border: 1px solid #ccd0d5;
- color: #4267b2;
- font-size: 12px;
- padding: 4px 8px;
- border-radius: 4px;
- cursor: pointer;
- transition: background-color 0.2s;
+    background: #f0f2f5;
+    border: 1px solid #ccd0d5;
+    color: #4267b2;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 .copy-btn:hover {
- background-color: #e4e6eb;
+    background-color: #e4e6eb;
 }
 
 .page-url {
- color: #4267b2;
- text-decoration: none;
- font-weight: 500;
+    color: #4267b2;
+    text-decoration: none;
+    font-weight: 500;
 }
 .page-url:hover {
- text-decoration: underline;
+    text-decoration: underline;
 }
 
 .card-footer {
- padding: 15px;
- border-top: 1px solid #e0e0e0;
- text-align: right;
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+    text-align: right;
 }
 
 /* Buttons */
 .connect-button {
- padding: 8px 18px;
- background-color: #4267b2;
- color: white;
- border: none;
- border-radius: 6px;
- font-size: 14px;
- font-weight: 600;
- cursor: pointer;
- transition: background-color 0.2s ease;
+    padding: 8px 18px;
+    background-color: #4267b2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .connect-button:hover {
- background-color: #365899;
+    background-color: #365899;
+}
+
+.connect-button:disabled {
+    background-color: #a0a0a0;
+    cursor: not-allowed;
 }
 
 .modal-footer {
- padding: 15px 20px;
- border-top: 1px solid #e0e0e0;
- background-color: #f7f7f7;
- text-align: center;
+    padding: 15px 20px;
+    border-top: 1px solid #e0e0e0;
+    background-color: #f7f7f7;
+    text-align: center;
 }
 
 .connect-all-button {
- padding: 12px 24px;
- background-color: #42b72a;
- color: white;
- border: none;
- border-radius: 6px;
- font-size: 16px;
- font-weight: 600;
- cursor: pointer;
- transition: background-color 0.2s ease;
+    padding: 12px 24px;
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .connect-all-button:hover {
- background-color: #318a20;
+    background-color: #318a20;
+}
+
+.connect-all-button:disabled {
+    background-color: #a0a0a0;
+    cursor: not-allowed;
 }
 
 .bot-selection-wrapper {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .bot-label {
-  font-weight: bold;
-  color: #555;
+    font-weight: bold;
+    color: #555;
 }
 
 .bot-select {
-  flex-grow: 1;
-  max-width: 300px;
+    flex-grow: 1;
+    max-width: 300px;
 }
 </style>

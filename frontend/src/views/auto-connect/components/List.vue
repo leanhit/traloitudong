@@ -188,9 +188,8 @@
         <FanpageSelectionModal
             v-if="isShowModal"
             :pages="pages"
+            :connectedPageIds="connectedPageIds"
             @close="isShowModal = false"
-            @connect-page="handleConnectPage"
-            @connect-all-pages="handleConnectAllPages" 
             @connect-success="refreshDataFn" />
     </div>
 </template>

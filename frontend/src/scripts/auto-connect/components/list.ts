@@ -1,3 +1,5 @@
+// src/views/auto-connect/list.ts
+
 import { useI18n } from 'vue-i18n';
 import { ref, reactive, watch, onMounted } from 'vue';
 import { ElMessage, ElMessageBox } from 'element-plus';
@@ -12,7 +14,7 @@ export default {
     components: { FanpageSelectionModal },
     props: ['viewSettings'],
     emits: ['onChangeView'],
-    setup(props: any, context: any) {
+    setup(props, context) {
         const { t } = useI18n();
         const connectionStore = useDataconnectionStore();
         const searchStore = useSearchStore();
@@ -25,6 +27,7 @@ export default {
         const tempList = ref([]);
         const isShowModal = ref(false);
         const pages = ref([]);
+        const connectedPageIds = ref([]); // State để lưu pageId đã kết nối
 
         const pagePagination = reactive({
             pageSize: 15,
@@ -32,8 +35,19 @@ export default {
             totalItems: 0,
         });
 
-        // Hàm xử lý đăng nhập thành công và lấy danh sách fanpage
-        const handleLoginSuccess = async (data: any) => {
+        // Hàm lấy danh sách pageId đã kết nối từ server
+        const fetchConnectedPageIds = async () => {
+            try {
+                const response = await fbConnectionApi.getAllConnections({ page: 999, size: 999 });
+                if (response.data && Array.isArray(response.data.content)) {
+                    connectedPageIds.value = response.data.content.map(conn => conn.pageId);
+                }
+            } catch (error) {
+                console.error("Lỗi khi lấy danh sách kết nối:", error);
+            }
+        };
+
+        const handleLoginSuccess = async (data) => {
             facebookStore.setFacebookData({
                 accessToken: data.accessToken,
                 userID: data.userID,
@@ -46,30 +60,30 @@ export default {
                 const pagesData = await response.json();
 
                 if (pagesData?.data) {
-                    pages.value = pagesData.data.map((page: any) => ({
+                    pages.value = pagesData.data.map((page) => ({
                         pageId: page.id,
                         pageName: page.name,
                         pageAccessToken: page.access_token,
                         thumbnail: page.picture?.data?.url,
+                        isConnected: connectedPageIds.value.includes(page.id), // Thêm thuộc tính isConnected
                     }));
                     
                     isShowModal.value = true;
                 } else {
                     console.error('No page data found.');
-                    ElMessage.error('No fanpages found. Please check permissions.');
+                    ElMessage.error('Không tìm thấy fanpage nào. Vui lòng kiểm tra lại quyền.');
                 }
             } catch (error) {
                 console.error('Error fetching page list:', error);
-                ElMessage.error('Error fetching fanpage list from Facebook.');
+                ElMessage.error('Lỗi khi lấy danh sách fanpage từ Facebook.');
             }
         };
 
-        const handleLoginFailure = (error: any) => {
+        const handleLoginFailure = (error) => {
             console.error('Login error:', error);
-            ElMessage.error('Facebook login failed.');
+            ElMessage.error('Đăng nhập Facebook thất bại.');
         };
 
-        // Hàm được gọi khi nhấn nút "Add Connection"
         const showFacebookLoginModal = () => {
             if (typeof window.FB === "undefined") {
                 console.error("❌ Facebook SDK chưa load!");
@@ -117,9 +131,12 @@ export default {
             }
         };
 
-        onMounted(refreshDataFn);
+        onMounted(() => {
+            refreshDataFn();
+            fetchConnectedPageIds(); // Tải danh sách pageId đã kết nối ngay khi component được mount
+        });
 
-        const deleteConfig = async (id: any) => {
+        const deleteConfig = async (id) => {
             ElMessageBox.confirm(
                 t('Are you sure you want to delete this connection?'),
                 t('Warning'),
@@ -146,7 +163,7 @@ export default {
             });
         };
 
-        const toggleStatus = async (itemData: any, newStatus: boolean) => {
+        const toggleStatus = async (itemData, newStatus) => {
             try {
                 isLoading.value = true;
                 const updatedData = { ...itemData, isEnabled: newStatus };
@@ -170,49 +187,43 @@ export default {
             }
         };
 
-        const actionAddConnections = async (pages: any[]) => {
-            if (!Array.isArray(pages) || pages.length === 0) {
-                ElMessage.error('Invalid data. Please select at least one page.');
-                return;
-            }
-
-            isLoading.value = true;
-
-            const cleanedPages = pages.map(page => {
-                const cleanPage = { ...page };
-                delete cleanPage.id;
-                delete cleanPage.createdAt;
-                delete cleanPage.lastUpdatedAt;
-                return cleanPage;
-            });
-
-            try {
-                const response = await fbConnectionApi.addConnections(cleanedPages);
-                if (response.data) {
-                    ElMessage({
-                        message: t('Connections added successfully!'),
-                        type: 'success',
-                    });
-                    await refreshDataFn();
-                } else {
-                    ElMessage.error(`Oops, ${response.message}`);
-                }
-            } catch (error) {
-                console.error(error);
-                ElMessage.error(t('An error occurred.'));
-            } finally {
-                isLoading.value = false;
-                isShowModal.value = false;
-            }
-        };
-
-        const handleConnectPage = (page: any) => {
+        const handleConnectPage = (page) => {
+            // Hàm này bây giờ sẽ gọi API addConnections
             actionAddConnections([page]);
         };
 
-        const handleConnectAllPages = (pagesToConnect: any[]) => {
+        const handleConnectAllPages = (pagesToConnect) => {
+            // Hàm này bây giờ sẽ gọi API addConnections
             actionAddConnections(pagesToConnect);
         };
+
+        const actionAddConnections = async (pages) => {
+             if (!Array.isArray(pages) || pages.length === 0) {
+                 ElMessage.error('Invalid data. Please select at least one page.');
+                 return;
+             }
+
+             isLoading.value = true;
+             try {
+                 const response = await fbConnectionApi.addConnections(pages);
+                 if (response.data) {
+                     ElMessage({
+                         message: t('Connections added successfully!'),
+                         type: 'success',
+                     });
+                     await refreshDataFn();
+                 } else {
+                     ElMessage.error(`Oops, ${response.message}`);
+                 }
+             } catch (error) {
+                 console.error(error);
+                 ElMessage.error(t('An error occurred.'));
+             } finally {
+                 isLoading.value = false;
+                 isShowModal.value = false;
+             }
+        };
+
 
         watch(
             () => searchStore.query,
@@ -230,12 +241,12 @@ export default {
             }
         );
 
-        const handleSizeChange = (size: number) => {
+        const handleSizeChange = (size) => {
             pagePagination.pageSize = size;
             listItems.value = splitData(tempList.value, pagePagination);
         };
 
-        const handleCurrentChange = (page: number) => {
+        const handleCurrentChange = (page) => {
             pagePagination.currentPage = page;
             listItems.value = splitData(tempList.value, pagePagination);
         };
@@ -260,6 +271,7 @@ export default {
             handleConnectPage,
             handleConnectAllPages,
             pages,
+            connectedPageIds,
         };
     },
 };
