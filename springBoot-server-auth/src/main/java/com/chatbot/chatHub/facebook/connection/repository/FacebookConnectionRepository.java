@@ -13,7 +13,6 @@ import java.util.UUID;
 public interface FacebookConnectionRepository extends JpaRepository<FacebookConnection, UUID> {
     Optional<FacebookConnection> findByBotId(String botId);
     Optional<FacebookConnection> findByPageId(String pageId);
-    Optional<FacebookConnection> findByVerifyToken(String verifyToken);
     List<FacebookConnection> findByOwnerId(String ownerId); // Thêm dòng này
     Page<FacebookConnection> findByOwnerId(String ownerId, Pageable pageable); 
 }

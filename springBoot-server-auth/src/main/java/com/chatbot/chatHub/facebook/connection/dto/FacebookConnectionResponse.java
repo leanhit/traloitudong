@@ -13,10 +13,7 @@ public class FacebookConnectionResponse {
     private String botName;
     private String pageId;
     private String fanpageUrl;
-    private String appSecret;
     private String pageAccessToken;
-    private String urlCallback;
-    private String verifyToken;
     private boolean isEnabled;
     private LocalDateTime createdAt;
     private LocalDateTime lastUpdatedAt;

@@ -21,10 +21,7 @@ public class FacebookConnection {
     private String ownerId;
     private String pageId;
     private String fanpageUrl;
-    private String appSecret;
     private String pageAccessToken;
-    private String urlCallback;
-    private String verifyToken;
     private boolean isEnabled; // Trường mới
     private LocalDateTime createdAt;
     private LocalDateTime lastUpdatedAt; // Trường mới

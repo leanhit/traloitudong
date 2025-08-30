@@ -34,10 +34,7 @@ public class FacebookConnectionService {
         newConnection.setBotName(request.getBotName());
         newConnection.setPageId(request.getPageId());
         newConnection.setFanpageUrl(request.getFanpageUrl());
-        newConnection.setAppSecret(request.getAppSecret());
         newConnection.setPageAccessToken(request.getPageAccessToken());
-        newConnection.setUrlCallback(request.getUrlCallback());
-        newConnection.setVerifyToken(request.getVerifyToken());
         newConnection.setOwnerId(ownerId);
         newConnection.setCreatedAt(LocalDateTime.now());
         newConnection.setLastUpdatedAt(LocalDateTime.now());
@@ -68,11 +65,8 @@ public class FacebookConnectionService {
         dto.setBotId(connection.getBotId());
         dto.setBotName(connection.getBotName());
         dto.setPageId(connection.getPageId());
-        dto.setAppSecret(connection.getAppSecret());
         dto.setPageAccessToken(connection.getPageAccessToken());
-        dto.setVerifyToken(connection.getVerifyToken());
         dto.setFanpageUrl(connection.getFanpageUrl());
-        dto.setUrlCallback(connection.getUrlCallback());
         dto.setEnabled(connection.isEnabled());
         dto.setCreatedAt(connection.getCreatedAt());
         dto.setLastUpdatedAt(connection.getLastUpdatedAt());
@@ -96,12 +90,6 @@ public class FacebookConnectionService {
         }
         if (request.getFanpageUrl() != null) {
             connection.setFanpageUrl(request.getFanpageUrl());
-        }
-        if (request.getVerifyToken() != null) {
-            connection.setVerifyToken(request.getVerifyToken());
-        }
-        if (request.getAppSecret() != null) {
-            connection.setAppSecret(request.getAppSecret());
         }
         if (request.getPageId() != null) {
             connection.setPageId(request.getPageId());

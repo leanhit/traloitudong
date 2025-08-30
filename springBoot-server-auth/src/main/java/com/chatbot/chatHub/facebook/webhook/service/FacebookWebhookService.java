@@ -3,6 +3,8 @@ package com.chatbot.chatHub.facebook.webhook.service;
 
 import com.chatbot.webHub.facebook.connection.model.FacebookConnection;
 import com.chatbot.webHub.facebook.connection.repository.FacebookConnectionRepository;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 import com.chatbot.chatHub.facebook.webhook.dto.WebhookRequest;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +23,10 @@ public class FacebookWebhookService {
     private final BotpressServiceFb botpressService;
     private final FacebookMessengerService facebookMessengerService;
 
+    
+    @Value("${facebook.autoConnect.verifyToken}")
+    private String configuredVerifyToken;
+
     public FacebookWebhookService(FacebookConnectionRepository connectionRepository,
                                   BotpressServiceFb botpressService,
                                   FacebookMessengerService facebookMessengerService) {
@@ -31,7 +37,7 @@ public class FacebookWebhookService {
 
     public boolean verifyWebhook(String mode, String challenge, String verifyToken) {
         if ("subscribe".equals(mode)) {
-            return connectionRepository.findByVerifyToken(verifyToken).isPresent();
+            return configuredVerifyToken.equals(verifyToken);
         }
         return false;
     }

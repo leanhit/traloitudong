@@ -12,9 +12,6 @@ public class CreateFacebookConnectionRequest {
     private String botName;
     private String pageId;
     private String fanpageUrl;
-    private String appSecret;
     private String pageAccessToken;
-    private String verifyToken;
-    private String urlCallback;
     private boolean isEnabled; // Thêm trường này để tạo kết nối ban đầu
 }

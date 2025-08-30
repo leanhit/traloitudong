@@ -46,7 +46,7 @@
                                         <th style="width: 20%" class="text-nowrap">
                                             {{ t('Connection Name') }}
                                         </th>
-                                        <th style="width: 15%" class="text-nowrap">
+                                        <th style="width: 20%" class="text-nowrap">
                                             {{ t('Fanpage url') }}
                                         </th>
                                         <th style="width: 10%" class="text-nowrap">
@@ -55,7 +55,7 @@
                                         <th style="width: 10%" class="text-nowrap">
                                             {{ t('Created At') }}
                                         </th>
-                                        <th style="width: 10%" class="text-nowrap text-center">
+                                        <th style="width: 5%" class="text-nowrap text-center">
                                             {{ t('Action') }}
                                         </th>
                                     </tr>
@@ -122,38 +122,38 @@
                                                 formatDateTime(itemData.created_at)
                                             }}</span>
                                         </td>
-                                        <td class="text-left text-nowrap">
-                                        <div class="d-flex gap-0">
-                                            <el-button
-                                            class="border-0"
-                                            size="small"
-                                            :disabled="!itemData"
-                                            @click="
-                                                $emit('onChangeView', {
-                                                viewName: 'EditConnection',
-                                                data: itemData,
-                                                })
-                                            "
-                                            >
-                                            <el-icon :size="15" style="vertical-align: middle;">
-                                                <Edit />
-                                            </el-icon>
-                                            </el-button>
-                                            <el-button
-                                            class="border-0"
-                                            size="small"
-                                            :disabled="!itemData"
-                                            @click="deleteConfig(itemData.id)"
-                                            >
-                                            <el-icon
-                                                :size="15"
-                                                class="text-danger"
-                                                style="vertical-align: middle;"
-                                            >
-                                                <Delete />
-                                            </el-icon>
-                                            </el-button>
-                                        </div>
+                                        <td class="text-center text-nowrap">
+                                            <div class="d-flex gap-0">
+                                                <el-button
+                                                class="border-0"
+                                                size="small"
+                                                :disabled="!itemData"
+                                                @click="
+                                                    $emit('onChangeView', {
+                                                    viewName: 'EditConnection',
+                                                    data: itemData,
+                                                    })
+                                                "
+                                                >
+                                                <el-icon :size="15" style="vertical-align: middle;">
+                                                    <Edit />
+                                                </el-icon>
+                                                </el-button>
+                                                <el-button
+                                                class="border-0"
+                                                size="small"
+                                                :disabled="!itemData"
+                                                @click="deleteConfig(itemData.id)"
+                                                >
+                                                <el-icon
+                                                    :size="15"
+                                                    class="text-danger"
+                                                    style="vertical-align: middle;"
+                                                >
+                                                    <Delete />
+                                                </el-icon>
+                                                </el-button>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>
