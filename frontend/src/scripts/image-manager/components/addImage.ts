@@ -139,20 +139,6 @@ export default {
       }
     });
 
-    // Xử lý khi người dùng chọn file
-    const handleFileChange: UploadProps['onChange'] = (uploadFile, uploadFiles) => {
-      // Chỉ cho phép một file, lấy file cuối cùng được chọn
-      itemModel.value.imageFile = uploadFile.raw || null;
-      if (itemModel.value.imageFile) {
-        dialogImageUrl.value = URL.createObjectURL(itemModel.value.imageFile);
-        // Xóa URL nhập tay nếu có file được chọn
-        itemModel.value.url = '';
-      } else {
-        dialogImageUrl.value = '';
-      }
-      // Kích hoạt lại validation cho trường URL/file
-      formRef.value?.validateField('url');
-    };
 
     // Xử lý khi xóa file khỏi el-upload
     const handleRemove: UploadProps['onRemove'] = (uploadFile, uploadFiles) => {
@@ -232,6 +218,26 @@ export default {
         }
       });
     }
+
+    watch(() => itemModel.value.url, (newUrl) => {
+  if (newUrl) {
+    itemModel.value.imageFile = null; // xóa file cũ
+    dialogImageUrl.value = newUrl;    // preview theo URL
+  }
+  formRef.value?.validateField('url');
+});
+
+const handleFileChange: UploadProps['onChange'] = (uploadFile) => {
+  itemModel.value.imageFile = uploadFile.raw || null;
+  if (itemModel.value.imageFile) {
+    dialogImageUrl.value = URL.createObjectURL(itemModel.value.imageFile);
+    itemModel.value.url = ''; // xóa URL nếu chọn file
+  } else {
+    dialogImageUrl.value = '';
+  }
+  formRef.value?.validateField('url');
+};
+
 
     return {
       t,

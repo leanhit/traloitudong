@@ -73,33 +73,41 @@
 
               <!-- URL ảnh (hoặc Upload) -->
               <div class="py-2 px-2">
-                <strong>{{ t('URL Image Or Upload') }}</strong>
-                <el-form-item prop="url">
-                  <el-input
-                    v-model="itemModel.url"
-                    size="large"
-                    :placeholder="t('Image URL')"
-                  />
-                  <div class="text-muted mt-2">
-                    {{ t('Or Upload An Image:') }}
-                  </div>
-                  <el-upload
-                    action="#"
-                    list-type="picture-card"
-                    :auto-upload="false"
-                    :on-change="handleFileChange"
-                    :on-remove="handleRemove"
-                    :on-preview="handlePictureCardPreview"
-                    :limit="1"
-                    :file-list="itemModel.imageFile ? [{ name: itemModel.imageFile.name, url: dialogImageUrl }] : []"
-                  >
-                    <el-icon><Plus /></el-icon>
-                  </el-upload>
-                  <el-dialog v-model="dialogVisible">
-                    <img w-full :src="dialogImageUrl" alt="Preview Image" />
-                  </el-dialog>
-                </el-form-item>
-              </div>
+  <strong>{{ t('URL Image Or Upload') }}</strong>
+  <el-form-item prop="url">
+    <!-- URL nhập tay -->
+    <el-input
+      v-model="itemModel.url"
+      size="large"
+      :placeholder="t('Nhập URL ảnh nếu muốn')"
+    />
+
+    <div class="text-muted mt-2">{{ t('Hoặc tải ảnh lên:') }}</div>
+
+    <!-- Upload kéo-thả + chọn file -->
+    <el-upload
+      class="upload-drag"
+      drag
+      action="#"
+      :auto-upload="false"
+      :file-list="itemModel.imageFile ? [{ name: itemModel.imageFile.name, url: dialogImageUrl }] : []"
+      :limit="1"
+      :on-change="handleFileChange"
+      :on-remove="handleRemove"
+      :on-preview="handlePictureCardPreview"
+    >
+      <i class="el-icon-upload"></i>
+      <div class="el-upload__text">{{ t('Kéo thả ảnh vào đây hoặc nhấn để chọn') }}</div>
+      <div class="el-upload__tip text-muted" style="font-size: 12px;">{{ t('Chỉ chấp nhận 1 ảnh') }}</div>
+    </el-upload>
+
+    <!-- Preview ảnh -->
+    <el-dialog v-model="dialogVisible" width="50%">
+      <img w-full :src="dialogImageUrl" alt="Preview Image" />
+    </el-dialog>
+  </el-form-item>
+</div>
+
 
               <!-- Tags -->
               <div class="py-2 px-2">
@@ -210,4 +218,34 @@ img {
   height: auto;
   display: block;
 }
+
+.upload-drag {
+  border: 2px dashed #d9d9d9;
+  border-radius: 8px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s, background-color 0.3s;
+
+  &:hover {
+    border-color: #409eff;
+    background-color: #f0f7ff;
+  }
+
+  .el-upload__icon {
+    font-size: 36px;
+    color: #409eff;
+  }
+
+  .el-upload__text {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #606266;
+  }
+
+  .el-upload__tip {
+    margin-top: 5px;
+  }
+}
+
 </style>

@@ -1,11 +1,11 @@
 // src/main/java/com/chatbot/connection/controller/FacebookConnectionController.java
 
-package com.chatbot.webHub.facebook.connection.controller;
+package com.chatbot.chatHub.facebook.connection.controller;
 
-import com.chatbot.webHub.facebook.connection.dto.CreateFacebookConnectionRequest;
-import com.chatbot.webHub.facebook.connection.dto.FacebookConnectionResponse;
-import com.chatbot.webHub.facebook.connection.dto.UpdateFacebookConnectionRequest;
-import com.chatbot.webHub.facebook.connection.service.FacebookConnectionService;
+import com.chatbot.chatHub.facebook.connection.dto.CreateFacebookConnectionRequest;
+import com.chatbot.chatHub.facebook.connection.dto.FacebookConnectionResponse;
+import com.chatbot.chatHub.facebook.connection.dto.UpdateFacebookConnectionRequest;
+import com.chatbot.chatHub.facebook.connection.service.FacebookConnectionService;
 import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;

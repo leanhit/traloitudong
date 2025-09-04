@@ -104,8 +104,8 @@
                 :page-sizes="[10, 15, 25, 50, 100]"
                 layout="total, sizes, prev, pager, next, jumper"
                 :total="pagePagination.totalItems"
-                @size-change="handleSizeChange"
-                @current-change="handleCurrentChange" />
+                @update:page-size="handleSizeChange"
+                @update:current-page="handleCurrentChange" />
         </div>
     </div>
 </template>

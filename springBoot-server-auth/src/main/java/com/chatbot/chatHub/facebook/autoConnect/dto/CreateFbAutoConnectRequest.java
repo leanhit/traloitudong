@@ -1,17 +1,14 @@
-// src/main/java/com/chatbot/webHub/facebook/autoConnect/dto/CreateFbAutoConnectRequest.java
+// src/main/java/com/chatbot/webHub/facebook/autoConnect/dto/FbAutoConnectRequest.java
 
-package com.chatbot.webHub.facebook.autoConnect.dto;
+package com.chatbot.chatHub.facebook.autoConnect.dto;
 
 import lombok.Data;
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
-import java.util.List;
+import jakarta.validation.constraints.NotBlank;
 
 @Data
 public class CreateFbAutoConnectRequest {
-    @NotNull(message = "Connection list cannot be null")
-    @Size(min = 1, message = "Connection list cannot be empty")
-    @Valid
-    private List<FbAutoConnectRequest> connections;
+    @NotBlank(message = "botId cannot be blank")
+    private String botId;
+    @NotBlank(message = "userAccessToken cannot be blank")
+    private String userAccessToken;
 }

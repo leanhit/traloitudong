@@ -23,9 +23,9 @@ export const fbConnectionApi = {
     },
 
     // API mới để thêm nhiều kết nối
-    addConnections(params: any[]) {
+    addConnections(params: any) {
         // Gửi một mảng các đối tượng trang đến server
-        return axios.post(`/connection/facebook/auto-connect`, { connections: params });
+        return axios.post(`/connection/facebook/auto-connect`, params );
     },
 
     // Hàm mới để đăng ký webhook cho một trang

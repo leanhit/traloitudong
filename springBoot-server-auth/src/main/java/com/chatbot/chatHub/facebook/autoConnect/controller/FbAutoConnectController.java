@@ -1,32 +1,39 @@
-// src/main/java/com/chatbot/webHub/facebook/autoConnect/controller/FacebookAutoConnectController.java
+package com.chatbot.chatHub.facebook.autoConnect.controller;
 
-package com.chatbot.webHub.facebook.autoConnect.controller;
-
-import com.chatbot.webHub.facebook.autoConnect.dto.CreateFbAutoConnectRequest;
-import com.chatbot.webHub.facebook.autoConnect.service.FbAutoConnectService; // Sửa tên class Service
+import com.chatbot.chatHub.facebook.autoConnect.dto.CreateFbAutoConnectRequest;
+import com.chatbot.chatHub.facebook.autoConnect.service.FbAutoConnectService;
+import com.chatbot.chatHub.facebook.autoConnect.dto.AutoConnectResponse; // Thêm import mới
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 import java.security.Principal;
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/connection/facebook/auto-connect")
 public class FbAutoConnectController {
 
-    private final FbAutoConnectService fbAutoConnectService; // Sửa tên biến
+  private final FbAutoConnectService fbAutoConnectService;
 
-    public FbAutoConnectController(FbAutoConnectService fbAutoConnectService) {
-        this.fbAutoConnectService = fbAutoConnectService;
-    }
+  public FbAutoConnectController(FbAutoConnectService fbAutoConnectService) {
+    this.fbAutoConnectService = fbAutoConnectService;
+  }
 
-    @PostMapping
-    public ResponseEntity<List<String>> createBulkConnections(@Valid @RequestBody CreateFbAutoConnectRequest request, Principal principal) {
-        // Dòng code được thêm để in dữ liệu request
-        System.out.println("Received request body: " + request);
-        
-        String ownerId = principal.getName();
-        List<String> connectionIds = fbAutoConnectService.createConnections(ownerId, request);
-        return ResponseEntity.ok(connectionIds);
-    }     
+  @PostMapping
+  public ResponseEntity<AutoConnectResponse> autoConnect(@Valid @RequestBody CreateFbAutoConnectRequest request,
+                          Principal principal) {
+    String ownerId = principal.getName();
+
+    System.out.println("📩 Received auto-connect request: " + request);
+
+    // Thay đổi kiểu dữ liệu nhận về
+    AutoConnectResponse result = fbAutoConnectService.autoConnect(
+        ownerId,
+        request.getBotId(),
+        request.getUserAccessToken()
+    );
+
+    // Trả về đối tượng kết quả chi tiết
+    return ResponseEntity.ok(result);
+  }
 }

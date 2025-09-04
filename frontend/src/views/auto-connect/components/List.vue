@@ -10,6 +10,18 @@
                     </li>
                 </ol>
             </div>
+            <div class="flex flex-col mx-1" style="min-width: 200px;">
+                <label class="mb-1 text-sm font-medium text-gray-700 px-2">Chọn Bot ID</label>
+                <el-select v-model="selectedBotId" placeholder="Select Bot">
+                    <el-option
+                    v-for="bot in botIdOptions"
+                    :key="bot.value"
+                    :label="bot.name"
+                    :value="bot.value"
+                    />
+                </el-select>
+            </div>
+
             <div class="d-flex align-items-center">
                 <div class="px-2 w-100">
                     <el-button
@@ -181,16 +193,9 @@
                 :page-sizes="[10, 15, 25, 50, 100]"
                 layout="total, sizes, prev, pager, next, jumper"
                 :total="pagePagination.totalItems"
-                @size-change="handleSizeChange"
-                @current-change="handleCurrentChange" />
+                @update:page-size="handleSizeChange"
+                @update:current-page="handleCurrentChange" />
         </div>
-
-        <FanpageSelectionModal
-            v-if="isShowModal"
-            :pages="pages"
-            :connectedPageIds="connectedPageIds"
-            @close="isShowModal = false"
-            @connect-success="refreshDataFn" />
     </div>
 </template>
 

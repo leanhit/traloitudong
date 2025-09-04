@@ -1,12 +1,12 @@
 // src/main/java/com/chatbot/connection/service/FacebookConnectionService.java
 
-package com.chatbot.webHub.facebook.connection.service;
+package com.chatbot.chatHub.facebook.connection.service;
 
-import com.chatbot.webHub.facebook.connection.dto.CreateFacebookConnectionRequest;
-import com.chatbot.webHub.facebook.connection.dto.FacebookConnectionResponse;
-import com.chatbot.webHub.facebook.connection.dto.UpdateFacebookConnectionRequest;
-import com.chatbot.webHub.facebook.connection.model.FacebookConnection;
-import com.chatbot.webHub.facebook.connection.repository.FacebookConnectionRepository;
+import com.chatbot.chatHub.facebook.connection.dto.CreateFacebookConnectionRequest;
+import com.chatbot.chatHub.facebook.connection.dto.FacebookConnectionResponse;
+import com.chatbot.chatHub.facebook.connection.dto.UpdateFacebookConnectionRequest;
+import com.chatbot.chatHub.facebook.connection.model.FacebookConnection;
+import com.chatbot.chatHub.facebook.connection.repository.FacebookConnectionRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
@@ -36,15 +36,17 @@ public class FacebookConnectionService {
         newConnection.setFanpageUrl(request.getFanpageUrl());
         newConnection.setPageAccessToken(request.getPageAccessToken());
         newConnection.setOwnerId(ownerId);
+        newConnection.setFbUserId("");
         newConnection.setCreatedAt(LocalDateTime.now());
         newConnection.setLastUpdatedAt(LocalDateTime.now());
         newConnection.setEnabled(request.isEnabled());
+        newConnection.setActive(true);
         connectionRepository.save(newConnection);
         return newConnection.getId().toString();
     }
 
     public List<FacebookConnectionResponse> getConnectionsByOwnerId(String ownerId) {
-        List<FacebookConnection> connections = connectionRepository.findByOwnerId(ownerId);
+        List<FacebookConnection> connections = connectionRepository.findByOwnerIdAndIsActiveTrue(ownerId);
         return connections.stream()
                 .map(this::convertToDto)
                 .collect(Collectors.toList());
@@ -52,7 +54,7 @@ public class FacebookConnectionService {
 
     public Page<FacebookConnectionResponse> getConnectionsByOwnerId(String ownerId, int page, int size) {
         Pageable pageable = PageRequest.of(page, size);
-        Page<FacebookConnection> connectionsPage = connectionRepository.findByOwnerId(ownerId, pageable);
+        Page<FacebookConnection> connectionsPage = connectionRepository.findByOwnerIdAndIsActiveTrue(ownerId, pageable);
         List<FacebookConnectionResponse> dtoList = connectionsPage.getContent().stream()
                 .map(this::convertToDto)
                 .collect(Collectors.toList());

@@ -1,6 +1,6 @@
 // src/main/java/com/chatbot/connections/models/FacebookConnection.java
 
-package com.chatbot.webHub.facebook.connection.model;
+package com.chatbot.chatHub.facebook.connection.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -22,7 +22,9 @@ public class FacebookConnection {
     private String pageId;
     private String fanpageUrl;
     private String pageAccessToken;
+    private String fbUserId;
     private boolean isEnabled; // Trường mới
+    private boolean isActive;
     private LocalDateTime createdAt;
     private LocalDateTime lastUpdatedAt; // Trường mới
 }

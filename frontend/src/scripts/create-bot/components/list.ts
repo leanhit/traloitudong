@@ -45,7 +45,7 @@ export default {
 
             tempList.value = botStore.bot.content;
 
-            pagePagination.totalItems = botStore.bot.totalItems;
+            botStore.bot.totalItems ? pagePagination.totalItems = botStore.bot.totalItems : pagePagination.totalItems = 0   ;
 
             listItems.value = tempList.value;
         }

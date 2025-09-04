@@ -1,8 +1,8 @@
 // src/main/java/com/chatbot/chatHub/facebook/webhook/service/FacebookWebhookService.java
 package com.chatbot.chatHub.facebook.webhook.service;
 
-import com.chatbot.webHub.facebook.connection.model.FacebookConnection;
-import com.chatbot.webHub.facebook.connection.repository.FacebookConnectionRepository;
+import com.chatbot.chatHub.facebook.connection.model.FacebookConnection;
+import com.chatbot.chatHub.facebook.connection.repository.FacebookConnectionRepository;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import com.chatbot.chatHub.facebook.webhook.dto.WebhookRequest;

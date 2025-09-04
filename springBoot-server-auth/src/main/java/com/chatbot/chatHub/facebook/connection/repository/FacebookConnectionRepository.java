@@ -1,8 +1,8 @@
 // src/main/java/com/chatbot/connections/repositories/FacebookConnectionRepository.java
 
-package com.chatbot.webHub.facebook.connection.repository;
+package com.chatbot.chatHub.facebook.connection.repository;
 
-import com.chatbot.webHub.facebook.connection.model.FacebookConnection;
+import com.chatbot.chatHub.facebook.connection.model.FacebookConnection;
 import org.springframework.data.domain.Page; // Thêm dòng này
 import org.springframework.data.domain.Pageable; // Thêm dòng này
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -15,4 +15,9 @@ public interface FacebookConnectionRepository extends JpaRepository<FacebookConn
     Optional<FacebookConnection> findByPageId(String pageId);
     List<FacebookConnection> findByOwnerId(String ownerId); // Thêm dòng này
     Page<FacebookConnection> findByOwnerId(String ownerId, Pageable pageable); 
+
+     // 👇 Thêm method có filter active
+    List<FacebookConnection> findByOwnerIdAndIsActiveTrue(String ownerId);
+    Page<FacebookConnection> findByOwnerIdAndIsActiveTrue(String ownerId, Pageable pageable);
+
 }

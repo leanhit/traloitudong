@@ -23,7 +23,7 @@ export default {
         const currentComponent = ref('ListData');
         const viewSettings = ref({
             viewName: 'ListData',
-            title: t('Configs '),
+            title: t('Create Connection'),
             dataItem: null,
         });
         const changeView = (paramsObject: { viewName: string; data: any }) => {
@@ -33,7 +33,7 @@ export default {
                     case 'ListData':
                         viewSettings.value = {
                             viewName: 'ListData',
-                            title: t("Configs"),
+                            title: t("Create Connection"),
                             dataItem: null,
                         };
                         break;
