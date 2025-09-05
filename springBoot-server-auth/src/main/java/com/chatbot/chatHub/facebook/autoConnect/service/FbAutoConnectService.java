@@ -36,7 +36,6 @@ public class FbAutoConnectService {
     public AutoConnectResponse autoConnect(String webUserId, String botId, String userAccessToken) {
         System.out.println("🔹 Bắt đầu auto connect fanpage cho webUserId=" + webUserId);
 
-        // Chuẩn bị các danh sách để lưu kết quả
         List<String> connectedPages = new ArrayList<>();
         List<String> reactivatedPages = new ArrayList<>();
         List<String> inactivePages = new ArrayList<>();
@@ -68,7 +67,7 @@ public class FbAutoConnectService {
 
         List<FacebookConnection> connectionsToSave = new ArrayList<>();
 
-        // 3️⃣ Xử lý FB pages
+        // 3️⃣ Xử lý FB pages: kết nối mới hoặc kích hoạt lại
         for (Map<String, Object> page : fbPages) {
             String pageId = (String) page.get("id");
             String pageName = (String) page.get("name");
@@ -81,23 +80,23 @@ public class FbAutoConnectService {
                 conn.setPageAccessToken(pageToken);
                 conn.setBotName(pageName);
                 
-                // ✅ Sửa logic: Kích hoạt lại connection nếu nó đang inactive
+                // Nếu kết nối đang inactive, kích hoạt lại
                 if (!conn.isActive()) {
                     conn.setActive(true); 
                     conn.setEnabled(true); 
                     conn.setLastUpdatedAt(LocalDateTime.now());
                     connectionsToSave.add(conn);
                     reactivatedPages.add(pageName); 
-                    System.out.println("♻️ Reactivate page: " + pageId + " (" + pageName + ")");
+                    System.out.println("♻️ Kích hoạt lại trang: " + pageId + " (" + pageName + ")");
                 } else {
-                    // Nếu đã active, vẫn cập nhật và thêm vào danh sách để lưu
+                    // Nếu đã active, cập nhật và thêm vào danh sách để lưu
                     conn.setLastUpdatedAt(LocalDateTime.now());
                     connectionsToSave.add(conn);
                     connectedPages.add(pageName);
-                    System.out.println("➡️ Page đã có connection và active, cập nhật: " + pageId + " (" + pageName + ")");
+                    System.out.println("➡️ Trang đã có kết nối và active, đang cập nhật: " + pageId + " (" + pageName + ")");
                 }
             } else {
-                // Page mới → tạo connection mới
+                // Trang mới → tạo kết nối mới
                 FacebookConnection conn = new FacebookConnection();
                 conn.setId(UUID.randomUUID());
                 conn.setBotId(botId);
@@ -113,51 +112,55 @@ public class FbAutoConnectService {
                 conn.setLastUpdatedAt(LocalDateTime.now());
                 connectionsToSave.add(conn);
                 connectedPages.add(pageName); 
-                System.out.println("➡️ Tạo connection mới cho page: " + pageId + " (" + pageName + ")");
+                System.out.println("➡️ Tạo kết nối mới cho trang: " + pageId + " (" + pageName + ")");
             }
         }
 
-        // 4️⃣ Xử lý page đã có connection nhưng không còn trong FB
-        for (FacebookConnection conn : existingConnections) {
-            // ✅ Chỉ xử lý khi kết nối đó thuộc về user hiện tại và đang active
-            if (!fbPageIds.contains(conn.getPageId()) && conn.getOwnerId().equals(webUserId) && conn.isActive()) {
+        // 4️⃣ Xử lý trang có kết nối nhưng không còn trong FB
+        // ✅ ĐÃ SỬA: lọc các kết nối theo fbUserId hiện tại
+        List<FacebookConnection> currentFbUserConnections = existingConnections.stream()
+                .filter(conn -> conn.getFbUserId() != null && conn.getFbUserId().equals(fbUserId))
+                .collect(Collectors.toList());
+
+        for (FacebookConnection conn : currentFbUserConnections) {
+            if (!fbPageIds.contains(conn.getPageId()) && conn.isActive()) {
                 try {
                     facebookApiGraphService.unsubscribePageFromWebhook(conn.getPageId(), conn.getPageAccessToken());
                     inactivePages.add(conn.getBotName());
                     conn.setActive(false);
                     conn.setLastUpdatedAt(LocalDateTime.now());
                     connectionsToSave.add(conn);
-                    System.out.println("❌ Đánh dấu inactive page " + conn.getPageId() + " cho webUserId=" + webUserId);
+                    System.out.println("❌ Đánh dấu không hoạt động trang " + conn.getPageId() + " cho fbUserId=" + fbUserId);
                 } catch (Exception e) {
-                    errors.add(new ConnectionError(conn.getBotName(), "Lỗi khi hủy webhook: " + e.getMessage()));
+                    errors.add(new ConnectionError(conn.getBotName(), "Lỗi khi hủy đăng ký webhook: " + e.getMessage()));
                     inactivePages.add(conn.getBotName());
                     conn.setActive(false);
                     conn.setLastUpdatedAt(LocalDateTime.now());
                     connectionsToSave.add(conn);
-                    System.err.println("❌ Lỗi khi hủy webhook cho page " + conn.getPageId() + ": " + e.getMessage());
+                    System.err.println("❌ Lỗi khi hủy đăng ký webhook cho trang " + conn.getPageId() + ": " + e.getMessage());
                 }
             }
         }
 
-        // 5️⃣ Lưu các connection mới hoặc reactivate
+        // 5️⃣ Lưu các kết nối mới hoặc kích hoạt lại
         if (!connectionsToSave.isEmpty()) {
             connectionRepository.saveAll(connectionsToSave);
-            System.out.println("✅ Lưu/activate " + connectionsToSave.size() + " connection(s) thành công");
+            System.out.println("✅ Lưu/kích hoạt " + connectionsToSave.size() + " kết nối thành công");
         }
 
-        // 6️⃣ Đăng ký webhook cho các connection mới/activate
+        // 6️⃣ Đăng ký webhook cho các kết nối đang hoạt động
         for (FacebookConnection conn : connectionsToSave) {
             try {
-                if(conn.isActive()){ // ✅ Chỉ đăng ký webhook cho các kết nối đang active
+                if(conn.isActive()){
                     facebookApiGraphService.subscribePageToWebhook(conn.getPageId(), conn.getPageAccessToken());
                 }
             } catch (Exception e) {
                 errors.add(new ConnectionError(conn.getBotName(), "Lỗi khi đăng ký webhook: " + e.getMessage()));
-                System.err.println("❌ Lỗi khi đăng ký webhook cho page " + conn.getPageId() + ": " + e.getMessage());
+                System.err.println("❌ Lỗi khi đăng ký webhook cho trang " + conn.getPageId() + ": " + e.getMessage());
             }
         }
 
-        System.out.println("🔹 Hoàn tất auto connect cho webUserId=" + webUserId);
+        System.out.println("🔹 Tự động kết nối hoàn tất cho webUserId=" + webUserId);
         
         boolean isSuccess = errors.isEmpty();
         String message = isSuccess ? "Tất cả kết nối đã được xử lý thành công!" : "Đã xử lý xong, nhưng có lỗi xảy ra.";
