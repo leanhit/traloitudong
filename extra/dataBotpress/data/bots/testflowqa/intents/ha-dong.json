@@ -1,0 +1,17 @@
+{
+  "name": "ha-dong",
+  "utterances": {
+    "en": [
+      "h﻿à đông",
+      "h﻿a dong",
+      "h﻿à dong",
+      "h﻿a đông",
+      "q﻿uận hà đông",
+      "q﻿uan ha dong"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

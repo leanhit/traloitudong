@@ -1,0 +1,17 @@
+{
+  "name": "tiktok",
+  "utterances": {
+    "en": [
+      "t﻿iktok",
+      "t﻿ik",
+      "t﻿ok",
+      "t﻿óp tóp",
+      "t﻿ôi muốn học tiktok.",
+      "t﻿ôi muon học tiktok"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

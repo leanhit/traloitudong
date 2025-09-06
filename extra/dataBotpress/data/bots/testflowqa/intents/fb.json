@@ -1,0 +1,17 @@
+{
+  "name": "fb",
+  "utterances": {
+    "en": [
+      "t﻿ôi muốn học fb.",
+      "t﻿ôi muốn học facebook.",
+      "m﻿uốn học fb",
+      "m﻿uốn học facebook",
+      "m﻿uon hoc fb",
+      "m﻿uon hoc facebook"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

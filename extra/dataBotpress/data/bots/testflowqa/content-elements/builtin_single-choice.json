@@ -1,0 +1,52 @@
+[
+  {
+    "id": "builtin_single-choice-nDgZjk",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "tôi muốn học online",
+          "value": "online"
+        },
+        {
+          "title": "tôi muốn học offline",
+          "value": "ofline"
+        }
+      ],
+      "markdown$en": false,
+      "disableFreeText$en": false,
+      "displayInMessage$en": true,
+      "typing$en": true,
+      "text$en": "Bên Em có kiểu dạy trực tiếp Off hoặc Online, 1 KÈM 1, chỉ từng bước kiểu cầm tay chỉ việc. Ở Hà Nội Bên em có cơ sở ở Quận Hà Đông, Cầu Giấy, Đống Đa, Nam Từ Liêm. Ngoài ra bên em nhận tại nhà, tại địa điểm gần Anh Chị.",
+      "isDropdown$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-23T02:52:44.588Z",
+    "modifiedOn": "2025-07-25T05:24:03.718Z"
+  },
+  {
+    "id": "builtin_single-choice-LxXIew",
+    "formData": {
+      "dropdownPlaceholder$en": "{{Select...}}",
+      "choices$en": [
+        {
+          "title": "Học Online",
+          "value": "online"
+        },
+        {
+          "title": "Học Offline",
+          "value": "offline"
+        }
+      ],
+      "markdown$en": false,
+      "disableFreeText$en": false,
+      "displayInMessage$en": true,
+      "typing$en": true,
+      "isDropdown$en": false,
+      "text$en": "\"Bên Em có kiểu dạy trực tiếp Off hoặc Online, 1 KÈM 1, chỉ từng bước kiểu cầm tay chỉ việc. Ở Hà Nội Bên em có cơ sở ở Quận Hà Đông, Cầu Giấy, Đống Đa, Nam Từ Liêm. Ngoài ra bên em nhận tại nhà, tại địa điểm gần Anh Chị.\""
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-25T05:12:26.588Z",
+    "modifiedOn": "2025-07-25T05:33:43.163Z"
+  }
+]

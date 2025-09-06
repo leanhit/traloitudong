@@ -1,0 +1,43 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "2ed59c2548",
+      "name": "entry",
+      "onEnter": [
+        "extractPhone {}"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'dt-zalo'",
+          "conditionType": "intent",
+          "node": "node-5938"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "cac4cb07ae",
+      "name": "node-5938",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-EtctaF",
+        "say #!builtin_text-ZuuhSh"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

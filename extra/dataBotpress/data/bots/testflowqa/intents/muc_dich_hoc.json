@@ -1,0 +1,51 @@
+{
+  "name": "muc_dich_hoc",
+  "utterances": {
+    "en": [
+      "Chạy quảng cáo tăng doanh thu",
+      "Tự chạy quảng cáo cho cửa hàng",
+      "Biết cách tìm đúng tệp khách hàng",
+      "Tiết kiệm chi phí thuê dịch vụ ngoài",
+      "Tăng đơn hàng từ TikTok, Facebook",
+      "Biết cách tạo nội dung thu hút",
+      "Xây kênh TikTok bán hàng",
+      "Biết viết content chuẩn chuyển đổi",
+      "Hiểu và tối ưu tệp quảng cáo",
+      "Chạy quảng cáo không bị \"đốt tiền\"",
+      "Muốn học để chạy quảng cáo bán hàng",
+      "Em muốn biết cách chạy quảng cáo TikTok",
+      "Học để tự làm marketing",
+      "Em cần học để tự chạy ads",
+      "Học để bán mỹ phẩm",
+      "Muốn học để quảng bá sản phẩm",
+      "Em muốn học để chạy quảng cáo dịch vụ",
+      "Muốn học để tiết kiệm chi phí thuê chạy ads",
+      "Em muốn hiểu cách nhắm đúng khách hàng",
+      "Học để kinh doanh online",
+      "Em đang kinh doanh nên muốn học thêm",
+      "Muốn tự chạy Facebook Ads",
+      "Em muốn học cách tạo chiến dịch quảng cáo",
+      "Học để kiếm thêm thu nhập",
+      "Em cần học để bán hàng hiệu quả hơn",
+      "Muốn học vì đang chạy ads không hiệu quả",
+      "Em muốn hiểu rõ cách target khách hàng",
+      "Muốn học để mở rộng kinh doanh",
+      "Em cần học để hiểu cách phân tích số liệu quảng cáo",
+      "Học để biết cách viết nội dung quảng cáo",
+      "Em cần học vì không biết bắt đầu từ đâu",
+      "Học để không bị phụ thuộc vào người khác",
+      "Em đang mở shop nên cần học chạy quảng cáo",
+      "Muốn học để phát triển thương hiệu cá nhân",
+      "Em muốn học để làm dịch vụ chạy quảng cáo",
+      "Học để chạy ads cho bạn bè/khách hàng",
+      "Em muốn học vì thấy nhiều người học hiệu quả",
+      "Muốn học để chạy chiến dịch chuyên nghiệp",
+      "Em đang chạy quảng cáo bị lỗi nên muốn học",
+      "Muốn học để tự tin khi chạy quảng cáo"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

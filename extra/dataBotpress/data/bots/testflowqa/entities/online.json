@@ -1,0 +1,47 @@
+{
+  "id": "online",
+  "name": "online",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "học từ xa",
+      "synonyms": []
+    },
+    {
+      "name": "học qua mạng",
+      "synonyms": []
+    },
+    {
+      "name": "học trực tuyến",
+      "synonyms": []
+    },
+    {
+      "name": "học qua Zoom.",
+      "synonyms": []
+    },
+    {
+      "name": "dạy qua Google Meet",
+      "synonyms": []
+    },
+    {
+      "name": "Học qua video",
+      "synonyms": []
+    },
+    {
+      "name": "Học không cần đến trung tâm",
+      "synonyms": []
+    },
+    {
+      "name": "hoc online/hoc tu xa/hoc qua zoom/hoc tren mang/hoc truc tuyen/hoc o nha/hoc bang video/hoc khong can den trung tam/hoc tren may tinh/minh o xa khong den hoc truc tiep duoc",
+      "synonyms": []
+    },
+    {
+      "name": "day online/day onl",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

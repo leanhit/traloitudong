@@ -1,0 +1,10 @@
+{
+  "id": "ban_busy",
+  "name": "ban_busy",
+  "type": "list",
+  "occurrences": [],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

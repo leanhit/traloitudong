@@ -1,0 +1,119 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "event.nlu.intent.name === 'ban_busy'",
+        "conditionType": "intent",
+        "node": "10_ban_busy.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === ''",
+        "conditionType": "intent",
+        "node": "15-dt-zalo.flow.json"
+      },
+      {
+        "condition": "!event.nlu || !event.nlu.intent || event.nlu.intent.name === 'none'",
+        "conditionType": "raw",
+        "node": "Fallback-khong_hieu_y.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === ''",
+        "conditionType": "intent",
+        "node": "3-noidung_khoahoc.flow.json"
+      }
+    ]
+  },
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "ad2b9d65dd",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-KHadf5",
+        "say #!builtin_text-GiFG7u"
+      ],
+      "onReceive": [],
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'ha-dong'",
+          "conditionType": "intent",
+          "node": "HN"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'cau-giay'",
+          "conditionType": "intent",
+          "node": "Tinh"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "210d3cbf94",
+      "name": "Ha-dong",
+      "next": [
+        {
+          "condition": "event.nlu.entities.some(e => e.name === 'dia-chi-chi-nhanh' && e.value.toLowerCase() === 'hà đông')",
+          "conditionType": "raw",
+          "node": "12-dangky_fb_tiktok.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-v5rkjj"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "5e7c78bfde",
+      "name": "cau_giay",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-kLUeJN"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "00959dd63b",
+      "name": "HN",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === ''",
+          "conditionType": "intent",
+          "node": "cau_giay"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'ha-dong'",
+          "conditionType": "intent",
+          "node": "Ha-dong"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "3d4af8aaf5",
+      "name": "Tinh",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-FWtxXC"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

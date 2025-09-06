@@ -1,0 +1,166 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "!event.nlu || !event.nlu.intent || event.nlu.intent.name === 'none'",
+        "conditionType": "raw",
+        "node": "Fallback-khong_hieu_y.flow.json"
+      }
+    ]
+  },
+  "startNode": "bat-dau",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "bat-dau",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'online'",
+          "conditionType": "intent",
+          "node": "5-online.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'fb'",
+          "conditionType": "intent",
+          "node": "6-chon_khoa_hoc.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'dia-chi-chi-nhanh'",
+          "conditionType": "intent",
+          "node": "2-diachi_chinhanh.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'gia'",
+          "conditionType": "intent",
+          "node": "8-gia.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'noi-dung-khoa-hoc'",
+          "conditionType": "intent",
+          "node": "3-noidung_khoahoc.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'thoi-gian-khai-giang'",
+          "conditionType": "intent",
+          "node": "4-lich_hoc.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'giangvien_thayco'",
+          "conditionType": "intent",
+          "node": "7-giangvien_thayco.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'offline'",
+          "conditionType": "intent",
+          "node": "13-Off-line.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'chao_hoi_ban_dau'",
+          "conditionType": "intent",
+          "node": "chao-hoi"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'trinhdo_hocvien'",
+          "conditionType": "intent",
+          "node": "1-trinhdo_hocvien.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'chon_khoa_hoc'",
+          "conditionType": "intent",
+          "node": "6-chon_khoa_hoc.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'muc_dich_hoc'",
+          "conditionType": "intent",
+          "node": "9-muc_dich_hoc.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'ban_busy'",
+          "conditionType": "intent",
+          "node": "10_ban_busy.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'hotro_saukhoahoc'",
+          "conditionType": "intent",
+          "node": "18-hotro_saukhoahoc.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'fb-tiktok'",
+          "conditionType": "intent",
+          "node": "16-hoc-fb-tiktok.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'chua-biet'",
+          "conditionType": "intent",
+          "node": ""
+        },
+        {
+          "condition": "event.nlu.intent.name === 'da-biet'",
+          "conditionType": "intent",
+          "node": "14-da-biet.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'dt-zalo'",
+          "conditionType": "intent",
+          "node": "15-dt-zalo.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'tinh_o_xa'",
+          "conditionType": "intent",
+          "node": "17-tinh_o_xa.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'hinh-thuc_kieu-day'",
+          "conditionType": "intent",
+          "node": "15-hinh_thuc_hoc.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === ''",
+          "conditionType": "intent",
+          "node": "21-san-pham-dich-vu.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'product_service_intent'",
+          "conditionType": "intent",
+          "node": "product_service.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'thanh_toan_pay'",
+          "conditionType": "intent",
+          "node": "thanh_toan_pay.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'tiktok'",
+          "conditionType": "intent",
+          "node": "6-chon_khoa_hoc.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'lo_cong_nghe'",
+          "conditionType": "intent",
+          "node": "lo_cong_nghe.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "55f62ab229",
+      "name": "chao-hoi",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "6-chon_khoa_hoc.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-4n5Ttr",
+        "say #!builtin_text-_8wyb5"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

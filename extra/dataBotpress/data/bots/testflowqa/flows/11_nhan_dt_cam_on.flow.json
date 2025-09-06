@@ -1,0 +1,46 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "!event.nlu || !event.nlu.intent || event.nlu.intent.name === 'none'",
+        "conditionType": "raw",
+        "node": "Fallback-khong_hieu_y.flow.json"
+      }
+    ]
+  },
+  "startNode": "nhan_so_dien_thoai",
+  "description": "",
+  "nodes": [
+    {
+      "id": "e22dce35c0",
+      "name": "nhan_so_dien_thoai",
+      "onEnter": [
+        "say #!builtin_text-pn8vpt"
+      ],
+      "onReceive": [],
+      "next": [
+        {
+          "condition": "event.nlu.entities.phone_number && event.nlu.entities.phone_number.length > 0",
+          "conditionType": "raw",
+          "node": "xac_nhan_so"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "736d30930d",
+      "name": "xac_nhan_so",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

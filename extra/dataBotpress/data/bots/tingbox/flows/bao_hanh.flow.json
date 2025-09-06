@@ -1,0 +1,24 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "e1bda98dad",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-Kv_T2c"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "chot-don-lead.flow.json"
+        }
+      ],
+      "type": "standard"
+    }
+  ]
+}

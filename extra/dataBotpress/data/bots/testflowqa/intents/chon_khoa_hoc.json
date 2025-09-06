@@ -1,0 +1,23 @@
+{
+  "name": "chon_khoa_hoc",
+  "utterances": {
+    "en": [
+      "Facebook",
+      "Tôi muốn học Facebook Ads",
+      "Học TikTok",
+      "Tiktok ads",
+      "Muốn học FB",
+      "f﻿b",
+      "f﻿ace",
+      "b﻿ook",
+      "f﻿aceboo",
+      "@xung_ho muốn học @khoa_hoc",
+      "Muốn học @khoa_hoc",
+      "@xung_ho cần học @khoa_hoc"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

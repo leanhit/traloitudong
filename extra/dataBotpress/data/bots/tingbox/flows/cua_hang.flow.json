@@ -1,0 +1,61 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "cb76af1071",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-IYUOX2"
+      ],
+      "onReceive": [],
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "wifi"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'sim'",
+          "conditionType": "intent",
+          "node": "sim"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "8c2a75ba1e",
+      "name": "wifi",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "chot-don-lead.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-ZyoNSX"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "a3e14cdf62",
+      "name": "sim",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "chot-don-lead.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-c_-OnZ"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

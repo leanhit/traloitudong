@@ -1,0 +1,40 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "event.nlu.intent.name === 'gia'",
+        "conditionType": "intent",
+        "node": "8-gia.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'hinh-thuc_kieu-day'",
+        "conditionType": "intent",
+        "node": "15-hinh_thuc_hoc.flow.json"
+      }
+    ]
+  },
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "63dcd5c2b5",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-CFlj-H",
+        "say #!builtin_text-nieyQY",
+        "say #!builtin_text-heZVWv"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'dt-zalo'",
+          "conditionType": "intent",
+          "node": "15-dt-zalo.flow.json"
+        }
+      ],
+      "type": "standard"
+    }
+  ]
+}

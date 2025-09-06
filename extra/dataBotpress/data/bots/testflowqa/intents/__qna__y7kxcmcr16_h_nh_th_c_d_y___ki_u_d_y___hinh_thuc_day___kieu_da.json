@@ -1,0 +1,22 @@
+{
+  "name": "__qna__y7kxcmcr16_h_nh_th_c_d_y___ki_u_d_y___hinh_thuc_day___kieu_da",
+  "entities": [],
+  "contexts": [
+    "global"
+  ],
+  "utterances": {
+    "en": [
+      "Học ở đâu vậy ạ",
+      "Có học trực tiếp không bạn",
+      "Mình muốn học trực tiếp, địa chỉ ở đâu",
+      "Học offline thì đến chỗ nào vậy",
+      "Cho mình xin địa chỉ trung tâm với",
+      "Có lớp học tại trung tâm không",
+      "Địa điểm học như thế nào vậy bạn",
+      "Học trực tiếp thì ở đâu ạ",
+      "Có cơ sở đào tạo không bạn",
+      "Trung tâm ở đâu vậy bạn"
+    ]
+  },
+  "slots": []
+}

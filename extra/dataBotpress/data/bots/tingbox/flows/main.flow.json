@@ -1,0 +1,70 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "df052970ef",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'gia'",
+          "conditionType": "intent",
+          "node": "gia.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'cua_hang'",
+          "conditionType": "intent",
+          "node": "cua_hang.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'hello'",
+          "conditionType": "intent",
+          "node": "xin-chao"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'ngoai_troi'",
+          "conditionType": "intent",
+          "node": "ngoai_troi.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'bank_nganhang'",
+          "conditionType": "intent",
+          "node": "bank_nganhang.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'bao_hanh'",
+          "conditionType": "intent",
+          "node": "bao_hanh.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'phi_hang_thang'",
+          "conditionType": "intent",
+          "node": "phi_hang_thang.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'hinh-anh'",
+          "conditionType": "intent",
+          "node": "hinh-anh.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "c899a7ed36",
+      "name": "xin-chao",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-lbs0Re"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

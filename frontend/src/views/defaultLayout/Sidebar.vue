@@ -63,14 +63,23 @@
                         </router-link>
                     </li>
                     <li class="has_sub">
-                        <router-link to="/image-manager">
-                            <i class="mdi mdi-seat-recline-normal"></i>
-                            <span>
-                                <strong>{{ t('Image Manager') }}</strong>
-                            </span>
-                            <span class="float-right"></span>
-                        </router-link>
-                    </li>
+                        <a href="javascript:void(0);" class="waves-effect">
+                            <i class="mdi mdi-image-multiple"></i> <span>{{ t('Image Manager') }}</span>
+                            <span class="menu-arrow float-right"><i class="mdi mdi-chevron-right"></i></span>
+                        </a>
+                        <ul class="list-unstyled">
+                            <li class="ml-5">
+                            <router-link to="/image-manager/images">
+                                <span>{{ t('Images') }}</span>
+                            </router-link>
+                            </li>
+                            <li class="ml-5">
+                            <router-link to="/image-manager/categories">
+                                <span>{{ t('Categories') }}</span>
+                            </router-link>
+                            </li>
+                        </ul>
+                        </li>
                 </ul>
             </div>
             <div class="clearfix"></div>

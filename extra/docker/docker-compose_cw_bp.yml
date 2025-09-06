@@ -1,0 +1,105 @@
+version: '3.8'
+
+services:
+  # Chatwoot
+  chatwoot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: chatwoot
+    depends_on:
+      - redis
+      - db
+    environment:
+      RAILS_ENV: production
+      SECRET_KEY_BASE: 8127bd12c332a5afde0dfab7ba29b05c784cf5952f59a5f5ff924892711331fdbd5befe117951054c60755d8b2d15613fa3c6cfeae8203d1697147be79d9603c
+      POSTGRES_HOST: db
+      POSTGRES_DATABASE: chatwoot
+      POSTGRES_USERNAME: chatwoot_user
+      POSTGRES_PASSWORD: chatwoot_password
+      REDIS_URL: redis://redis:6379
+      FRONTEND_URL: "https://chat.traloitudong.com"
+      ALLOWED_CORS_ORIGINS: "https://chat.traloitudong.com"
+      ACTION_CABLE_FRONTEND_URL: "wss://cwsv.traloitudong.com/cable"
+      COOKIE_DOMAIN: ".traloitudong.com"
+      ENABLE_ACCOUNT_SIGNUP: "true"
+      RAILS_LOG_TO_STDOUT: "true"
+
+    ports:
+      - "3003:3000"
+    volumes:
+      - chatwoot_data:/app/storage
+    command: ["sh", "-c", "mkdir -p tmp/pids && bundle exec rails db:prepare && bundle exec puma -C config/puma.rb"]
+    networks:
+      - internal
+
+  # Redis
+  redis:
+    image: redis:7
+    container_name: chatwoot_redis
+    restart: always
+    volumes:
+      - redis_data:/data
+    networks:
+      - internal
+
+  # Botpress
+  botpress:
+    image: botpress/server
+    container_name: botpress
+    restart: always
+    user: root
+    ports:
+      - "3001:3000"
+    environment:
+      - DATABASE=postgres
+      - DATABASE_URL=postgres://botpress_user:Admin%40123@db:5432/botpress
+    volumes:
+      - ./data:/botpress/data
+    depends_on:
+      - db
+    networks:
+      - internal
+
+  # Shared PostgreSQL (hỗ trợ extension vector)
+  db:
+    image: ankane/pgvector:latest
+    container_name: botpress_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - internal
+
+  # Init DB - tạo user/db cho Chatwoot & Botpress
+  db_init:
+    image: postgres:14
+    depends_on:
+      - db
+    entrypoint: >
+      sh -c "
+        sleep 5 &&
+        psql -h db -U postgres -c \"CREATE USER chatwoot_user WITH PASSWORD 'chatwoot_password' SUPERUSER;\" &&
+        psql -h db -U postgres -c \"CREATE DATABASE chatwoot OWNER chatwoot_user;\" &&
+        psql -h db -U postgres -c \"CREATE USER botpress_user WITH PASSWORD 'Admin@123';\" &&
+        psql -h db -U postgres -c \"CREATE DATABASE botpress OWNER botpress_user;\"
+      "
+    environment:
+      PGPASSWORD: postgres
+    networks:
+      - internal
+    restart: "no"
+
+volumes:
+  postgres_data:
+  chatwoot_data:
+  redis_data:
+
+networks:
+  internal:
+    driver: bridge
+    

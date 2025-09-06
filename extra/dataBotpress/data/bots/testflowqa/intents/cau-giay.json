@@ -1,0 +1,22 @@
+{
+  "name": "cau-giay",
+  "utterances": {
+    "en": [
+      "c﻿ầu giấy",
+      "c﻿au giay",
+      "c﻿ầu giay",
+      "c﻿au giấy",
+      "q﻿uận cầu giấy",
+      "q﻿uan cau giay",
+      "q﻿uận cau giay",
+      "q﻿uận cau giấy",
+      "x﻿in địa chỉ cầu giấy",
+      "địa chỉ cầu giấy",
+      "d﻿ia chi cau giay"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

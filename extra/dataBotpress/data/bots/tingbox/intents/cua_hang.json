@@ -1,0 +1,17 @@
+{
+  "name": "cua_hang",
+  "utterances": {
+    "en": [
+      "c﻿ửa hàng",
+      "c﻿ửa hang",
+      "c﻿ua hang",
+      "c﻿ua hàng",
+      "t﻿rong nhà",
+      "t﻿rong nha"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

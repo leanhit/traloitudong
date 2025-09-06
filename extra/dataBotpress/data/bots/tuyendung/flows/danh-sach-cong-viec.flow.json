@@ -1,0 +1,74 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "0f9af330ed",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'digital-marketing'",
+          "conditionType": "intent",
+          "node": "Digital-marketing"
+        },
+        {
+          "condition": "event.nlu.intent.name === ''",
+          "conditionType": "intent",
+          "node": "tuyendung-hr"
+        },
+        {
+          "condition": "event.nlu.intent.name === ''",
+          "conditionType": "intent",
+          "node": "Ketoan-hanhchinh"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "632640052a",
+      "name": "Digital-marketing",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "kinh-nghiem.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Oq0KXp"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "e9bc7601a5",
+      "name": "tuyendung-hr",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "f9c8af95ec",
+      "name": "Ketoan-hanhchinh",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

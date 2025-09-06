@@ -65,6 +65,9 @@ dependencies {
     // Spring HATEOAS
 	implementation 'org.springframework.data:spring-data-commons:3.4.3'
     implementation 'org.springframework.hateoas:spring-hateoas:2.1.1'
+
+	// MinIO Client Library for S3-compatible object storage
+    implementation 'io.minio:minio:8.5.1'
 }
 
 tasks.named('test') {

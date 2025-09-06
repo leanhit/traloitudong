@@ -1,0 +1,21 @@
+{
+  "name": "luong-salary",
+  "utterances": {
+    "en": [
+      "luong vi tri nay la bao nhieu",
+      "co luong co dinh khong",
+      "luong co thuong hoa hong khong",
+      "muc luong co the thuong luong duoc khong",
+      "luong khoi diem la bao nhieu",
+      "co tro cap gi khong",
+      "tong thu nhap hang thang la bao nhieu",
+      "luong ke toan la bao nhieu",
+      "luong ban hang cao khong",
+      "luong co tra theo ngay khong"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

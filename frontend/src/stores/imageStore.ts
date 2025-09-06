@@ -3,22 +3,45 @@ import { defineStore } from "pinia";
 import { imageApi } from '@/api/imageApi';
 
 export const useImageStore = defineStore("imageStore", () => {
-    const image = ref(null);
-    async function getAllImages(pagePagination: { page: number, size: number }) {
+    // Sử dụng reactive để quản lý dữ liệu phức tạp như phân trang
+    const imagePagination = reactive({
+        content: [], // Danh sách ảnh trên trang hiện tại
+        totalElements: 0, // Tổng số ảnh
+        totalPages: 0, // Tổng số trang
+        pageNumber: 0, // Số trang hiện tại (lưu ý: backend trả về page 0)
+        pageSize: 10, // Kích thước trang
+    });
+
+    const isLoading = ref(false);
+    const error = ref(null);
+
+    async function getAllImages(page: number, size: number) {
+        isLoading.value = true;
+        error.value = null; // Xóa lỗi cũ
         try {
-            const response = await imageApi.getAllImages(pagePagination);
-            if (response.status == 200) {
-                image.value = response.data;
+            const response = await imageApi.getAllImages(page, size);
+            if (response.status === 200) {
+                // Cập nhật state với dữ liệu phân trang từ backend
+                imagePagination.content = response.data.content;
+                imagePagination.totalElements = response.data.totalElements;
+                imagePagination.totalPages = response.data.totalPages;
+                imagePagination.pageNumber = response.data.number;
+                imagePagination.pageSize = response.data.size;
             } else {
-                console.log('Error:', response.status);
+                error.value = `Error: ${response.status}`;
             }
         } catch (err) {
-            console.log('Error:', err);
+            console.error('API call failed:', err);
+            error.value = 'Failed to fetch images. Please try again.';
+        } finally {
+            isLoading.value = false;
         }
     }
 
     return {
-        image,
+        imagePagination,
+        isLoading,
+        error,
         getAllImages,
     };
 });

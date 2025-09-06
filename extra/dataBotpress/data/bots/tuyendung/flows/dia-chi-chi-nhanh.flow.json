@@ -1,0 +1,24 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "49c20fcf82",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-K5kxrU"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "kinh-nghiem.flow.json"
+        }
+      ],
+      "type": "standard"
+    }
+  ]
+}

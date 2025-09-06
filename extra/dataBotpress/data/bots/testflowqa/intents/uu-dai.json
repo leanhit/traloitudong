@@ -1,0 +1,31 @@
+{
+  "name": "uu-dai",
+  "utterances": {
+    "en": [
+      "Khoa hoc nay gia bao nhieu vay ban",
+      "Chi phi hoc 1 kem 1 la bao nhieu",
+      "Khoa chatbot nay co hoc phi khong, bao nhieu tien vay",
+      "Minh muon hoc chay quang cao, ben ban tinh phi the nao",
+      "Mot buoi hoc keo dai bao lau va gia la bao nhieu",
+      "Co hoc thu khong, neu hoc chinh thuc thi hoc phi ra sao",
+      "Gia nay da bao gom tai lieu va ho tro chua",
+      "Hoc phi tinh theo buoi hay tron khoa vay ban",
+      "Hoc 1 nguoi thi gia bao nhieu, neu hoc nhom co giam khong",
+      "Minh o xa hoac hoc online thi hoc phi co khac gi khong",
+      "Khóa học này giá bao nhiêu vậy bạn",
+      "Chi phí học 1 kèm 1 là bao nhiêu",
+      "Khóa chatbot này có học phí không bao nhiêu tiền vậy",
+      "Mình muốn học chạy quảng cáo bên bạn tính phí thế nào",
+      "Một buổi học kéo dài bao lâu và giá là bao nhiêu",
+      "Có học thử không nếu học chính thức thì học phí ra sao",
+      "Giá này đã bao gồm tài liệu và hỗ trợ chưa",
+      "Học phí tính theo buổi hay trọn khóa vậy bạn",
+      "Học 1 người thì giá bao nhiêu nếu học nhóm có giảm không",
+      "Mình ở xa hoặc học online thì học phí có khác gì không"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

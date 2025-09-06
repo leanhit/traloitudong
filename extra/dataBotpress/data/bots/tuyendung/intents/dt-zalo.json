@@ -1,0 +1,16 @@
+{
+  "name": "dt-zalo",
+  "utterances": {
+    "en": [
+      "s﻿ố đt mình",
+      "s﻿ố mình",
+      "s﻿ố điện thoại mình",
+      "s﻿ố zalo",
+      "z﻿alo"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

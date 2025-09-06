@@ -1,0 +1,44 @@
+{
+  "name": "offline",
+  "utterances": {
+    "en": [
+      "Mình muốn học trực tiếp.",
+      "Có thể học tại trung tâm không?",
+      "Mình muốn tới lớp học.",
+      "Cho mình học offline được không?",
+      "Có lớp học trực tiếp không?",
+      "Mình không thích học online, có offline không?",
+      "Mình muốn học tại nơi luôn.",
+      "Dạy trực tiếp ở đâu vậy?",
+      "Học ở trung tâm thì như nào?",
+      "Mình muốn tới học luôn, không học online.",
+      "Có địa điểm học không?",
+      "Em muốn học tại lớp.",
+      "Có lớp nào học tại Hà Nội không?",
+      "Có lớp offline tại TP.HCM không?",
+      "Em ở gần trung tâm, muốn học trực tiếp.",
+      "Em muốn đăng ký lớp học tại trung tâm.",
+      "Dạy tại chỗ hay online vậy?",
+      "Lớp offline có còn chỗ không?",
+      "Em chỉ học được trực tiếp thôi.",
+      "Mình thích học tại lớp hơn.",
+      "Em muốn đăng ký học ở cơ sở Hà Nội.",
+      "Có lớp tại trung tâm không anh/chị?",
+      "Mình muốn tới học tận nơi.",
+      "Em không rành máy tính, muốn học trực tiếp.",
+      "Có lớp học không cần online không?",
+      "Học trực tiếp có đông người không?",
+      "Có dạy tại văn phòng không?",
+      "Mình muốn học tại trung tâm cho dễ hiểu.",
+      "Lớp trực tiếp mở vào ngày nào vậy?",
+      "Em muốn đăng ký lớp học tại chỗ.",
+      "x﻿in địa chỉ",
+      "x﻿in dia chi",
+      "Địa chỉ ở đâu ?"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

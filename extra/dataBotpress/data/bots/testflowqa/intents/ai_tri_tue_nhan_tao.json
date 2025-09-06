@@ -1,0 +1,31 @@
+{
+  "name": "ai_tri_tue_nhan_tao",
+  "utterances": {
+    "en": [
+      "ai",
+      "trí tuệ nhân tạo",
+      "tri tue nhan tao",
+      "artificial intelligence",
+      "máy học",
+      "machine learning",
+      "ml",
+      "deep learning",
+      "dl",
+      "ai model",
+      "ai bot",
+      "ai chatbot",
+      "ai system",
+      "ai tools",
+      "ai software",
+      "ai app",
+      "ai ứng dụng",
+      "ai automation",
+      "ai training",
+      "ai platform"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

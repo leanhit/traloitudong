@@ -1,0 +1,23 @@
+{
+  "id": "partime",
+  "name": "partime",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "Việc làm bán thời gian",
+      "synonyms": []
+    },
+    {
+      "name": "Công việc part-time",
+      "synonyms": []
+    },
+    {
+      "name": "Việc làm thêm",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

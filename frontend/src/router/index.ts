@@ -59,10 +59,26 @@ const routes = [
                 meta: { requiresAuth: true },
             },
             {
+                // Route cha cho Image Manager
                 path: 'image-manager',
                 name: 'image-manager',
-                component: () => import('@/views/image-manager/Index.vue'),
+                redirect: { name: 'images' }, // Tự động chuyển hướng đến route con đầu tiên
+                component: () => import('@/views/image-manager/ImageManagerLayout.vue'), // Tạo một layout cha
                 meta: { requiresAuth: true },
+                children: [
+                    {
+                        path: 'images',
+                        name: 'images',
+                        component: () => import('@/views/image-manager/image/Index.vue'),
+                        meta: { requiresAuth: true, title: 'Image List' },
+                    },
+                    {
+                        path: 'categories',
+                        name: 'categories',
+                        component: () => import('@/views/image-manager/category/Index.vue'),
+                        meta: { requiresAuth: true, title: 'Category List' },
+                    },
+                ],
             },
         ],
     },

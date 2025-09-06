@@ -1,0 +1,31 @@
+{
+  "id": "28mh9n6i9s_h_c_ph__1_kh_a_nh__v_y_l__bao_nhi_u_ah",
+  "data": {
+    "action": "text",
+    "contexts": [
+      "global"
+    ],
+    "enabled": true,
+    "answers": {
+      "en": [
+        "Khóa học thấp nhất 999k. Khóa học chuyên sâu có giá từ 1999K. \n\n"
+      ]
+    },
+    "questions": {
+      "en": [
+        "Học phí 1 khóa như vậy là bao nhiêu ah",
+        "xin giá",
+        "giá bao nhiêu",
+        "học phí",
+        "giá ",
+        "hoc phi",
+        "gia",
+        "phí thế nào",
+        "phi the nao",
+        "phí sao ?"
+      ]
+    },
+    "redirectFlow": "",
+    "redirectNode": ""
+  }
+}

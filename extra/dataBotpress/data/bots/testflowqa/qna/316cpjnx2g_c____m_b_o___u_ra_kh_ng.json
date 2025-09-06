@@ -1,0 +1,24 @@
+{
+  "id": "316cpjnx2g_c____m_b_o___u_ra_kh_ng",
+  "data": {
+    "action": "text",
+    "contexts": [
+      "global"
+    ],
+    "enabled": true,
+    "answers": {
+      "en": [
+        "Sau khóa học bên Em giữ lại làm tại trung tâm hoặc giới thiệu công việc sang công ty khác a."
+      ]
+    },
+    "questions": {
+      "en": [
+        "có đảm bảo đầu ra không",
+        "có hỗ trợ sau khóa học không",
+        "học xong có xin được việc không"
+      ]
+    },
+    "redirectFlow": "",
+    "redirectNode": ""
+  }
+}

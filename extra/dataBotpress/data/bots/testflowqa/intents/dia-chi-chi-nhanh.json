@@ -1,0 +1,56 @@
+{
+  "name": "dia-chi-chi-nhanh",
+  "utterances": {
+    "en": [
+      "Học ở đâu vậy ạ",
+      "Có học trực tiếp không bạn",
+      "Mình muốn học trực tiếp, địa chỉ ở đâu",
+      "Học offline thì đến chỗ nào vậy",
+      "Cho mình xin địa chỉ trung tâm với",
+      "Có lớp học tại trung tâm không",
+      "Địa điểm học như thế nào vậy bạn",
+      "Học trực tiếp thì ở đâu ạ",
+      "Có cơ sở đào tạo không bạn",
+      "Trung tâm ở đâu vậy bạn",
+      "Hoc o dau vay a",
+      "Co hoc truc tiep khong ban",
+      "Minh muon hoc truc tiep, dia chi o dau",
+      "Hoc offline thi den cho nao vay",
+      "Cho minh xin dia chi trung tam voi",
+      "Co lop hoc tai trung tam khong",
+      "Dia diem hoc nhu the nao vay ban",
+      "Hoc truc tiep thi o dau a",
+      "Co co so dao tao khong ban",
+      "Trung tam o dau vay ban",
+      "địa chỉ",
+      "địa chỉ bên mình ở đâu ?",
+      "x﻿in địa chỉ",
+      "Hà Đông",
+      "Anh ở Hà Đông",
+      "Gần Hà Đông có không?",
+      "Em ở quận Hà Đông",
+      "Địa chỉ Hà Đông",
+      "Em muốn học ở Hà Đông",
+      "học ở đâu",
+      "h\roc o dau",
+      "h﻿ọc o dau",
+      "h﻿ọc ở dau",
+      "h﻿oc ở đâu",
+      "h﻿oc ở dau",
+      "h﻿oc o đâu"
+    ]
+  },
+  "slots": [
+    {
+      "id": "h9sXgID0HILmOrxL2p786",
+      "name": "ha-noi",
+      "entities": [
+        "dia-chi-chi-nhanh"
+      ],
+      "color": 1
+    }
+  ],
+  "contexts": [
+    "global"
+  ]
+}

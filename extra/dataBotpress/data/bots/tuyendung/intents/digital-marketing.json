@@ -1,0 +1,15 @@
+{
+  "name": "digital-marketing",
+  "utterances": {
+    "en": [
+      "Digital Marketing",
+      "Tôi quan tâm công việc: Digital Marketing",
+      "t\rôi quan tâm Digital Marketing",
+      ""
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

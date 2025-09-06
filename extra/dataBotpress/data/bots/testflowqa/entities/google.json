@@ -1,0 +1,51 @@
+{
+  "id": "google",
+  "name": "google",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "goolge",
+      "synonyms": []
+    },
+    {
+      "name": "gogle",
+      "synonyms": []
+    },
+    {
+      "name": "googl",
+      "synonyms": []
+    },
+    {
+      "name": "googel",
+      "synonyms": []
+    },
+    {
+      "name": "goole",
+      "synonyms": []
+    },
+    {
+      "name": "goolgee",
+      "synonyms": []
+    },
+    {
+      "name": "ggogle",
+      "synonyms": []
+    },
+    {
+      "name": "goggole",
+      "synonyms": []
+    },
+    {
+      "name": "gggle",
+      "synonyms": []
+    },
+    {
+      "name": "ggoole",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

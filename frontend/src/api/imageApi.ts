@@ -1,4 +1,4 @@
-// ✅ Đúng — dùng instance đã setup baseURL và interceptor
+// src/api/image.ts
 import axios from '@/plugins/axios';
 
 export const imageApi = {
@@ -14,8 +14,14 @@ export const imageApi = {
         return axios.delete(`/images/${imageId}`);
     },
 
-    getAllImages(params: any) {
-        return axios.get(`/images`, params);
+    // Sửa đổi phương thức getAllImages để nhận các tham số phân trang rõ ràng
+    getAllImages(page: number = 0, size: number = 10) {
+        return axios.get('/images', {
+            params: {
+                page,
+                size,
+            },
+        });
     },
 
     addImage(params: any) {

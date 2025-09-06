@@ -1,0 +1,22 @@
+{
+  "id": "km2lpjxwc1_kh_ch_ch____t___gi__cao__gia_cao____t",
+  "data": {
+    "action": "text",
+    "contexts": [
+      "global"
+    ],
+    "enabled": true,
+    "answers": {
+      "en": [
+        "Dạ em hiểu ạ, mình cứ thoải mái tham khảo, có gì cần test loa hoặc hỏi thêm thông tin thì cứ inbox em nhé!"
+      ]
+    },
+    "questions": {
+      "en": [
+        "Để e tham khảo đã có gì e báo lại sau. tham khảo. tham khao."
+      ]
+    },
+    "redirectFlow": "",
+    "redirectNode": ""
+  }
+}

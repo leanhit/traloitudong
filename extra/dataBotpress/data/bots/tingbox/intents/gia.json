@@ -1,0 +1,22 @@
+{
+  "name": "gia",
+  "utterances": {
+    "en": [
+      "x﻿in giá",
+      "g﻿iá",
+      "x﻿in gia",
+      "g﻿iá bao nhiêu",
+      "g﻿ia bao nhieu",
+      "g﻿iá bao nhieu",
+      "b﻿ao nhiêu tiền vậy",
+      "b﻿ao nhiêu tien",
+      "b﻿ao nhieu",
+      "t﻿iền",
+      "b﻿ao nhiêu tiền"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

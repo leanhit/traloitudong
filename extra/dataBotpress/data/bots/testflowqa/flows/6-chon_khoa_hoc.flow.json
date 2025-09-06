@@ -1,0 +1,182 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "event.nlu.intent.name === ''",
+        "conditionType": "intent",
+        "node": "10_ban_busy.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'trinhdo_hocvien'",
+        "conditionType": "intent",
+        "node": "1-trinhdo_hocvien.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === ''",
+        "conditionType": "intent",
+        "node": "15-dt-zalo.flow.json"
+      },
+      {
+        "condition": "!event.nlu || !event.nlu.intent || event.nlu.intent.name === 'none'",
+        "conditionType": "raw",
+        "node": "Fallback-khong_hieu_y.flow.json"
+      }
+    ]
+  },
+  "startNode": "chon_khoa_hoc",
+  "description": "",
+  "nodes": [
+    {
+      "id": "418e585e71",
+      "name": "chon_khoa_hoc",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'fb'",
+          "conditionType": "intent",
+          "node": "chon_FB"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'tiktok'",
+          "conditionType": "intent",
+          "node": "chon_Tiktok"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'fb-tiktok'",
+          "conditionType": "intent",
+          "node": "fb-tiktok"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'ai_tri_tue_nhan_tao'",
+          "conditionType": "intent",
+          "node": "chon_AI"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'shopee'",
+          "conditionType": "intent",
+          "node": "chon_shopee"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'google_aword'",
+          "conditionType": "intent",
+          "node": "google"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'gia'",
+          "conditionType": "intent",
+          "node": "8-gia.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'trinhdo_hocvien'",
+          "conditionType": "intent",
+          "node": "1-trinhdo_hocvien.flow.json"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "1e7ddc1990",
+      "name": "chon_FB",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "1-trinhdo_hocvien.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-AMUdvQ",
+        "say #!builtin_text-uqKBRN",
+        "say #!builtin_text-XRYldY"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "3f53eb019c",
+      "name": "chon_Tiktok",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "1-trinhdo_hocvien.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-3OrJ7j",
+        "say #!builtin_text-uqKBRN",
+        "say #!builtin_text-_8wyb5"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "34c21c3424",
+      "name": "fb-tiktok",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "1-trinhdo_hocvien.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-6hkrgg"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "95236aa465",
+      "name": "chon_AI",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "1-trinhdo_hocvien.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-w8qTUn"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "3a711ea442",
+      "name": "chon_shopee",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "1-trinhdo_hocvien.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-gdngjS",
+        "say #!builtin_text-eWtK4M"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "2edd024937",
+      "name": "google",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "1-trinhdo_hocvien.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-CZPdDN"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    }
+  ]
+}

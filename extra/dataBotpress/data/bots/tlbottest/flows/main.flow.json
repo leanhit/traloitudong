@@ -1,0 +1,33 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "bat-dau",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "bat-dau",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'none'",
+          "node": "none_message"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-F7jDBL"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "58a637911b",
+      "name": "none_message",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-iVBzXn"
+      ],
+      "onReceive": null
+    }
+  ]
+}

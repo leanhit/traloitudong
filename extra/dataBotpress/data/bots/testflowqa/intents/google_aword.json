@@ -1,0 +1,30 @@
+{
+  "name": "google_aword",
+  "utterances": {
+    "en": [
+      "google",
+      "gg",
+      "gu gồ",
+      "gu go",
+      "gu gô",
+      "gồ gồ",
+      "gô gô",
+      "google search",
+      "google tim kiem",
+      "google workspace",
+      "google ads",
+      "google quảng cáo",
+      "google analytics",
+      "google cloud",
+      "google drive",
+      "google maps",
+      "google meet",
+      "google doc",
+      "google sheet"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

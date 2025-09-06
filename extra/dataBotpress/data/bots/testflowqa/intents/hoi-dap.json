@@ -1,0 +1,21 @@
+{
+  "name": "hoi-dap",
+  "utterances": {
+    "en": [
+      "Học xong có được cấp chứng chỉ không",
+      "Có được thực hành không",
+      "Học xong có làm được luôn không",
+      "Học lại có mất phí không",
+      "Khóa này dành cho người mới bắt đầu được không",
+      "Có demo hay học thử không",
+      "Bao lâu thì học xong",
+      "Có cần biết trước marketing không",
+      "Có cần laptop không",
+      "Có cam kết hỗ trợ sau không"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

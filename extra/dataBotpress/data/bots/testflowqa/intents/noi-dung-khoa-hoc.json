@@ -1,0 +1,53 @@
+{
+  "name": "noi-dung-khoa-hoc",
+  "utterances": {
+    "en": [
+      "Khóa học này dạy những gì vậy?",
+      "Cho mình xem nội dung khóa học được không?",
+      "Học xong thì mình làm được gì?",
+      "Khóa học Facebook dạy từ cơ bản tới nâng cao luôn không?",
+      "TikTok Ads học có dễ không bạn?",
+      "Học có thực hành không hay chỉ lý thuyết thôi?",
+      "Khóa này có dạy cách chạy quảng cáo thật không?",
+      "Có dạy target đúng khách hàng không bạn?",
+      "Nội dung học có phù hợp cho người mới không?",
+      "Khóa này dạy quảng cáo mảng nào vậy (spa, mỹ phẩm...)?",
+      "Khoa hoc nay day nhung gi vay?",
+      "Cho minh xem noi dung khoa hoc duoc khong?",
+      "Hoc xong thi minh lam duoc gi?",
+      "Khoa hoc Facebook day tu co ban toi nang cao luon khong?",
+      "TikTok Ads hoc co de khong ban?",
+      "Hoc co thuc hanh khong hay chi ly thuyet thoi?",
+      "Khoa nay co day cach chay quang cao that khong?",
+      "Co day target dung khach hang khong ban?",
+      "Noi dung hoc co phu hop cho nguoi moi khong?",
+      "Khoa nay day quang cao mang nao vay (spa, my pham...)?",
+      "x﻿in nội dung",
+      "x﻿in noi dung",
+      "xin lộ trình khóa học",
+      "xin lo trinh khoa hoc",
+      "cho toi lo trinh khoa hoc",
+      "gui lo trinh khoa hoc cho toi",
+      "toi muon xem lo trinh khoa hoc",
+      "co the gui lo trinh khoa hoc khong",
+      "toi can lo trinh khoa hoc",
+      "gui cho toi thong tin lo trinh khoa hoc",
+      "toi muon biet lo trinh khoa hoc",
+      "gui lo trinh khoa hoc giup toi",
+      "co lo trinh khoa hoc khongxin lộ trình khóa học",
+      "cho tôi lộ trình khóa học",
+      "gửi lộ trình khóa học cho tôi",
+      "tôi muốn xem lộ trình khóa học",
+      "có thể gửi lộ trình khóa học không",
+      "tôi cần lộ trình khóa học",
+      "gửi cho tôi thông tin lộ trình khóa học",
+      "tôi muốn biết lộ trình khóa học",
+      "gửi lộ trình khóa học giúp tôi",
+      "có lộ trình khóa học không"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

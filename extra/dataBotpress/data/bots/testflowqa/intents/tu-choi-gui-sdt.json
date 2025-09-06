@@ -1,0 +1,10 @@
+{
+  "name": "tu-choi-gui-sdt",
+  "utterances": {
+    "en": []
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

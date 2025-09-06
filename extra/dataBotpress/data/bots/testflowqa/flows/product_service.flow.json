@@ -1,0 +1,86 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "event.nlu.intent.name === ''",
+        "conditionType": "intent",
+        "node": "15-dt-zalo.flow.json"
+      },
+      {
+        "condition": "!event.nlu || !event.nlu.intent || event.nlu.intent.name === 'none'",
+        "conditionType": "raw",
+        "node": "Fallback-khong_hieu_y.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === ''",
+        "conditionType": "intent",
+        "node": "3-noidung_khoahoc.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'gia'",
+        "conditionType": "intent",
+        "node": "8-gia.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'thoi-gian-khai-giang'",
+        "conditionType": "intent",
+        "node": "4-lich_hoc.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === ''",
+        "conditionType": "intent",
+        "node": "2-diachi_chinhanh.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === ''",
+        "conditionType": "intent",
+        "node": "15-hinh_thuc_hoc.flow.json"
+      }
+    ]
+  },
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "a22631fa7c",
+      "name": "entry",
+      "onEnter": [
+        "product_service {}",
+        "say #!builtin_text-q6ZAcS",
+        "say #!builtin_text-UDjkf8"
+      ],
+      "onReceive": [],
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'product_service_intent'",
+          "conditionType": "intent",
+          "node": "sanpham"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'dt-zalo'",
+          "conditionType": "intent",
+          "node": "15-dt-zalo.flow.json"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "af79a8a7e2",
+      "name": "sanpham",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-kAKtO5",
+        "say #!builtin_text-CoGj35"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

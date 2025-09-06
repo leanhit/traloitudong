@@ -1,0 +1,19 @@
+{
+  "id": "fb",
+  "name": "fb",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "fb/face/facebook/book/mạng xã hội/mxh",
+      "synonyms": []
+    },
+    {
+      "name": "facebook,fb,face,fac,fbook,f b,fây búc,fây b,phây búc,phây b,phb,fcb,fécbúc,phê búc,phâybúc,faceb,facebok,faceboo",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

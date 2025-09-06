@@ -1,0 +1,28 @@
+{
+  "name": "yes_no-co_khong",
+  "utterances": {
+    "en": [
+      "c﻿ó",
+      "c﻿o",
+      "c﻿hua",
+      "c﻿hưa",
+      "k﻿hông",
+      "k﻿hong",
+      "Rồi",
+      "Dạ rồi",
+      "r﻿oi",
+      "d﻿ạ roi",
+      "d﻿a roi",
+      "v﻿âng",
+      "v﻿ang",
+      "Chưa bao giờ",
+      "c﻿hua bao gio",
+      "Không ạ",
+      "k﻿hong ạ"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

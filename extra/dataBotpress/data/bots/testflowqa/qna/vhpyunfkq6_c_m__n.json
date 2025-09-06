@@ -1,0 +1,26 @@
+{
+  "id": "vhpyunfkq6_c_m__n",
+  "data": {
+    "action": "text",
+    "contexts": [
+      "global"
+    ],
+    "enabled": true,
+    "answers": {
+      "en": [
+        "Dạ không có gì ạ, Em rất vui khi được hỗ trợ anh/chị ạ!"
+      ]
+    },
+    "questions": {
+      "en": [
+        "cảm ơn",
+        "cam on",
+        "cảm ơn bạn",
+        "cảm on",
+        "cam ơn"
+      ]
+    },
+    "redirectFlow": "",
+    "redirectNode": ""
+  }
+}

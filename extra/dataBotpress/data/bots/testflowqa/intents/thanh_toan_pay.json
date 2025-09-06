@@ -1,0 +1,51 @@
+{
+  "name": "thanh_toan_pay",
+  "utterances": {
+    "en": [
+      "Thanh toán ra sao?",
+      "Thanh toán kiểu gì?",
+      "Trả tiền thế nào?",
+      "Trả tiền ra sao?",
+      "Trả như nào?",
+      "Tính tiền thế nào?",
+      "Trả bằng cách nào?",
+      "Thanh toán bằng cách nào?",
+      "Thanh toán như nào?",
+      "Trả tiền bằng cách nào?",
+      "Trả tiền như nào?",
+      "Làm sao để thanh toán?",
+      "Làm sao để trả tiền?",
+      "Thanh toán qua đâu?",
+      "Thanh toán kiểu gì vậy?",
+      "Trả tiền kiểu gì vậy?",
+      "Có thể thanh toán thế nào?",
+      "Mình thanh toán sao?",
+      "Mình trả tiền sao?",
+      "Phương thức thanh toán là gì?",
+      "Thanh toan ra sao?",
+      "Thanh toan kieu gi?",
+      "Tra tien the nao?",
+      "Tra tien ra sao?",
+      "Tra nhu nao?",
+      "Tinh tien the nao?",
+      "Tra bang cach nao?",
+      "Thanh toan bang cach nao?",
+      "Thanh toan nhu nao?,",
+      "Tra tien bang cach nao?",
+      "Tra tien nhu nao?",
+      "Lam sao de thanh toan?",
+      "Lam sao de tra tien?",
+      "Thanh toan qua dau?",
+      "Thanh toan kieu gi vay?",
+      "Tra tien kieu gi vay?",
+      "Co the thanh toan the nao?",
+      "Minh thanh toan sao?",
+      "Minh tra tien sao?",
+      "Phuong thuc thanh toan la gi?"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

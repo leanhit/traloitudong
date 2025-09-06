@@ -1,0 +1,21 @@
+{
+  "name": "danh-sach-cong-viec",
+  "utterances": {
+    "en": [
+      "hien tai cong ty dang tuyen vi tri nao",
+      "con vi tri nao dang tuyen khong",
+      "cho minh xem danh sach cong viec di",
+      "co nhung cong viec nao phu hop voi nguoi moi ra truong",
+      "dang can tuyen bao nhieu nguoi",
+      "viec lam nao dang hot",
+      "nhan su ben ban dang can vi tri nao",
+      "cho minh biet cong ty con tuyen ke toan khong",
+      "cho xem tat ca vi tri dang tuyen",
+      "nhan vien van phong con tuyen khong"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

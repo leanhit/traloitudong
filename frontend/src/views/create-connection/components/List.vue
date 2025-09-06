@@ -44,7 +44,7 @@
                     <div class="card-body pt-0">
                         <div class="table-responsive rounded card-table">
                             <table
-                                class="table table-striped table-head-fixed table-borderless w-100 fixed-table">
+                                 class="table table-striped table-bordered w-100">
                                 <thead>
                                     <tr>
                                         <th

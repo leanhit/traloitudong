@@ -1,0 +1,55 @@
+{
+  "id": "offline",
+  "name": "offline",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "học trực tiếp",
+      "synonyms": []
+    },
+    {
+      "name": "học tại trung tâm",
+      "synonyms": []
+    },
+    {
+      "name": "tới lớp học",
+      "synonyms": []
+    },
+    {
+      "name": "Dạy trực tiếp",
+      "synonyms": []
+    },
+    {
+      "name": "Học ở trung tâm",
+      "synonyms": []
+    },
+    {
+      "name": "không học online",
+      "synonyms": []
+    },
+    {
+      "name": "Có địa điểm học không",
+      "synonyms": []
+    },
+    {
+      "name": "học tại lớp",
+      "synonyms": []
+    },
+    {
+      "name": "học tại Hà Nội",
+      "synonyms": []
+    },
+    {
+      "name": "hoc truc tiep/hoc tai trung tam/hoc offline/den lop hoc/gap truc tiep giao vien/hoc tap trung/hoc tai cho/hoc truc tiep tai lop/co lop day tai cho khong/minh muon den trung tam hoc",
+      "synonyms": []
+    },
+    {
+      "name": "offf",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

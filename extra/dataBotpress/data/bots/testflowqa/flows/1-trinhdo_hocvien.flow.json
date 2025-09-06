@@ -1,0 +1,132 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "event.nlu.intent.name === 'gia'",
+        "conditionType": "raw",
+        "node": "8-gia.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'dt-zalo'",
+        "conditionType": "intent",
+        "node": "15-dt-zalo.flow.json"
+      },
+      {
+        "condition": "!event.nlu || !event.nlu.intent || event.nlu.intent.name === 'none'",
+        "conditionType": "raw",
+        "node": "Fallback-khong_hieu_y.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'hinh-thuc_kieu-day'",
+        "conditionType": "intent",
+        "node": "15-hinh_thuc_hoc.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'dia-chi-chi-nhanh'",
+        "conditionType": "intent",
+        "node": "2-diachi_chinhanh.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'noi-dung-khoa-hoc'",
+        "conditionType": "intent",
+        "node": "3-noidung_khoahoc.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'product_service_intent'",
+        "conditionType": "intent",
+        "node": "product_service.flow.json"
+      }
+    ]
+  },
+  "startNode": "trinhdo-hocvien",
+  "description": "",
+  "nodes": [
+    {
+      "id": "c9f5756b1b",
+      "name": "trinhdo-hocvien",
+      "onEnter": [],
+      "onReceive": [],
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'chua-biet'",
+          "conditionType": "intent",
+          "node": "chua_biet"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'da-biet'",
+          "conditionType": "intent",
+          "node": "Da-biet"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'muc_dich_hoc'",
+          "conditionType": "intent",
+          "node": "9-muc_dich_hoc.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'hinh-thuc_kieu-day'",
+          "conditionType": "intent",
+          "node": "15-hinh_thuc_hoc.flow.json"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "dcf7cbf341",
+      "name": "chua_biet",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "21-san-pham-dich-vu.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-GNMoVL",
+        "say #!builtin_text-DLQZC_"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "fbf0ba10b3",
+      "name": "Da-biet",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'san_pham_dich_vu'",
+          "conditionType": "intent",
+          "node": "21-san-pham-dich-vu.flow.json"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "node-7a63"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-LmnGcK",
+        "say #!builtin_text-64x7d6"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "3f7d204fca",
+      "name": "node-7a63",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "product_service.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-pQUI9E",
+        "say #!builtin_text-spAXIE"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    }
+  ]
+}

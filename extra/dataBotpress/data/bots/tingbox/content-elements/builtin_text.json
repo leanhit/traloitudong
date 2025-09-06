@@ -1,0 +1,309 @@
+[
+  {
+    "id": "builtin_text-pSsHWg",
+    "formData": {
+      "text$en": "👋, {{user.nickname}}!",
+      "variations$en": [
+        "Hello, {{user.nickname}}!",
+        "Welcome to Botpress, {{user.nickname}}!"
+      ],
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T00:57:36.026Z",
+    "modifiedOn": "2019-07-01T13:51:45.578Z"
+  },
+  {
+    "id": "builtin_text-AY5SSW",
+    "formData": {
+      "text$en": "This is the first time we speak 🤖",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T00:59:51.118Z",
+    "modifiedOn": "2019-07-01T13:51:45.586Z"
+  },
+  {
+    "id": "builtin_text-bFsOmf",
+    "formData": {
+      "text$en": "We already spoke {{temp.$r}} times!",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:00:37.593Z",
+    "modifiedOn": "2019-07-01T13:51:45.593Z"
+  },
+  {
+    "id": "builtin_text-TtzrCV",
+    "formData": {
+      "text$en": "Alright, I have forgotten your name.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:06:41.963Z",
+    "modifiedOn": "2019-07-01T13:51:45.598Z"
+  },
+  {
+    "id": "builtin_text-z0J9qh",
+    "formData": {
+      "text$en": "May I know your name please?",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:08:41.241Z",
+    "modifiedOn": "2019-07-01T13:51:45.603Z"
+  },
+  {
+    "id": "builtin_text-X069Le",
+    "formData": {
+      "text$en": "Try saying something like \"forget my name\"!",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:16:53.227Z",
+    "modifiedOn": "2019-07-01T13:51:45.607Z"
+  },
+  {
+    "id": "builtin_text-kKQ8C3",
+    "formData": {
+      "text$en": "(To see how this works, double-click anywhere on the flow and go to the \"Transitions\" panel)",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:17:55.317Z",
+    "modifiedOn": "2019-07-01T13:51:45.612Z"
+  },
+  {
+    "id": "builtin_text-lbs0Re",
+    "formData": {
+      "text$en": "Xin chào, Anh/chị muốn dùng Loa cho cửa hàng hay ngoài trời như chợ, lề đường, vỉa hè ?\n",
+      "typing$en": true,
+      "markdown$en": false
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T16:41:48.068Z",
+    "modifiedOn": "2025-08-08T07:28:10.000Z"
+  },
+  {
+    "id": "builtin_text-sRxAPP",
+    "formData": {
+      "text$en": "Bot Memory is used by the bot to store information about a conversation. Here's an example.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T16:55:01.413Z",
+    "modifiedOn": "2019-07-01T13:51:45.623Z"
+  },
+  {
+    "id": "builtin_text-6RY1f5",
+    "formData": {
+      "text$en": "A bot could ask questions that are similar but have different meanings. To differentiate between the meanings of these questions, we use Contexts.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T17:02:32.795Z",
+    "modifiedOn": "2019-07-01T13:51:45.630Z"
+  },
+  {
+    "id": "builtin_text-UP2ozm",
+    "formData": {
+      "text$en": "Please pick an animal from the choices, I'm not a Zoologist.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T18:05:07.711Z",
+    "modifiedOn": "2019-07-01T20:42:58.782Z"
+  },
+  {
+    "id": "builtin_text-lALv5x",
+    "formData": {
+      "text$en": "Please ask questions about that animal, like its life span or its habitat.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T18:14:48.625Z",
+    "modifiedOn": "2019-07-01T13:51:45.647Z"
+  },
+  {
+    "id": "builtin_text-bOU5xw",
+    "formData": {
+      "text$en": "Please refer to our [documentation](https://botpress.com/docs/build/memory) to learn more about Bot Memory.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T18:29:05.998Z",
+    "modifiedOn": "2019-07-01T13:51:45.651Z"
+  },
+  {
+    "id": "builtin_text-SKQxXN",
+    "formData": {
+      "text$en": "Ask me something thats included in the choices. Let's try again.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T18:40:32.874Z",
+    "modifiedOn": "2019-07-01T13:51:45.656Z"
+  },
+  {
+    "id": "builtin_text-T8Oa8M",
+    "formData": {
+      "text$en": "To learn more about how to setup a Contextual FAQ, please refer to our [tutorial](https://botpress.com/docs/tutorials/contextual-faq)",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T19:53:14.411Z",
+    "modifiedOn": "2019-07-01T13:51:45.661Z"
+  },
+  {
+    "id": "builtin_text-yFOIFD",
+    "formData": {
+      "text$en": "Tell me if you need help!",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T22:02:33.058Z",
+    "modifiedOn": "2019-07-01T13:51:45.667Z"
+  },
+  {
+    "id": "builtin_text-error",
+    "formData": {
+      "text$en": "😯 Oops! We've got a problem. Please try something else while we're fixing it 🔨",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-09-03T18:58:10.702Z",
+    "modifiedOn": "2019-09-03T18:58:10.702Z"
+  },
+  {
+    "id": "builtin_text--icAL0",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "{{temp.endMessage}}"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-07-23T19:07:46.506Z",
+    "modifiedOn": "2021-07-23T19:22:07.392Z"
+  },
+  {
+    "id": "builtin_text-CDcG1x",
+    "formData": {
+      "text$en": "Giá loa Tingbox là 700k. Ngoài ra bên em có có Loa Momo giá 400k hoặc trả góp 0 đồng.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-05T14:58:16.438Z",
+    "modifiedOn": "2025-08-08T07:25:45.934Z"
+  },
+  {
+    "id": "builtin_text-xEQO2Y",
+    "formData": {
+      "text$en": "kết thúc",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-05T15:02:45.727Z",
+    "modifiedOn": "2025-08-05T15:02:45.727Z"
+  },
+  {
+    "id": "builtin_text-IYUOX2",
+    "formData": {
+      "text$en": "Cửa hàng nhà mình có wifi chứ ạ ? ",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-08T07:31:26.671Z",
+    "modifiedOn": "2025-08-08T07:31:26.671Z"
+  },
+  {
+    "id": "builtin_text-ZyoNSX",
+    "formData": {
+      "text$en": "Loa dùng wifi giá 700k.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-08T07:36:59.305Z",
+    "modifiedOn": "2025-08-08T07:36:59.305Z"
+  },
+  {
+    "id": "builtin_text-OfPLMD",
+    "formData": {
+      "text$en": "Gửi bên em số đt + địa chỉ nhận hàng ạ.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-08T07:38:48.675Z",
+    "modifiedOn": "2025-08-08T07:38:48.675Z"
+  },
+  {
+    "id": "builtin_text-ad0FkF",
+    "formData": {
+      "text$en": "Nhà mình có wifi không ạ ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-08T07:40:26.251Z",
+    "modifiedOn": "2025-08-08T07:40:26.251Z"
+  },
+  {
+    "id": "builtin_text-c_-OnZ",
+    "formData": {
+      "text$en": "Không có wifi thì cần có sim gắn vào loa ạ. ",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-08T07:45:52.634Z",
+    "modifiedOn": "2025-08-08T07:45:52.634Z"
+  },
+  {
+    "id": "builtin_text-NxCH3e",
+    "formData": {
+      "text$en": "Bên em có bán sim kèm giá 80k, dùng vào mạng 1 năm cho loa.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-08T07:49:10.296Z",
+    "modifiedOn": "2025-08-08T07:49:10.296Z"
+  },
+  {
+    "id": "builtin_text-YaxqUZ",
+    "formData": {
+      "text$en": "Loa liên kết được tất cả ngân hàng ạ. Anh/chị đang dùng ngân hàng nào vậy ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-08T07:57:50.517Z",
+    "modifiedOn": "2025-08-08T07:57:50.517Z"
+  },
+  {
+    "id": "builtin_text-Kv_T2c",
+    "formData": {
+      "text$en": "Loa bảo hành 1 năm, 1 đổi 1 ạ.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-08T08:08:59.160Z",
+    "modifiedOn": "2025-08-08T08:08:59.160Z"
+  },
+  {
+    "id": "builtin_text-tBNfCM",
+    "formData": {
+      "text$en": "Hoàn toàn MIỄN PHÍ: \n• Không phí giao dịch \n• Không phí rút tiền \n• Không phí duy trì hàng tháng",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-08T08:19:32.496Z",
+    "modifiedOn": "2025-08-08T08:19:32.496Z"
+  }
+]

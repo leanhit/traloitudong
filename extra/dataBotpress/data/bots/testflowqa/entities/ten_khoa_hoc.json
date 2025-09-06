@@ -1,0 +1,15 @@
+{
+  "id": "ten_khoa_hoc",
+  "name": "ten_khoa_hoc",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "Facebook Ads, TikTok Ads, Zalo Marketing",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

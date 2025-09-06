@@ -1,0 +1,21 @@
+{
+  "name": "vi-tri",
+  "utterances": {
+    "en": [
+      "toi muon ung tuyen lam nhan vien sale",
+      "cho minh nop don vao vi tri ke toan",
+      "co the xin viec lam tai cong ty duoc khong",
+      "minh muon lam o vi tri nhan vien van phong",
+      "ung tuyen vi tri tai xe",
+      "em dang tim viec lam marketing",
+      "toi muon ung tuyen lam nhan vien kinh doanh",
+      "lam o vi tri nhan su con tuyen khong",
+      "cho toi nop cv lam tro ly giam doc",
+      "co the nop ho so vao phong ky thuat khong"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

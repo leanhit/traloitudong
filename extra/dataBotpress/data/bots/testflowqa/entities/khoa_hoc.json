@@ -1,0 +1,23 @@
+{
+  "id": "khoa_hoc",
+  "name": "khoa_hoc",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "trí tuệ nhân tạo, artificial intelligence",
+      "synonyms": []
+    },
+    {
+      "name": "FB, fb, Facebook, facebook, face, faceb, phây bốc, phở bò",
+      "synonyms": []
+    },
+    {
+      "name": "Tiktok, TikTok, tiktok, tok tok, tik, tok",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

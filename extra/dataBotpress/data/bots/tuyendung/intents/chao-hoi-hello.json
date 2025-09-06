@@ -1,0 +1,26 @@
+{
+  "name": "chao-hoi-hello",
+  "contexts": [
+    "global"
+  ],
+  "slots": [],
+  "utterances": {
+    "en": [
+      "good day!",
+      "good morning",
+      "holla",
+      "bonjour",
+      "hey there",
+      "hi bot",
+      "hey bot",
+      "hey robot",
+      "hey!",
+      "hi",
+      "hello",
+      "a﻿lo",
+      "x﻿in chào",
+      "x﻿in chao",
+      "c﻿hào"
+    ]
+  }
+}

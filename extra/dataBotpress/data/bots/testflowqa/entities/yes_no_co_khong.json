@@ -1,0 +1,19 @@
+{
+  "id": "yes_no_co_khong",
+  "name": "yes_no_co_khong",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "có, có rồi, đã, ok, rồi, đúng vậy, chắc chắn, yes, yeah",
+      "synonyms": []
+    },
+    {
+      "name": "không, chưa, chưa có, chưa bao giờ, no, chưa từng, không có",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

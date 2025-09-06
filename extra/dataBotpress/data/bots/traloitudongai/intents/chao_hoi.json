@@ -1,0 +1,16 @@
+{
+  "name": "chao_hoi",
+  "utterances": {
+    "en": [
+      "h﻿i",
+      "x﻿in chào",
+      "a﻿lo",
+      "x﻿in chao",
+      "a﻿lô"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}
