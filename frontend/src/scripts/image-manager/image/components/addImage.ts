@@ -14,6 +14,7 @@ export default {
     const isLoading = ref(false);
     const viewName = ref('');
     const formRef = ref<FormInstance>();
+    const isEditMode = ref(false);
 
     // Model cho dữ liệu ảnh
     const itemModel = ref({
@@ -54,6 +55,7 @@ export default {
       await categoryStore.getAllCategories();
 
       if (viewName.value === 'AddImage') {
+        isEditMode.value = false;
         itemModel.value = {
           id: '',
           name: '',
@@ -66,13 +68,14 @@ export default {
         dialogImageUrl.value = '';
       } else if (viewName.value === 'EditImage') {
         const dataItem = props.viewSettings.dataItem;
+        isEditMode.value = true;
         itemModel.value = {
           id: dataItem.id || '',
           name: dataItem.title || '',
           description: dataItem.description || '',
           url: dataItem.fileUrl || '',
           tags: dataItem.tags || [],
-          category: dataItem.category?.id || '',
+          category: dataItem.categoryId || '',
           imageFile: null,
         };
         dialogImageUrl.value = dataItem.fileUrl || '';
@@ -191,6 +194,7 @@ export default {
       handleRemove,
       handlePictureCardPreview,
       onSubmit,
+      isEditMode
     };
   },
 };

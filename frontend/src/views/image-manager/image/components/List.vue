@@ -93,7 +93,7 @@
                                         <td>
                                             <span class="truncate-text">{{ formatDateTime(itemData.created_at) }}</span>
                                         </td>
-                                        <td>                                        
+                                        <td class=" text-nowrap">                                     
                                             <el-button
                                                 class="border-0 mx-1 my-1"
                                                 size="small"

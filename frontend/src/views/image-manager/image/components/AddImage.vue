@@ -37,8 +37,8 @@
               <!-- Category -->
               <div class="py-2 px-2">
                 <strong>{{ t('Category') }}</strong>
-                <el-form-item prop="category">
-                  <el-select v-model="itemModel.category" :placeholder="t('Select Category')" size="large" style="width: 100%;">
+                <el-form-item prop="category" >
+                  <el-select v-model="itemModel.category" :placeholder="t('Select Category')" size="large" style="width: 100%;" :disabled="isEditMode">
                     <el-option
                       v-for="cat in categories"
                       :key="cat.id"

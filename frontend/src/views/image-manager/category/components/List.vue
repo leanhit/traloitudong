@@ -65,7 +65,7 @@
                         {{ formatDateTime(itemData.createdDate) }}
                       </span>
                     </td>
-                    <td class="text-center">
+                    <td class="text-center text-nowrap">
                       <el-button
                         class="border-0 mx-1 my-1"
                         size="small"

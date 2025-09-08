@@ -85,6 +85,11 @@ export default {
             }
         );
 
+        onMounted(async () => {
+            await categoryStore.getAllCategories();
+
+    });
+
         // Các hàm xử lý sự kiện phân trang
         const handleSizeChange = (size: number) => {
             imageStore.imagePagination.pageSize = size;
