@@ -7,7 +7,7 @@ import com.chatbot.image.category.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
+import java.util.UUID;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
@@ -19,7 +19,7 @@ public class CategoryService {
     @Autowired
     private CategoryRepository categoryRepository;
 
-    // --- Phương thức chuyển đổi Entity -> DTO ---
+    // --- Entity -> DTO ---
     private CategoryResponseDTO convertToResponseDTO(Category category) {
         return new CategoryResponseDTO(
             category.getId(),
@@ -29,7 +29,7 @@ public class CategoryService {
         );
     }
     
-    // --- CREATE (Tạo mới) ---
+    // --- CREATE ---
     @Transactional
     public CategoryResponseDTO createCategory(CategoryRequestDTO requestDTO) {
         if (categoryRepository.findByName(requestDTO.getName()).isPresent()) {
@@ -42,26 +42,26 @@ public class CategoryService {
         return convertToResponseDTO(savedCategory);
     }
 
-    // --- READ (Đọc tất cả) ---
+    // --- READ all ---
     public List<CategoryResponseDTO> getAllCategories() {
         return categoryRepository.findAll().stream()
             .map(this::convertToResponseDTO)
             .collect(Collectors.toList());
     }
 
-    // --- READ (Đọc theo ID) - Trả về DTO cho client
-    public Optional<CategoryResponseDTO> getCategoryDtoById(String id) {
+    // --- READ by ID (DTO cho client) ---
+    public Optional<CategoryResponseDTO> getCategoryDtoById(UUID id) {
         return categoryRepository.findById(id).map(this::convertToResponseDTO);
     }
 
-    // --- READ (Đọc theo ID) - Trả về Entity cho các Service nội bộ
-    public Optional<Category> getCategoryById(String id) {
+    // --- READ by ID (Entity cho nội bộ Service) ---
+    public Optional<Category> getCategoryById(UUID id) {
         return categoryRepository.findById(id);
     }
     
-    // --- UPDATE (Cập nhật) ---
+    // --- UPDATE ---
     @Transactional
-    public CategoryResponseDTO updateCategory(String id, CategoryRequestDTO requestDTO) {
+    public CategoryResponseDTO updateCategory(UUID id, CategoryRequestDTO requestDTO) {
         Category category = categoryRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Không tìm thấy danh mục với id: " + id));
         
@@ -73,9 +73,9 @@ public class CategoryService {
         return convertToResponseDTO(updatedCategory);
     }
 
-    // --- DELETE (Xóa) ---
+    // --- DELETE ---
     @Transactional
-    public void deleteCategory(String id) {
+    public void deleteCategory(UUID id) {
         if (!categoryRepository.existsById(id)) {
             throw new RuntimeException("Không tìm thấy danh mục với id: " + id);
         }

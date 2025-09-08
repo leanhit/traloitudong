@@ -26,10 +26,17 @@ export const useCategoryStore = defineStore("categoryStore", () => {
         }
     }
 
+    // Hàm tìm categoryName từ categoryId
+    function getCategoryNameById(categoryId: number | string) {
+        const category = categories.value.find(c => c.id === categoryId);
+        return category ? category.name : 'Unknown Category';
+    }
+
     return {
         categories,
         loading,
         error,
         getAllCategories,
+        getCategoryNameById
     };
 });

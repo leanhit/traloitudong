@@ -8,7 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import jakarta.validation.Valid;
-
+import java.util.UUID;
 import java.util.List;
 
 @RestController
@@ -26,9 +26,7 @@ public class CategoryController {
 
     // READ (Đọc một danh mục theo ID)
     @GetMapping("/{id}")
-    public ResponseEntity<CategoryResponseDTO> getCategoryById(@PathVariable String id) {
-        // Lỗi này xảy ra vì bạn đã gọi phương thức getCategoryById trả về Entity
-        // Dùng phương thức trả về DTO
+    public ResponseEntity<CategoryResponseDTO> getCategoryById(@PathVariable UUID id) {
         return categoryService.getCategoryDtoById(id) // Thay đổi ở đây
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
@@ -47,7 +45,7 @@ public class CategoryController {
 
     // UPDATE (Cập nhật một danh mục)
     @PutMapping("/{id}")
-    public ResponseEntity<CategoryResponseDTO> updateCategory(@PathVariable String id, @Valid @RequestBody CategoryRequestDTO requestDTO) {
+    public ResponseEntity<CategoryResponseDTO> updateCategory(@PathVariable UUID id, @Valid @RequestBody CategoryRequestDTO requestDTO) {
         try {
             CategoryResponseDTO updatedCategory = categoryService.updateCategory(id, requestDTO);
             return ResponseEntity.ok(updatedCategory);
@@ -58,7 +56,7 @@ public class CategoryController {
 
     // DELETE (Xóa một danh mục)
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteCategory(@PathVariable String id) {
+    public ResponseEntity<Void> deleteCategory(@PathVariable UUID id) {
         try {
             categoryService.deleteCategory(id);
             return ResponseEntity.noContent().build();

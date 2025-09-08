@@ -9,9 +9,9 @@
             <a href="javascript:void(0)">{{ t('Image Manager') }}</a>
           </li>
           <li class="breadcrumb-item active">
-            <a href="javascript:void(0)">{{
-              viewSettings.title || (viewName === 'AddImage' ? t('Add Image') : t('Edit Image'))
-            }}</a>
+            <a href="javascript:void(0)">
+              {{ viewSettings.title || (viewName === 'AddImage' ? t('Add Image') : t('Edit Image')) }}
+            </a>
           </li>
         </ol>
       </div>
@@ -21,12 +21,7 @@
             size="default"
             type="danger"
             class="d-none d-md-block"
-            @click="
-              $emit('onChangeView', {
-                viewName: 'ListData',
-                data: null,
-              })
-            "
+            @click="$emit('onChangeView', { viewName: 'ListData', data: null })"
           >
             <div>{{ t('Back') }}</div>
           </el-button>
@@ -36,29 +31,17 @@
 
     <div class="card">
       <div class="card-body">
-        <el-form
-          ref="formRef"
-          :model="itemModel"
-          :rules="rules"
-          label-width="120px"
-          class="ruleForm"
-        >
+        <el-form ref="formRef" :model="itemModel" :rules="rules" label-width="120px" class="ruleForm">
           <div class="row">
             <div class="col-12">
-            
               <!-- Category -->
               <div class="py-2 px-2">
                 <strong>{{ t('Category') }}</strong>
                 <el-form-item prop="category">
-                  <el-select
-                    v-model="itemModel.category"
-                    :placeholder="t('Select Category')"
-                    size="large"
-                    style="width: 100%;"
-                  >
+                  <el-select v-model="itemModel.category" :placeholder="t('Select Category')" size="large" style="width: 100%;">
                     <el-option
                       v-for="cat in categories"
-                      :key="cat"
+                      :key="cat.id"
                       :label="cat.name"
                       :value="cat.id"
                     ></el-option>
@@ -70,65 +53,47 @@
               <div class="py-2 px-2">
                 <strong>{{ t('Name') }}</strong>
                 <el-form-item prop="name">
-                  <el-input
-                    v-model="itemModel.name"
-                    size="large"
-                    :placeholder="t('Enter image name')"
-                  />
+                  <el-input v-model="itemModel.name" size="large" :placeholder="t('Enter image name')" />
                 </el-form-item>
               </div>
 
-              <!-- Mô tả ảnh -->
+              <!-- Mô tả -->
               <div class="py-2 px-2">
                 <strong>{{ t('Description') }}</strong>
                 <el-form-item prop="description">
-                  <el-input
-                    v-model="itemModel.description"
-                    type="textarea"
-                    :rows="3"
-                    size="large"
-                    :placeholder="t('Description')"
-                  />
+                  <el-input v-model="itemModel.description" type="textarea" :rows="3" size="large" :placeholder="t('Description')" />
                 </el-form-item>
               </div>
 
-              <!-- URL ảnh (hoặc Upload) -->
+              <!-- URL hoặc Upload -->
               <div class="py-2 px-2">
-  <strong>{{ t('URL Image Or Upload') }}</strong>
-  <el-form-item prop="url">
-    <!-- URL nhập tay -->
-    <el-input
-      v-model="itemModel.url"
-      size="large"
-      :placeholder="t('Nhập URL ảnh nếu muốn')"
-    />
+                <strong>{{ t('URL Image Or Upload') }}</strong>
+                <el-form-item prop="url">
+                  <el-input v-model="itemModel.url" size="large" :placeholder="t('Nhập URL ảnh nếu muốn')" />
 
-    <div class="text-muted mt-2">{{ t('Hoặc tải ảnh lên:') }}</div>
+                  <div class="text-muted mt-2">{{ t('Hoặc tải ảnh lên:') }}</div>
 
-    <!-- Upload kéo-thả + chọn file -->
-    <el-upload
-      class="upload-drag"
-      drag
-      action="#"
-      :auto-upload="false"
-      :file-list="itemModel.imageFile ? [{ name: itemModel.imageFile.name, url: dialogImageUrl }] : []"
-      :limit="1"
-      :on-change="handleFileChange"
-      :on-remove="handleRemove"
-      :on-preview="handlePictureCardPreview"
-    >
-      <i class="el-icon-upload"></i>
-      <div class="el-upload__text">{{ t('Kéo thả ảnh vào đây hoặc nhấn để chọn') }}</div>
-      <div class="el-upload__tip text-muted" style="font-size: 12px;">{{ t('Chỉ chấp nhận 1 ảnh') }}</div>
-    </el-upload>
+                  <el-upload
+                    class="upload-drag"
+                    drag
+                    action="#"
+                    :auto-upload="false"
+                    :file-list="itemModel.imageFile ? [{ name: itemModel.imageFile.name, url: dialogImageUrl }] : []"
+                    :limit="1"
+                    :on-change="handleFileChange"
+                    :on-remove="handleRemove"
+                    :on-preview="handlePictureCardPreview"
+                  >
+                    <i class="el-icon-upload"></i>
+                    <div class="el-upload__text">{{ t('Kéo thả ảnh vào đây hoặc nhấn để chọn') }}</div>
+                    <div class="el-upload__tip text-muted" style="font-size: 12px;">{{ t('Chỉ chấp nhận 1 ảnh') }}</div>
+                  </el-upload>
 
-    <!-- Preview ảnh -->
-    <el-dialog v-model="dialogVisible" width="50%">
-      <img w-full :src="dialogImageUrl" alt="Preview Image" />
-    </el-dialog>
-  </el-form-item>
-</div>
-
+                  <el-dialog v-model="dialogVisible" width="50%">
+                    <img w-full :src="dialogImageUrl" alt="Preview Image" />
+                  </el-dialog>
+                </el-form-item>
+              </div>
 
               <!-- Tags -->
               <div class="py-2 px-2">
@@ -144,10 +109,7 @@
                     :placeholder="t('Chọn hoặc nhập thẻ')"
                     size="large"
                     style="width: 100%;"
-                  >
-                    <!-- Bạn có thể thêm các option mặc định nếu muốn -->
-                    <!-- <el-option label="Mèo" value="mèo"></el-option> -->
-                  </el-select>
+                  />
                 </el-form-item>
               </div>
             </div>
@@ -156,16 +118,7 @@
       </div>
       <div class="card-footer">
         <div class="text-center py-3">
-          <el-button
-            size="large"
-            type="primary"
-            class="mr-1 ml-1"
-            @click="onSubmit(formRef)"
-          >
-            <el-icon>
-              <Plus v-if="viewName === 'AddImage'" />
-              <Edit v-else-if="viewName === 'EditImage'" />
-            </el-icon>
+          <el-button size="large" type="primary" class="mr-1 ml-1" @click="onSubmit(formRef)">
             <span>{{ viewSettings.title || (viewName === 'AddImage' ? t('Add Image') : t('Update Image')) }}</span>
           </el-button>
         </div>

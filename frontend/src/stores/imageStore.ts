@@ -15,6 +15,11 @@ export const useImageStore = defineStore("imageStore", () => {
     const isLoading = ref(false);
     const error = ref(null);
 
+    // Hàm tiện ích convert URL
+    function convertUrl(fileUrl: string) {
+        return fileUrl.replace('http://localhost:9000', 'https://image.traloitudong.com');
+    }
+
     async function getAllImages(page: number, size: number) {
         isLoading.value = true;
         error.value = null; // Xóa lỗi cũ
@@ -22,7 +27,11 @@ export const useImageStore = defineStore("imageStore", () => {
             const response = await imageApi.getAllImages(page, size);
             if (response.status === 200) {
                 // Cập nhật state với dữ liệu phân trang từ backend
-                imagePagination.content = response.data.content;
+                // Cập nhật state với dữ liệu phân trang từ backend
+                imagePagination.content = response.data.content.map(img => ({
+                    ...img,
+                    fileUrl: convertUrl(img.fileUrl), // Convert URL
+                }));
                 imagePagination.totalElements = response.data.totalElements;
                 imagePagination.totalPages = response.data.totalPages;
                 imagePagination.pageNumber = response.data.number;

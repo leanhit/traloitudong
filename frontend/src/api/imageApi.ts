@@ -6,10 +6,6 @@ export const imageApi = {
         return axios.get(`/images/${imageId}`);
     },
 
-    updateImage(imageId: string, params: any) {
-        return axios.put(`/images/${imageId}`, params);
-    },
-
     deleteImage(imageId: string) {
         return axios.delete(`/images/${imageId}`);
     },
@@ -24,8 +20,28 @@ export const imageApi = {
         });
     },
 
-    addImage(params: any) {
+    addImage1(params: any) {
         return axios.post(`/images`, params);
+    },
+
+    updateImage1(imageId: string, params: any) {
+        return axios.put(`/images/${imageId}`, params);
+    },
+
+    updateImage(imageId: string, formData: FormData) {
+        return axios.put(`/images/${imageId}`, formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data',
+            },
+        });
+    },
+
+    addImage(formData: FormData) {
+        return axios.post(`/images`, formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data',
+            },
+        });
     },
 
 };

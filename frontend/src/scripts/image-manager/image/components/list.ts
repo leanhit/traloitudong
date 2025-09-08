@@ -4,6 +4,7 @@ import { ElMessage, ElMessageBox } from "element-plus";
 import { filterDataFunction, splitData, formatDateTime } from "@/until/search";
 import { imageApi } from "@/api/imageApi";
 import { useImageStore } from "@/stores/imageStore";
+import { useCategoryStore } from "@/stores/categoryStore";
 import { useSearchStore } from "@/stores/search";
 
 export default {
@@ -13,6 +14,7 @@ export default {
         const { t } = useI18n();
         const imageStore = useImageStore();
         const searchStore = useSearchStore();
+        const categoryStore = useCategoryStore();
 
         const filterData = ref("");
         const filter = ref("ALL");
@@ -103,6 +105,7 @@ export default {
             formatDateTime,
             handleSizeChange,
             handleCurrentChange,
+            getCategoryNameById:categoryStore.getCategoryNameById
         };
     },
 };

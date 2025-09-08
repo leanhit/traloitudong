@@ -76,10 +76,10 @@
                                             {{ itemIndex + 1 }}
                                         </td>
                                         <td>
-                                            <img :src="itemData.url" alt="Image" class="img-thumbnail" style="width: 60px; height: 60px; object-fit: cover;" />
+                                            <img :src="itemData.fileUrl" alt="Image" class="img-thumbnail" style="width: 60px; height: 60px; object-fit: cover;" />
                                         </td>
                                         <td>
-                                            <span class="truncate-text">{{ itemData.name }}</span>
+                                            <span class="truncate-text">{{ itemData.title }}</span>
                                         </td>
                                         <td>
                                             <span class="truncate-text">{{ itemData.description }}</span>
@@ -88,47 +88,34 @@
                                             <span class="truncate-text">{{ itemData.tags ? itemData.tags.join(', ') : '' }}</span>
                                         </td>
                                         <td>
-                                            <span class="truncate-text">{{ itemData.category }}</span>
+                                            <span class="truncate-text">{{ getCategoryNameById(itemData.categoryId) }}</span>
                                         </td>
                                         <td>
                                             <span class="truncate-text">{{ formatDateTime(itemData.created_at) }}</span>
                                         </td>
-                                        <td>
-                                            <el-dropdown trigger="click" class="px-1">
-                                                <el-button type="primary">
-                                                    <el-icon :size="15" style="vertical-align: middle;">
-                                                        <More />
-                                                    </el-icon>
-                                                </el-button>
-                                                <template #dropdown>
-                                                    <el-dropdown-menu>
-                                                        <el-button
-                                                            class="border-0 mx-1 my-1"
-                                                            size="small"
-                                                            :disabled="!itemData"
-                                                            @click="
-                                                                $emit('onChangeView', {
-                                                                    viewName: 'EditImage',
-                                                                    data: itemData,
-                                                                })">
-                                                            <el-icon :size="15" style="vertical-align: middle;">
-                                                                <Edit />
-                                                            </el-icon>
-                                                            <span class="ml-1">{{ t('Edit Image') }}</span>
-                                                        </el-button>
-                                                        <el-button
-                                                            class="border-0 ml-1"
-                                                            size="small"
-                                                            :disabled="!itemData"
-                                                            @click="deleteImage(itemData.id)">
-                                                            <el-icon :size="15" class="text-danger" style="vertical-align: middle;">
-                                                                <Delete />
-                                                            </el-icon>
-                                                            <span class="ml-1 mr-1">{{ t('Delete Image') }}</span>
-                                                        </el-button>
-                                                    </el-dropdown-menu>
-                                                </template>
-                                            </el-dropdown>
+                                        <td>                                        
+                                            <el-button
+                                                class="border-0 mx-1 my-1"
+                                                size="small"
+                                                :disabled="!itemData"
+                                                @click="
+                                                    $emit('onChangeView', {
+                                                        viewName: 'EditImage',
+                                                        data: itemData,
+                                                    })">
+                                                <el-icon :size="15" style="vertical-align: middle;">
+                                                    <Edit />
+                                                </el-icon>
+                                            </el-button>
+                                            <el-button
+                                                class="border-0 ml-1"
+                                                size="small"
+                                                :disabled="!itemData"
+                                                @click="deleteImage(itemData.id)">
+                                                <el-icon :size="15" class="text-danger" style="vertical-align: middle;">
+                                                    <Delete />
+                                                </el-icon>
+                                            </el-button>
                                         </td>
                                     </tr>
                                 </tbody>
