@@ -7,6 +7,8 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import java.util.Set;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -49,21 +51,30 @@ public class FacebookMessengerService {
             System.out.println("--------------------------------------------------");
 
             for (int attempt = 1; attempt <= 3; attempt++) {
-                try {
-                    webClient.post()
-                        .uri(url)
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .bodyValue(payload)
-                        .retrieve()
-                        .toBodilessEntity()
-                        .block();
+            try {
+                webClient.post()
+                    .uri(url)
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .bodyValue(payload)
+                    .retrieve()
+                    .toBodilessEntity()
+                    .block();
 
-                    System.out.println("✅ Gửi tin nhắn tới " + recipientId + " thành công (attempt " + attempt + ")");
-                    return;
-                } catch (Exception e) {
-                    System.err.println("⚠️ Lỗi gửi tin nhắn (attempt " + attempt + "): " + e.getMessage());
+                System.out.println("✅ Gửi tin nhắn tới " + recipientId + " thành công (attempt " + attempt + ")");
+                return; // thành công thì thoát luôn
+            } catch (Exception e) {
+                System.err.println("⚠️ Lỗi gửi tin nhắn (attempt " + attempt + "): " + e.getMessage());
+
+                if (attempt < 3) {
+                    try {
+                        Thread.sleep(1000L * attempt); // delay 1s, 2s...
+                    } catch (InterruptedException ie) {
+                        Thread.currentThread().interrupt();
+                    }
                 }
             }
+        }
+
         }, () -> {
             System.err.println("❌ Không tìm thấy cấu hình cho page_id: " + pageId);
         });
@@ -77,16 +88,25 @@ public class FacebookMessengerService {
         List<Map<String, Object>> replies = (List<Map<String, Object>>) botpressResponse.get("responses");
 
         if (replies != null) {
+            Set<String> sentMessages = new HashSet<>();
+
             for (Map<String, Object> reply : replies) {
                 String type = (String) reply.get("type");
                 if ("text".equals(type)) {
                     String text = (String) reply.get("text");
-                    sendMessageToUser(pageId, senderId, text);
+
+                    // Nếu chưa gửi thì mới gửi
+                    if (text != null && sentMessages.add(text)) {
+                        sendMessageToUser(pageId, senderId, text);
+                    } else {
+                        System.out.println("⚠️ Bỏ qua message trùng: " + text);
+                    }
                 }
-                // TODO: sau này xử lý thêm image, quick_replies, card...
+                // TODO: xử lý thêm image, quick_replies, card...
             }
         } else {
             System.out.println("⚠️ Botpress không trả về 'responses' hoặc rỗng.");
         }
     }
+
 }

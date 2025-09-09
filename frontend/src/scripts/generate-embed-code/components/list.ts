@@ -1,22 +1,21 @@
-import { useI18n } from 'vue-i18n';
-import { ref, computed, watch } from 'vue';
+import { useI18n } from "vue-i18n";
+import { ref, computed, watch, onMounted } from "vue";
 
 export default {
-    props: ['viewSettings'],
-    setup() {
-        const { t } = useI18n();
-        const BOTPRESS_SERVER_URL = 'https://bot.traloitudong.com'; // Cập nhật nếu khác
+  props: ["viewSettings"],
+  setup() {
+    const { t } = useI18n();
+    const BOTPRESS_SERVER_URL = "https://bot.traloitudong.com";
 
-        // Reactive state
-        const botId = ref('');
-        const activeSection = ref(''); // 'code' or 'test' or ''
-        const copyStatusVisible = ref(false);
-        const testIframeRef = ref<HTMLIFrameElement | null>(null);
+    const botId = ref("");
+    const activeSection = ref("");
+    const copyStatusVisible = ref(false);
+    const testIframeRef = ref<HTMLIFrameElement | null>(null);
+    const defaultBotIframeRef = ref<HTMLIFrameElement | null>(null);
 
-        // Computed property for generated embed code
-        const generatedCode = computed(() => {
-            if (!botId.value) return '';
-            return `
+    const generatedCode = computed(() => {
+      if (!botId.value) return "";
+      return `
         <script src="${BOTPRESS_SERVER_URL}/assets/modules/channel-web/inject.js"><\/script>
         <script>
           window.botpressWebChat.init({
@@ -29,11 +28,10 @@ export default {
             textColorOnBackground: "#000000"
           });
         <\/script>`;
-        });
+    });
 
-        // Function to generate full HTML content for the iframe
-        const getBotpressFullHtmlContent = (id: string) => {
-            return `
+    const getBotpressFullHtmlContent = (id: string) => {
+      return `
         <!DOCTYPE html>
         <html lang="vi">
         <head>
@@ -47,11 +45,10 @@ export default {
             ${getBotpressEmbedCodeScripts(id)}
         </body>
         </html>`;
-        };
+    };
 
-        // Helper function to get embed scripts (reused for iframe)
-        const getBotpressEmbedCodeScripts = (id: string) => {
-            return `
+    const getBotpressEmbedCodeScripts = (id: string) => {
+      return `
         <script src="${BOTPRESS_SERVER_URL}/assets/modules/channel-web/inject.js"><\/script>
         <script>
           window.botpressWebChat.init({
@@ -64,64 +61,77 @@ export default {
             textColorOnBackground: "#000000"
           });
         <\/script>`;
-        };
+    };
 
-        // Function to handle section display and content generation
-        const showSection = (type: 'code' | 'test') => {
-            if (!botId.value) {
-                alert('Vui lòng nhập Bot ID trước!');
-                return;
-            }
-            activeSection.value = type;
-            copyStatusVisible.value = false; // Hide status when switching sections
-        };
+    const showSection = (type: "code" | "test") => {
+      if (!botId.value) {
+        alert("Vui lòng nhập Bot ID trước!");
+        return;
+      }
+      activeSection.value = type;
+      copyStatusVisible.value = false;
+    };
 
-        // Watch for changes in activeSection to load iframe content
-        watch(activeSection, (newSection) => {
-            if (newSection === 'test' && testIframeRef.value) {
-                const iframeContent = getBotpressFullHtmlContent(botId.value);
-                const iframeDoc =
-                    testIframeRef.value.contentDocument ||
-                    testIframeRef.value.contentWindow?.document;
-                if (iframeDoc) {
-                    iframeDoc.open();
-                    iframeDoc.write(iframeContent);
-                    iframeDoc.close();
-                }
-            }
+    watch(activeSection, (newSection) => {
+      if (newSection === "test" && testIframeRef.value) {
+        const iframeContent = getBotpressFullHtmlContent(botId.value);
+        const iframeDoc =
+          testIframeRef.value.contentDocument ||
+          testIframeRef.value.contentWindow?.document;
+        if (iframeDoc) {
+          iframeDoc.open();
+          iframeDoc.write(iframeContent);
+          iframeDoc.close();
+        }
+      }
+    });
+
+    const copyEmbedCode = () => {
+      if (!generatedCode.value) return;
+
+      navigator.clipboard
+        .writeText(generatedCode.value)
+        .then(() => {
+          copyStatusVisible.value = true;
+          setTimeout(() => {
+            copyStatusVisible.value = false;
+          }, 2000);
+        })
+        .catch((err) => {
+          console.error("Failed to copy text: ", err);
+          alert("Không thể sao chép. Vui lòng thử lại hoặc sao chép thủ công.");
         });
+    };
 
-        // Function to copy embed code to clipboard
-        const copyEmbedCode = () => {
-            if (!generatedCode.value) return;
+    const defaultTestIframe = ref<HTMLIFrameElement | null>(null);
 
-            navigator.clipboard
-                .writeText(generatedCode.value)
-                .then(() => {
-                    copyStatusVisible.value = true;
-                    setTimeout(() => {
-                        copyStatusVisible.value = false;
-                    }, 2000);
-                })
-                .catch((err) => {
-                    console.error('Failed to copy text: ', err);
-                    alert(
-                        'Không thể sao chép. Vui lòng thử lại hoặc sao chép thủ công.'
-                    );
-                });
-        };
+    onMounted(() => {
+        if (defaultTestIframe.value) {
+        const iframeDoc =
+            defaultTestIframe.value.contentDocument ||
+            defaultTestIframe.value.contentWindow?.document;
 
-        return {
-            t,
-            botId,
-            activeSection,
-            copyStatusVisible,
-            testIframeRef,
-            generatedCode,
-            showSection,
-            copyEmbedCode,
-            getBotpressFullHtmlContent,
-            getBotpressEmbedCodeScripts,
-        };
-    },
+        if (iframeDoc) {
+            iframeDoc.open();
+            iframeDoc.write(getBotpressFullHtmlContent("traloitudongai"));
+            iframeDoc.close();
+        }
+        }
+    });
+
+    return {
+      t,
+      botId,
+      activeSection,
+      copyStatusVisible,
+      testIframeRef,
+      defaultBotIframeRef,
+      generatedCode,
+      showSection,
+      copyEmbedCode,
+      getBotpressFullHtmlContent,
+      getBotpressEmbedCodeScripts,
+      defaultTestIframe
+    };
+  },
 };
