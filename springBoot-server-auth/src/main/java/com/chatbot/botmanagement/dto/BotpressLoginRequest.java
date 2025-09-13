@@ -1,3 +1,4 @@
+// /src/main/java/com/chatbot/botpress/dto/BotpressLoginRequest.java
 package com.chatbot.botmanagement.dto;
 
 import lombok.AllArgsConstructor;
@@ -7,10 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class BotResponse {
-    private String botId;
-    private String botName;
-    private String ownerId;
-    private String message;
-    private String botDescription;
+public class BotpressLoginRequest {
+    private String email;
+    private String password;
 }

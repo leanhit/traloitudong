@@ -66,35 +66,50 @@
                       </span>
                     </td>
                     <td class="text-center text-nowrap">
-                      <el-button
-                        class="border-0 mx-1 my-1"
-                        size="small"
-                        :disabled="!itemData"
-                        @click="
-                          $emit('onChangeView', {
-                            viewName: 'EditCategory',
-                            data: itemData,
-                          })
-                        "
-                      >
-                        <el-icon :size="15" style="vertical-align: middle">
-                          <Edit />
-                        </el-icon>
-                      </el-button>
-                      <el-button
-                        class="border-0 ml-1"
-                        size="small"
-                        :disabled="!itemData"
-                        @click="deleteCategory(itemData.id)"
-                      >
-                        <el-icon
-                          :size="15"
-                          class="text-danger"
-                          style="vertical-align: middle"
+                      <el-tooltip
+                          class="box-item"
+                          effect="dark"
+                          content="Chỉnh sửa category"
+                          placement="top"
+                      >                    
+                        <el-button
+                          class="border-0 mx-1 my-1"
+                          size="small"
+                          :disabled="!itemData"
+                          @click="
+                            $emit('onChangeView', {
+                              viewName: 'EditCategory',
+                              data: itemData,
+                            })
+                          "
                         >
-                          <Delete />
-                        </el-icon>
-                      </el-button>
+                          <el-icon :size="15" style="vertical-align: middle">
+                            <Edit />
+                          </el-icon>
+                        </el-button>
+                        </el-tooltip>
+
+                      <el-tooltip
+                        class="box-item"
+                        effect="dark"
+                        content="Xóa category"
+                        placement="top"
+                      >                        
+                        <el-button
+                          class="border-0 ml-1"
+                          size="small"
+                          :disabled="!itemData"
+                          @click="deleteCategory(itemData.id)"
+                        >
+                          <el-icon
+                            :size="15"
+                            class="text-danger"
+                            style="vertical-align: middle"
+                          >
+                            <Delete />
+                          </el-icon>
+                        </el-button>
+                      </el-tooltip>  
                     </td>
                   </tr>
                 </tbody>

@@ -65,7 +65,7 @@
                                         <th style="min-width: 100px;">
                                             {{ t('Created At') }}
                                         </th>
-                                        <th style="min-width: 100px;">
+                                        <th class="text-nowrap text-center">
                                             {{ t('Action') }}
                                         </th>
                                     </tr>
@@ -93,29 +93,62 @@
                                         <td>
                                             <span class="truncate-text">{{ formatDateTime(itemData.created_at) }}</span>
                                         </td>
-                                        <td class=" text-nowrap">                                     
-                                            <el-button
+                                        <td class="text-nowrap">
+                                            <el-tooltip
+                                                class="box-item"
+                                                effect="dark"
+                                                content="Sao chép đường dẫn ảnh"
+                                                placement="top"
+                                            >
+                                                <el-button
                                                 class="border-0 mx-1 my-1"
                                                 size="small"
                                                 :disabled="!itemData"
-                                                @click="
-                                                    $emit('onChangeView', {
-                                                        viewName: 'EditImage',
-                                                        data: itemData,
-                                                    })">
+                                                @click="copyImageUrl(itemData.fileUrl)"
+                                                >
+                                                <el-icon :size="15" style="vertical-align: middle;">
+                                                    <CopyDocument />
+                                                </el-icon>
+                                                </el-button>
+                                            </el-tooltip>                                        
+                                            <el-tooltip
+                                                class="box-item"
+                                                effect="dark"
+                                                content="Chỉnh sửa hình ảnh"
+                                                placement="top"
+                                            >
+                                                <el-button
+                                                class="border-0 mx-1 my-1"
+                                                size="small"
+                                                :disabled="!itemData"
+                                                @click="$emit('onChangeView', {
+                                                    viewName: 'EditImage',
+                                                    data: itemData,
+                                                })"
+                                                >
                                                 <el-icon :size="15" style="vertical-align: middle;">
                                                     <Edit />
                                                 </el-icon>
-                                            </el-button>
-                                            <el-button
+                                                </el-button>
+                                            </el-tooltip>
+
+                                            <el-tooltip
+                                                class="box-item"
+                                                effect="dark"
+                                                content="Xóa hình ảnh"
+                                                placement="top"
+                                            >
+                                                <el-button
                                                 class="border-0 ml-1"
                                                 size="small"
                                                 :disabled="!itemData"
-                                                @click="deleteImage(itemData.id)">
+                                                @click="deleteImage(itemData.id)"
+                                                >
                                                 <el-icon :size="15" class="text-danger" style="vertical-align: middle;">
                                                     <Delete />
                                                 </el-icon>
-                                            </el-button>
+                                                </el-button>
+                                            </el-tooltip>
                                         </td>
                                     </tr>
                                 </tbody>

@@ -18,9 +18,6 @@ export default {
         const commonFields = {
             botName: 'Connection Name (Bot Name)',
             botId: 'Bot ID',
-            pageId: 'Page ID',
-            fanpageUrl: 'Fanpage URL',
-            pageAccessToken: 'Page Access Token',
         };
 
         // Các trường chỉ hiển thị khi ở chế độ Sửa

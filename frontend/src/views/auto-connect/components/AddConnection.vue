@@ -102,7 +102,7 @@
                                         v-model="itemModel[key]" 
                                         size="large"
                                         :placeholder="label"
-                                        :disabled = "key !== 'botName' && key !== 'botId' "/>
+                                        :disabled = "key !== 'botName' && key !== 'botId' && key"/>
                                 </el-form-item>
                             </div>
 

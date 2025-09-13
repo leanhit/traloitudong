@@ -60,9 +60,9 @@
                                 <strong>
                                     <a>{{ t('Bot Description') }}</a>
                                 </strong>
-                                <el-form-item prop="bot_description">
+                                <el-form-item prop="botDescription">
                                     <el-input
-                                        v-model="itemModel.bot_description"
+                                        v-model="itemModel.botDescription"
                                         size="large"
                                         placeholder="" />
                                 </el-form-item>
@@ -84,7 +84,7 @@
                                     </el-select>
                                 </el-form-item>
                             </div>
-                            <div class="py-2 px-2" v-if="isAddBot">
+                            <div class="py-2 px-2" v-if="false && isAddBot">
                                 <strong>
                                     <a>{{ t('Bot Id') }}</a>
                                     <el-tooltip

@@ -19,6 +19,13 @@
                         class="border-0 mx-1 my-1"
                         size="default"
                         type="primary"
+                        @click="getToken()">
+                        <div>{{ t('Get token') }}</div>
+                    </el-button>
+                    <el-button
+                        class="border-0 mx-1 my-1"
+                        size="default"
+                        type="primary"
                         @click="
                             $emit('onChangeView', {
                                 viewName: 'AddBot',
@@ -43,53 +50,53 @@
                 <div class="col-lg-12">
                     <div class="card-body pt-0">
                         <div class="table-responsive rounded card-table">
-                             <table class="table table-striped table-borderless w-100 fixed-table">
-            <thead>
-              <tr>
-                <th style="width:10%">{{ t('Index') }}</th>
-                <th style="width:15%">{{ t('Bot ID') }}</th>
-                <th style="width:20%">{{ t('Bot Name') }}</th>
-                <th style="width:25%">{{ t('Bot Description') }}</th>
-                <th style="width:15%">{{ t('Created At') }}</th>
-                <th style="width:15%">{{ t('Action') }}</th>
-              </tr>
-            </thead>
-            <tbody v-if="listItems && listItems.length > 0">
-              <tr v-for="(itemData, itemIndex) in listItems" :key="itemIndex">
-                <td class="text-truncate">{{ itemIndex + 1 }}</td>
-                <td class="text-truncate" :title="itemData.botId">{{ itemData.botId }}</td>
-                <td class="text-truncate" :title="itemData.botName">{{ itemData.botName }}</td>
-                <td class="text-truncate" :title="itemData.bot_description">{{ itemData.bot_description }}</td>
-                <td class="text-truncate" :title="itemData.created_at">{{ formatDateTime(itemData.created_at) }}</td>
-                <td>
-                  <el-dropdown trigger="click">
-                    <el-button type="primary">
-                      <el-icon :size="15"><More /></el-icon>
-                    </el-button>
-                    <template #dropdown>
-                      <el-dropdown-menu>
-                        <el-dropdown-item>
-                          <el-button size="small" @click="$emit('onChangeView', { viewName: 'EditBot', data: itemData })">
-                            <el-icon :size="15"><Edit /></el-icon> {{ t('Edit Bot') }}
-                          </el-button>
-                        </el-dropdown-item>
-                        <el-dropdown-item>
-                          <el-button size="small" type="danger" @click="deleteBot(itemData.id)">
-                            <el-icon :size="15"><Delete /></el-icon> {{ t('Delete Bot') }}
-                          </el-button>
-                        </el-dropdown-item>
-                      </el-dropdown-menu>
-                    </template>
-                  </el-dropdown>
-                </td>
-              </tr>
-            </tbody>
-            <tbody v-else>
-              <tr>
-                <td class="text-center py-5" colspan="6"><strong>{{ t('There are no item') }}</strong></td>
-              </tr>
-            </tbody>
-          </table>
+                             <table class="table table-striped table-bordered w-100">
+                              <thead>
+                                <tr>
+                                  <th style="width:10%">{{ t('Index') }}</th>
+                                  <th style="width:15%">{{ t('Bot ID') }}</th>
+                                  <th style="width:20%">{{ t('Bot Name') }}</th>
+                                  <th style="width:25%">{{ t('Bot Description') }}</th>
+                                  <th style="width:15%">{{ t('Created At') }}</th>
+                                  <th style="width:15%"  class="text-nowrap text-center">{{ t('Action') }}</th>
+                                </tr>
+                              </thead>
+                              <tbody v-if="listItems && listItems.length > 0">
+                                <tr v-for="(itemData, itemIndex) in listItems" :key="itemIndex">
+                                  <td class="text-truncate">{{ itemIndex + 1 }}</td>
+                                  <td class="text-truncate" :title="itemData.botId">{{ itemData.botId }}</td>
+                                  <td class="text-truncate" :title="itemData.botName">{{ itemData.botName }}</td>
+                                  <td class="text-truncate" :title="itemData.bot_description">{{ itemData.bot_description }}</td>
+                                  <td class="text-truncate" :title="itemData.created_at">{{ formatDateTime(itemData.created_at) }}</td>
+                                  <td>
+                                    <el-dropdown trigger="click">
+                                      <el-button type="primary">
+                                        <el-icon :size="15"><More /></el-icon>
+                                      </el-button>
+                                      <template #dropdown>
+                                        <el-dropdown-menu>
+                                          <el-dropdown-item>
+                                            <el-button size="small" @click="$emit('onChangeView', { viewName: 'EditBot', data: itemData })">
+                                              <el-icon :size="15"><Edit /></el-icon> {{ t('Edit Bot') }}
+                                            </el-button>
+                                          </el-dropdown-item>
+                                          <el-dropdown-item>
+                                            <el-button size="small" type="danger" @click="deleteBot(itemData.id)">
+                                              <el-icon :size="15"><Delete /></el-icon> {{ t('Delete Bot') }}
+                                            </el-button>
+                                          </el-dropdown-item>
+                                        </el-dropdown-menu>
+                                      </template>
+                                    </el-dropdown>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tbody v-else>
+                                <tr>
+                                  <td class="text-center py-5" colspan="6"><strong>{{ t('There are no item') }}</strong></td>
+                                </tr>
+                              </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

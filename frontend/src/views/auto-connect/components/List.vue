@@ -136,6 +136,12 @@
                                         </td>
                                         <td class="text-center text-nowrap">
                                             <div class="d-flex gap-0">
+                                                <el-tooltip
+                                                    class="box-item"
+                                                    effect="dark"
+                                                    content="Chỉnh sửa connection"
+                                                    placement="top"
+                                                >                                            
                                                 <el-button
                                                 class="border-0"
                                                 size="small"
@@ -151,6 +157,13 @@
                                                     <Edit />
                                                 </el-icon>
                                                 </el-button>
+                                        </el-tooltip>
+                                        <el-tooltip
+                                            class="box-item"
+                                            effect="dark"
+                                            content="Xóa connection"
+                                            placement="top"
+                                        >                                                
                                                 <el-button
                                                 class="border-0"
                                                 size="small"
@@ -165,6 +178,7 @@
                                                     <Delete />
                                                 </el-icon>
                                                 </el-button>
+                                            </el-tooltip>
                                             </div>
                                         </td>
                                     </tr>

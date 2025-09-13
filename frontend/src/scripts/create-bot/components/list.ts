@@ -25,7 +25,7 @@ export default {
             botName: '',
             botId: '',
             bot_type: '',
-            bot_description: '',
+            botDescription: '',
             created_at: '',
         });
 
@@ -41,7 +41,7 @@ export default {
             tempList.value = [];
             listItems.value = [];
 
-            await botStore.getAllBots({ page: 1, size: 999 });
+            await botStore.getAllBots({ page: 0, size: 999 });
 
             tempList.value = botStore.bot.content;
 
@@ -108,6 +108,12 @@ export default {
             listItems.value = splitData(tempList.value, pagePagination);
         };
 
+        const getToken=()=>{
+            const token = botApi.getToken()
+            console.log("token ===>", token.data);
+            alert(token.data)
+        }
+
         return {
             t,
             pagePagination,
@@ -121,6 +127,7 @@ export default {
             filter,
             deleteBot,
             formatDateTime,
+            getToken
         };
     },
 };

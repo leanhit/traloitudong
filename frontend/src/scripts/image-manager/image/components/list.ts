@@ -74,6 +74,16 @@ export default {
                 });
         };
 
+        // Phương thức mới để sao chép URL hình ảnh
+        const copyImageUrl = async (url: string) => {
+        try {
+            await navigator.clipboard.writeText(url);
+            ElMessage.success(t("Image URL copied successfully!"));
+        } catch (err) {
+            ElMessage.error(t("Failed to copy URL. Please try again."));
+        }
+        };        
+
         // Sử dụng watch cho search query
         watch(
             () => searchStore.query,
@@ -110,7 +120,8 @@ export default {
             formatDateTime,
             handleSizeChange,
             handleCurrentChange,
-            getCategoryNameById:categoryStore.getCategoryNameById
+            getCategoryNameById:categoryStore.getCategoryNameById,
+            copyImageUrl
         };
     },
 };

@@ -4,11 +4,13 @@ import com.chatbot.botpress.dto.BotpressCreateBotRequest;
 import com.chatbot.botpress.dto.BotpressUpdateBotRequest;
 import com.chatbot.botpress.dto.BotpressResponse;
 import com.chatbot.botpress.dto.BotpressTemplateRequest;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Service

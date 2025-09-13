@@ -111,4 +111,15 @@ export const botApi = {
         // ✅ Đã sửa: Gọi endpoint nghiệp vụ chính
         return axios.get(`/bots/templates`).catch(handleApiError);
     },
+
+    
+
+    /**
+     * Lấy token botpress mới
+     * Maps to: GET /api/admin/refresh-token
+     */
+    getToken() {
+        // ✅ Đã sửa: Gọi endpoint nghiệp vụ chính
+        return axios.post(`/admin/refresh-token`).catch(handleApiError);
+    },
 };

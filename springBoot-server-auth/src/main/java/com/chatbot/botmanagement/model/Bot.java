@@ -18,6 +18,10 @@ public class Bot {
     @Column(name = "bot_name", nullable = false)
     private String botName;
 
+    @Column(name = "bot_description", nullable = false)
+    private String botDescription;
+
     @Column(name = "owner_id", nullable = false)
     private String ownerId;
+
 }
