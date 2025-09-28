@@ -1,0 +1,108 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "nwlbsjrvkf",
+    "contentId": "builtin_single-choice-ffPiky",
+    "invalidContentId": "",
+    "keywords": {
+      "tinh_nang": [
+        "tinh_nang",
+        "Tính năng chính"
+      ],
+      "gia_price": [
+        "gia_price",
+        "Bảng giá"
+      ],
+      "nhan_tin_moi": [
+        "nhan_tin_moi",
+        "Nhận thông tin mới"
+      ],
+      "cskh": [
+        "cskh",
+        "Gặp CSKH"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-invalid-count-nwlbsjrvkf\",\"value\": 0}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-valid-nwlbsjrvkf\",\"value\": null}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-ret-nwlbsjrvkf\",\"value\": null}",
+        "say #!builtin_single-choice-ffPiky {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "061311"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"nwlbsjrvkf\",\"contentId\":\"builtin_single-choice-ffPiky\",\"invalidContentId\":\"\",\"keywords\":{\"tinh_nang\":[\"tinh_nang\",\"Tính năng chính\"],\"gia_price\":[\"gia_price\",\"Bảng giá\"],\"nhan_tin_moi\":[\"nhan_tin_moi\",\"Nhận thông tin mới\"],\"cskh\":[\"cskh\",\"Gặp CSKH\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-nwlbsjrvkf'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "327865"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"nwlbsjrvkf\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-nwlbsjrvkf']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "860102"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "024580"
+    }
+  ]
+}

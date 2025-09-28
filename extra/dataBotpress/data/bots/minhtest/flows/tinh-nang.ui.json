@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "1b10fc17ea",
+      "position": {
+        "x": -725,
+        "y": -645
+      }
+    },
+    {
+      "id": "skill-c3427f",
+      "position": {
+        "x": -465,
+        "y": -580
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "1b10fc17ea",
+      "sourcePort": "out0",
+      "target": "skill-c3427f",
+      "points": [
+        {
+          "x": -525,
+          "y": -558
+        },
+        {
+          "x": -464,
+          "y": -549
+        }
+      ]
+    }
+  ]
+}

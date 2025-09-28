@@ -17,6 +17,11 @@
         "condition": "!event.nlu || !event.nlu.intent || event.nlu.intent.name === 'none'",
         "conditionType": "raw",
         "node": "Fallback-khong_hieu_y.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'gia'",
+        "conditionType": "intent",
+        "node": "8-gia.flow.json"
       }
     ]
   },

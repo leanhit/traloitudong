@@ -1,0 +1,28 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [
+      "say #!builtin_text-CDcG1x"
+    ],
+    "next": []
+  },
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "4e2adb0763",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-CDcG1x"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "type": "standard"
+    }
+  ]
+}

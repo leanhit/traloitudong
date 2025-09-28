@@ -1,0 +1,19 @@
+{
+  "id": "gia-uu-dai",
+  "name": "gia-uu-dai",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "gia/giá/bao nhiêu tiền",
+      "synonyms": []
+    },
+    {
+      "name": "giá khóa học / giá khóa học/ khóa học giá",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

@@ -13,6 +13,11 @@
         {
           "condition": "event.nlu.intent.name === 'none'",
           "node": "none_message"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'gui_anh'",
+          "conditionType": "intent",
+          "node": "gui-anh"
         }
       ],
       "onEnter": [],
@@ -26,6 +31,21 @@
         "say #!builtin_text-iVBzXn"
       ],
       "onReceive": null
+    },
+    {
+      "id": "114dc880ca",
+      "name": "gui-anh",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_image-iCEZL-"
+      ],
+      "onReceive": null,
+      "type": "standard"
     }
   ]
 }

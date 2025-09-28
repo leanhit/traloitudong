@@ -1,0 +1,29 @@
+{
+  "name": "fb-noidung-khoahoc",
+  "utterances": {
+    "en": [
+      "n﻿ội dung {khoa_hoc}",
+      "n﻿oi dung {khoa_hoc}",
+      "n﻿ội dung {khoa_hoc}",
+      "xin lộ trình khóa học f\rb",
+      "xin lộ trình khóa học \rfacebook",
+      "x﻿in lo trinh khoa hoc fb",
+      "x﻿in lo trinh khoa hoc facebook",
+      "n﻿ội dung học fb",
+      "c﻿hương trình học {khoa_hoc}",
+      "c﻿huong trinh hoc {khoa_hoc}",
+      "g﻿iáo án {khoa_hoc}",
+      "g﻿iáo án {khoa_hoc}",
+      "fb",
+      "facebook",
+      "f\race",
+      "hoc fb",
+      "khoa hoc fb",
+      "noi dung fb"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

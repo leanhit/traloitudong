@@ -1,0 +1,12 @@
+{
+  "name": "co-kinh-nghiem",
+  "utterances": {
+    "en": [
+      "đã từng trực pages, edit video"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

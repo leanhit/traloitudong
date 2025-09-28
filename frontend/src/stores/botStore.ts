@@ -209,6 +209,7 @@ export const useBotStore = defineStore('botStore', () => {
             isLoading.value = false;
         }
     }
+    
 
     return {
         bot,

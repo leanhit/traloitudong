@@ -1,0 +1,50 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "7df7087133",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-nlNOCm"
+      ],
+      "onReceive": [],
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "chua-kinh-nghiem"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "e90d26c7ba",
+      "name": "chua-kinh-nghiem",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "453868e3ba",
+      "name": "co-kinh-nghiem",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

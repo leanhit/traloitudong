@@ -1,0 +1,17 @@
+{
+  "name": "quan_ly_nhan_vien",
+  "utterances": {
+    "en": [
+      "q﻿uản lý nhân viên",
+      "q﻿uan ly nhan vien",
+      "q﻿uản lý nhan vien",
+      "q﻿uản ly nhan vien",
+      "q﻿uan lý nhân viên",
+      "q﻿uan lý nhân vien"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "nhu_cau",
+  "utterances": {
+    "en": [
+      "Tôi dùng bot để bán hàng",
+      "t﻿ôi dùng bot để tư vấn"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

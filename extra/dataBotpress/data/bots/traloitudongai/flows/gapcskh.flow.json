@@ -1,0 +1,36 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "c3d51fe953",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-KM7FV4"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "node-c970"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "3ddbdd71de",
+      "name": "node-c970",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [],
+      "onReceive": [],
+      "type": "standard"
+    }
+  ]
+}

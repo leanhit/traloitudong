@@ -1,0 +1,100 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "event.nlu.intent.name === 'ban_busy'",
+        "conditionType": "intent",
+        "node": "10_ban_busy.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'dt-zalo'",
+        "conditionType": "intent",
+        "node": "15-dt-zalo.flow.json"
+      },
+      {
+        "condition": "!event.nlu || !event.nlu.intent || event.nlu.intent.name === 'none'",
+        "conditionType": "raw",
+        "node": "Fallback-khong_hieu_y.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === ''",
+        "conditionType": "intent",
+        "node": "3-noidung_khoahoc.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'thoi-gian-khai-giang'",
+        "conditionType": "intent",
+        "node": "4-lich_hoc.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'gia'",
+        "conditionType": "intent",
+        "node": "8-gia.flow.json"
+      }
+    ]
+  },
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "b59eb3f810",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'co_sanpham_dichvu'",
+          "conditionType": "intent",
+          "node": "co-roi"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'chua_co_sanpham_dichvu'",
+          "conditionType": "intent",
+          "node": "chua-co"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'hinh-thuc_kieu-day'",
+          "conditionType": "intent",
+          "node": "15-hinh_thuc_hoc.flow.json"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "810ad533b2",
+      "name": "chua-co",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "15-dt-zalo.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-dyZIx6",
+        "say #!builtin_text-BUF0fo"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "05aa6e9984",
+      "name": "co-roi",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "product_service.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Bqcppy",
+        "say #!builtin_text-DfEcf-"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    }
+  ]
+}

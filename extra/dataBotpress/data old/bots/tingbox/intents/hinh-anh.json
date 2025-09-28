@@ -1,0 +1,15 @@
+{
+  "name": "hinh-anh",
+  "utterances": {
+    "en": [
+      "gửi mình ảnh xem",
+      "g﻿ửi anh",
+      "g﻿ui anh",
+      "ảnh"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

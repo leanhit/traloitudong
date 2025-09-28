@@ -8,13 +8,15 @@
       "id": "08b95ebbd0",
       "name": "entry",
       "onEnter": [
-        "say #!builtin_text-vppOS-"
+        "say #!builtin_text-quG3mt",
+        "say #!builtin_text-9q98_T"
       ],
       "onReceive": null,
       "next": [
         {
           "condition": "true",
-          "node": ""
+          "conditionType": "always",
+          "node": "nhu_cau.flow.json"
         }
       ],
       "type": "standard"

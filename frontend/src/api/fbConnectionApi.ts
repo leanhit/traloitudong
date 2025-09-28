@@ -22,14 +22,20 @@ export const fbConnectionApi = {
         return axios.post(`/connection/facebook`, params);
     },
 
-    // API mới để thêm nhiều kết nối
+    // API mới để thêm nhiều kết nối, làm trên server 
     addConnections(params: any) {
-        // Gửi một mảng các đối tượng trang đến server
+        // Gửi một token tới server
         return axios.post(`/connection/facebook/auto-connect`, params );
     },
 
+    // API mới để thêm nhiều kết nối, làm trên client
+    addConnectionsClient(params: any[]) {
+        // Gửi một mảng các đối tượng trang đến server
+        return axios.post(`/connection/facebook/auto-connect-client`, { connections: params });
+    },
+
     // Hàm mới để đăng ký webhook cho một trang
-    subscribePageToWebhook: (pageId, pageAccessToken) => {
+    subscribePageToWebhook: (pageId:any, pageAccessToken:any) => {
         return axios.post(
             `https://graph.facebook.com/v18.0/${pageId}/subscribed_apps`,
             null, // body is null for POST with params
@@ -43,7 +49,7 @@ export const fbConnectionApi = {
     },
 
     // Hàm mới để hủy đăng ký webhook cho một trang
-    unsubscribePageFromWebhook: (pageId, pageAccessToken) => {
+    unsubscribePageFromWebhook: (pageId:any, pageAccessToken:any) => {
         return axios.delete(
             `https://graph.facebook.com/v18.0/${pageId}/subscribed_apps`,
             {

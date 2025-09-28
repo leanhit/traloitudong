@@ -1,0 +1,21 @@
+{
+  "name": "hotro_saukhoahoc",
+  "utterances": {
+    "en": [
+      "Sau khóa học em còn được hỗ trợ không",
+      "Học xong rồi có ai hỗ trợ không anh",
+      "Có được hỗ trợ sau khi học xong không",
+      "Em quên bài thì có được học lại không",
+      "Có nhóm nào hỗ trợ sau khóa học không",
+      "Khi làm thực tế gặp khó khăn thì sao",
+      "Trung tâm có hỗ trợ lâu dài không",
+      "Em muốn ôn lại thì phải làm sao",
+      "Học xong lâu rồi có hỏi lại được không",
+      "Có cập nhật kiến thức mới cho học viên cũ không"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

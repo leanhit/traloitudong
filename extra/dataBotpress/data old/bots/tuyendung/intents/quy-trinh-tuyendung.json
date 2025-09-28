@@ -1,0 +1,21 @@
+{
+  "name": "quy-trinh-tuyendung",
+  "utterances": {
+    "en": [
+      "nop ho so xong thi bao lau moi co ket qua",
+      "quy trinh tuyen dung nhu the nao",
+      "co phai phong van truc tiep khong",
+      "can bao nhieu vong phong van",
+      "co test dau vao khong",
+      "co can lam bai kiem tra khong",
+      "bao lau se duoc goi phong van",
+      "co the phong van online khong",
+      "thoi gian phong van keo dai bao lau",
+      "sau khi phong van se duoc thong bao qua gi"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

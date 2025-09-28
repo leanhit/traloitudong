@@ -522,13 +522,13 @@
   {
     "id": "builtin_text-xy1hWt",
     "formData": {
-      "text$en": "Khóa học thấp nhất 999k. Khóa học chuyên sâu có giá từ 1999K. ",
+      "text$en": "Học combo: FB, Tiktok kết hợp Trí tuệ nhân tạo AI là 3 triệu/ khóa . \n\nHọc riêng FB(hoặc Tiktok) kết hợp Trí tuệ nhân tạo AI là 2 triệu/ khóa ạ.",
       "markdown$en": false,
       "typing$en": true
     },
     "createdBy": "admin",
     "createdOn": "2025-07-28T07:01:47.551Z",
-    "modifiedOn": "2025-08-18T14:30:54.039Z"
+    "modifiedOn": "2025-09-11T05:53:21.354Z"
   },
   {
     "id": "builtin_text-fKaZzt",
@@ -1149,13 +1149,13 @@
   {
     "id": "builtin_text-pvDKfT",
     "formData": {
-      "text$en": "Anh có sản phẩm để thực hành khi học chạy quảng cáo chưa ?",
+      "text$en": "Anh chị muốn học khóa Combo hay riêng lẻ  ạ ?",
       "markdown$en": false,
       "typing$en": true
     },
     "createdBy": "admin",
     "createdOn": "2025-08-18T14:31:05.652Z",
-    "modifiedOn": "2025-08-18T14:31:05.652Z"
+    "modifiedOn": "2025-09-09T17:40:17.173Z"
   },
   {
     "id": "builtin_text-GSo2mw",
@@ -1266,5 +1266,148 @@
     "createdBy": "admin",
     "createdOn": "2025-08-25T15:13:04.582Z",
     "modifiedOn": "2025-08-25T15:13:04.582Z"
+  },
+  {
+    "id": "builtin_text-Nv4Gca",
+    "formData": {
+      "text$en": "Anh chị mới bắt đầu học hay đã có kinh nghiệm quảng cáo rồi ạ ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-09T16:35:02.343Z",
+    "modifiedOn": "2025-09-09T16:46:31.712Z"
+  },
+  {
+    "id": "builtin_text-5ZextE",
+    "formData": {
+      "text$en": "Anh/chị học để bán hàng, hoc nghề hay học để quản lý nhân viên ạ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-09T16:50:37.077Z",
+    "modifiedOn": "2025-09-09T16:50:37.077Z"
+  },
+  {
+    "id": "builtin_text-UhUOWT",
+    "formData": {
+      "text$en": "Anh/chị có sản phẩm, dịch vụ để thực hành khi học chưa ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-09T16:57:08.159Z",
+    "modifiedOn": "2025-09-09T16:57:08.159Z"
+  },
+  {
+    "id": "builtin_text-OruJ42",
+    "formData": {
+      "text$en": "Anh/chị đang bán sản phẩm, dịch vụ gì ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-09T17:01:17.970Z",
+    "modifiedOn": "2025-09-09T17:01:17.970Z"
+  },
+  {
+    "id": "builtin_text-hhnHEE",
+    "formData": {
+      "text$en": "Bán hàng truyền thống kiết hợp online là điều gần như bắt buộc hiện nay ạ. Nếu không kết hợp sẽ không cạnh tranh được với thị trường.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-09T17:03:51.831Z",
+    "modifiedOn": "2025-09-09T17:03:51.831Z"
+  },
+  {
+    "id": "builtin_text-_3TKYH",
+    "formData": {
+      "text$en": "Anh/chị có sản phẩm, dịch vụ để thực hành khi học chưa ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-09T17:04:11.603Z",
+    "modifiedOn": "2025-09-09T17:04:11.603Z"
+  },
+  {
+    "id": "builtin_text-6GH_be",
+    "formData": {
+      "text$en": "Fb, tiktok hiện là 2 nghề hot nhất hiện nay ạ. ",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-09T17:13:34.137Z",
+    "modifiedOn": "2025-09-09T17:13:34.137Z"
+  },
+  {
+    "id": "builtin_text-5OKmpl",
+    "formData": {
+      "text$en": "Anh/chị có sản phẩm, dịch vụ để thực hành khi học chưa ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-09T17:14:18.550Z",
+    "modifiedOn": "2025-09-09T17:14:18.550Z"
+  },
+  {
+    "id": "builtin_text-Q4XmUO",
+    "formData": {
+      "text$en": "Dạ, nếu biết quảng cáo sẽ quản lý nhân viên hiệu quả hơn, nhân viên cũng sẽ không gian lận về tiền bạc khi chạy quảng cáo ạ. Quảng cáo là công việc quan trọng trong kinh doanh.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-09T17:16:10.085Z",
+    "modifiedOn": "2025-09-14T14:25:30.638Z"
+  },
+  {
+    "id": "builtin_text-88r2pC",
+    "formData": {
+      "text$en": "Anh/chị đang bán sản phẩm, dịch vụ gì ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-09T17:16:28.912Z",
+    "modifiedOn": "2025-09-09T17:19:35.081Z"
+  },
+  {
+    "id": "builtin_text-3FHC0v",
+    "formData": {
+      "text$en": "Dạ, tiện thể học luôn sẽ rất tốt ạ.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-09T17:44:59.194Z",
+    "modifiedOn": "2025-09-09T17:44:59.194Z"
+  },
+  {
+    "id": "builtin_text-hU7mRW",
+    "formData": {
+      "text$en": "Gửi số Zalo, Bên em tư vấn chuyên sâu thêm nhá.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-09T17:45:28.639Z",
+    "modifiedOn": "2025-09-09T17:45:28.639Z"
+  },
+  {
+    "id": "builtin_text-6y3OuX",
+    "formData": {
+      "text$en": "Dạ, Anh chị cứ học 1 khóa trước, học xong lại học tiếp ạ.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-09T17:46:42.093Z",
+    "modifiedOn": "2025-09-09T17:46:42.093Z"
   }
 ]

@@ -1,0 +1,276 @@
+[
+  {
+    "id": "builtin_text-pSsHWg",
+    "formData": {
+      "text$en": "👋, {{user.nickname}}!",
+      "variations$en": [
+        "Hello, {{user.nickname}}!",
+        "Welcome to Botpress, {{user.nickname}}!"
+      ],
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T00:57:36.026Z",
+    "modifiedOn": "2025-07-26T07:20:26.729Z"
+  },
+  {
+    "id": "builtin_text-AY5SSW",
+    "formData": {
+      "text$en": "This is the first time we speak 🤖",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T00:59:51.118Z",
+    "modifiedOn": "2025-07-26T07:20:26.755Z"
+  },
+  {
+    "id": "builtin_text-bFsOmf",
+    "formData": {
+      "text$en": "We already spoke {{temp.$r}} times!",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:00:37.593Z",
+    "modifiedOn": "2025-07-26T07:20:26.790Z"
+  },
+  {
+    "id": "builtin_text-TtzrCV",
+    "formData": {
+      "text$en": "Alright, I have forgotten your name.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:06:41.963Z",
+    "modifiedOn": "2025-07-26T07:20:26.816Z"
+  },
+  {
+    "id": "builtin_text-z0J9qh",
+    "formData": {
+      "text$en": "May I know your name please?",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:08:41.241Z",
+    "modifiedOn": "2025-07-26T07:20:26.838Z"
+  },
+  {
+    "id": "builtin_text-X069Le",
+    "formData": {
+      "text$en": "Try saying something like \"forget my name\"!",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:16:53.227Z",
+    "modifiedOn": "2025-07-26T07:20:26.860Z"
+  },
+  {
+    "id": "builtin_text-kKQ8C3",
+    "formData": {
+      "text$en": "(To see how this works, double-click anywhere on the flow and go to the \"Transitions\" panel)",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:17:55.317Z",
+    "modifiedOn": "2025-07-26T07:20:26.885Z"
+  },
+  {
+    "id": "builtin_text-lbs0Re",
+    "formData": {
+      "text$en": "Xin chào, Bạn muốn làm Fulltime hay Parttime ?",
+      "typing$en": true,
+      "markdown$en": false
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T16:41:48.068Z",
+    "modifiedOn": "2025-08-01T01:39:21.698Z"
+  },
+  {
+    "id": "builtin_text-sRxAPP",
+    "formData": {
+      "text$en": "Bot Memory is used by the bot to store information about a conversation. Here's an example.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T16:55:01.413Z",
+    "modifiedOn": "2025-07-26T07:20:26.942Z"
+  },
+  {
+    "id": "builtin_text-6RY1f5",
+    "formData": {
+      "text$en": "A bot could ask questions that are similar but have different meanings. To differentiate between the meanings of these questions, we use Contexts.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T17:02:32.795Z",
+    "modifiedOn": "2025-07-26T07:20:26.966Z"
+  },
+  {
+    "id": "builtin_text-UP2ozm",
+    "formData": {
+      "text$en": "Please pick an animal from the choices, I'm not a Zoologist.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T18:05:07.711Z",
+    "modifiedOn": "2025-07-26T07:20:26.988Z"
+  },
+  {
+    "id": "builtin_text-lALv5x",
+    "formData": {
+      "text$en": "Please ask questions about that animal, like its life span or its habitat.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T18:14:48.625Z",
+    "modifiedOn": "2025-07-26T07:20:27.029Z"
+  },
+  {
+    "id": "builtin_text-bOU5xw",
+    "formData": {
+      "text$en": "Please refer to our [documentation](https://botpress.com/docs/build/memory) to learn more about Bot Memory.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T18:29:05.998Z",
+    "modifiedOn": "2025-07-26T07:20:27.055Z"
+  },
+  {
+    "id": "builtin_text-SKQxXN",
+    "formData": {
+      "text$en": "Ask me something thats included in the choices. Let's try again.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T18:40:32.874Z",
+    "modifiedOn": "2025-07-26T07:20:27.081Z"
+  },
+  {
+    "id": "builtin_text-T8Oa8M",
+    "formData": {
+      "text$en": "To learn more about how to setup a Contextual FAQ, please refer to our [tutorial](https://botpress.com/docs/tutorials/contextual-faq)",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T19:53:14.411Z",
+    "modifiedOn": "2025-07-26T07:20:27.101Z"
+  },
+  {
+    "id": "builtin_text-yFOIFD",
+    "formData": {
+      "text$en": "Tell me if you need help!",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-03-25T22:02:33.058Z",
+    "modifiedOn": "2025-07-26T07:20:27.114Z"
+  },
+  {
+    "id": "builtin_text-error",
+    "formData": {
+      "text$en": "😯 Oops! We've got a problem. Please try something else while we're fixing it 🔨",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-09-03T18:58:10.702Z",
+    "modifiedOn": "2025-07-26T07:20:27.131Z"
+  },
+  {
+    "id": "builtin_text--icAL0",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "{{temp.endMessage}}"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-07-23T19:07:46.506Z",
+    "modifiedOn": "2025-07-26T07:20:27.239Z"
+  },
+  {
+    "id": "builtin_text-fo7hSD",
+    "formData": {
+      "text$en": "mmmm\n",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-26T07:40:50.674Z",
+    "modifiedOn": "2025-07-26T07:40:50.674Z"
+  },
+  {
+    "id": "builtin_text-Z2HLj5",
+    "formData": {
+      "text$en": "Bạn làm được ca sáng hay chiều ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-01T01:42:54.043Z",
+    "modifiedOn": "2025-08-01T01:42:54.043Z"
+  },
+  {
+    "id": "builtin_text-kZ7tc5",
+    "formData": {
+      "text$en": "Bạn đang ở khu vực nào HN ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-01T01:48:09.621Z",
+    "modifiedOn": "2025-08-01T01:48:09.621Z"
+  },
+  {
+    "id": "builtin_text-K5kxrU",
+    "formData": {
+      "text$en": "Bên mình có cơ sở ở Cầu Giấy, Đống Đa, Hà Đông, Nam Từ Liêm.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-01T01:52:20.277Z",
+    "modifiedOn": "2025-08-01T01:52:20.277Z"
+  },
+  {
+    "id": "builtin_text-KhT36K",
+    "formData": {
+      "text$en": "Có CV gửi vào đây hoặc gửi số ĐT bên mình gọi trao đổi công việc cụ thể nhá.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-01T02:10:46.790Z",
+    "modifiedOn": "2025-08-01T02:10:46.790Z"
+  },
+  {
+    "id": "builtin_text-nlNOCm",
+    "formData": {
+      "text$en": "Bạn từng làm công việc liên trực pages, viết content, edit video hay chạy qc fb, tiktok bao giờ chưa ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-01T10:39:14.765Z",
+    "modifiedOn": "2025-08-01T10:56:46.117Z"
+  },
+  {
+    "id": "builtin_text-vE3CsM",
+    "formData": {
+      "text$en": "Dạ, bên em đã nhận được số điện thoại của Anh/Chị rồi ạ. Bên em sẽ liên hệ sớm nhất để trao đổi công việc! Cảm ơn Anh/Chị đã nhắn tin cho bên Em!",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-01T10:49:51.474Z",
+    "modifiedOn": "2025-08-01T10:49:51.474Z"
+  },
+  {
+    "id": "builtin_text-Oq0KXp",
+    "formData": {
+      "text$en": "Cảm ơn Bạn đã quan tâm tới công việc bên Em.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-04T07:36:04.677Z",
+    "modifiedOn": "2025-09-04T07:40:33.108Z"
+  }
+]

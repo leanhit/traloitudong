@@ -1,0 +1,21 @@
+[
+  {
+    "id": "builtin_card-Y3u60-",
+    "formData": {
+      "markdown$en": true,
+      "image$en": "/api/v1/bots/minhtest/media/rygnvhbsu7acu7k3ia51-z6838917920497_0f0e8fc63cead2d3df98966a4369731d.jpg",
+      "actions$en": [
+        {
+          "action": "Say something",
+          "text": "mua ngay",
+          "title": "mua ngay"
+        }
+      ],
+      "title$en": "{{event.nlu.slots}}",
+      "subtitle$en": "{{user.ext}}"
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-11T09:59:17.446Z",
+    "modifiedOn": "2025-09-11T09:59:17.446Z"
+  }
+]

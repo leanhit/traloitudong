@@ -1,0 +1,23 @@
+[
+  {
+    "id": "builtin_image-eBnbmn",
+    "formData": {
+      "typing$en": true,
+      "image$en": "https://lifestyle.znews.vn/10-buc-anh-dep-nhat-giai-nhiep-anh-thien-van-cua-nam-post1237834.html"
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-10T03:31:58.968Z",
+    "modifiedOn": "2025-09-10T03:31:58.968Z"
+  },
+  {
+    "id": "builtin_image-iCEZL-",
+    "formData": {
+      "typing$en": true,
+      "image$en": "https://photo.znews.vn/w960/Uploaded/mdf_eioxrd/2021_07_06/1q.jpg",
+      "title$en": "hi"
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-10T03:33:45.904Z",
+    "modifiedOn": "2025-09-10T03:33:45.904Z"
+  }
+]

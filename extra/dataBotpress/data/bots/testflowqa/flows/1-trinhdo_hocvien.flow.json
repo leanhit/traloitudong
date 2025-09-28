@@ -79,12 +79,12 @@
         {
           "condition": "true",
           "conditionType": "always",
-          "node": "21-san-pham-dich-vu.flow.json"
+          "node": "9-muc_dich_hoc.flow.json"
         }
       ],
       "onEnter": [
         "say #!builtin_text-GNMoVL",
-        "say #!builtin_text-DLQZC_"
+        "say #!builtin_text-5ZextE"
       ],
       "onReceive": [],
       "type": "standard"

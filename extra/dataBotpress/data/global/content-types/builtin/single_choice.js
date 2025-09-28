@@ -1,4 +1,4 @@
-//CHECKSUM:cc8cea48332251e5a1284ec938cdc9c2f185cf25c610825c40a7511cfb6c2e94
+//CHECKSUM:b64dcafa5ad6c0fdd9cb57a5a2a5655a7802b6ecf5405d2bcb6423a40d898fd5
 const base = require('./_base')
 const utils = require('./_utils')
 
@@ -55,11 +55,6 @@ module.exports = {
       disableFreeText: {
         type: 'boolean',
         title: 'module.builtin.disableFreeText',
-        default: false
-      },
-      displayInMessage: {
-        type: 'boolean',
-        title: 'module.builtin.types.singleChoice.displayInMessageTitle',
         default: false
       },
       ...base.typingIndicators

@@ -1,0 +1,10 @@
+{
+  "name": "dangky_chotdon",
+  "utterances": {
+    "en": []
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

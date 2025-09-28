@@ -1,0 +1,10 @@
+{
+  "name": "chot-lead",
+  "utterances": {
+    "en": []
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

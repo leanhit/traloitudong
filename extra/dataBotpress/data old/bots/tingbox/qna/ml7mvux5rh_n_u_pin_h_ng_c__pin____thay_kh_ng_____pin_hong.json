@@ -1,0 +1,22 @@
+{
+  "id": "ml7mvux5rh_n_u_pin_h_ng_c__pin____thay_kh_ng_____pin_hong",
+  "data": {
+    "action": "text",
+    "contexts": [
+      "global"
+    ],
+    "enabled": true,
+    "answers": {
+      "en": [
+        "Anh/chị chờ em xíu nhé, em gửi liền đây. Gửi qua đây hơi chậm ạ, anh/chị cho em xin số Zalo để em gửi nhanh và đầy đủ hơn ạ"
+      ]
+    },
+    "questions": {
+      "en": [
+        "Gửi hình ảnh video, gui hinh anh video,"
+      ]
+    },
+    "redirectFlow": "",
+    "redirectNode": ""
+  }
+}

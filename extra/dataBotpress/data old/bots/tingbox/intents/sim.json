@@ -1,0 +1,13 @@
+{
+  "name": "sim",
+  "utterances": {
+    "en": [
+      "s﻿im",
+      "t﻿hẻ sim"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

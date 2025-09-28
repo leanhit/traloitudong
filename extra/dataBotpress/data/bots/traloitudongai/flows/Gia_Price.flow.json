@@ -1,18 +1,21 @@
 {
   "version": "0.0.1",
   "catchAll": {},
-  "startNode": "entry",
+  "startNode": "gia",
   "description": "",
   "nodes": [
     {
       "id": "205adae30e",
-      "name": "entry",
-      "onEnter": [],
+      "name": "gia",
+      "onEnter": [
+        "say #!builtin_text-AG9PUB"
+      ],
       "onReceive": null,
       "next": [
         {
           "condition": "true",
-          "node": ""
+          "conditionType": "always",
+          "node": "dt_zalo.flow.json"
         }
       ],
       "type": "standard"

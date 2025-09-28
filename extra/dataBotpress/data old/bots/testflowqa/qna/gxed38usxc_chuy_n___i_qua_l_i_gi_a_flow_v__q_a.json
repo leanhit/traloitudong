@@ -1,0 +1,24 @@
+{
+  "id": "gxed38usxc_chuy_n___i_qua_l_i_gi_a_flow_v__q_a",
+  "data": {
+    "action": "text_redirect",
+    "contexts": [
+      "global"
+    ],
+    "enabled": true,
+    "answers": {
+      "en": [
+        "\n1. Chiều chuyển đổi: Q&A -> Flow (Cấu hình rõ ràng)\nBạn phải cấu hình: Đây là chiều mà bạn chủ động thiết lập. Khi bạn \"Enable Redirection\" trong một Q&A item và chọn một Node/Flow đích, bạn đang nói rõ với Botpress rằng: \"Khi Q&A này được trả lời, hãy chuyển người dùng đến điểm này trong Flow.\"\n\nCó nghĩa là:\n\nNgười dùng hỏi một câu mà Q&A trả lời.\n\nBot trả lời Q&A.\n\nBot tự động và ngay lập tức chuyển đến Node/Flow mà bạn đã chỉ định.\n\nLà một liên kết rõ ràng và một chiều (theo nghĩa bạn thiết lập): Bạn định nghĩa điểm đến.\n\n2. Chiều chuyển đổi: Flow -> Q&A (Cơ chế ưu tiên xử lý của Botpress)\nBotpress xử lý tự động: Chiều này không yêu cầu bạn \"liên kết\" cụ thể từ Flow đến Q&A. Thay vào đó, nó dựa trên cơ chế ưu tiên xử lý đầu vào của Botpress.\n\nCó nghĩa là:\n\nKhi người dùng đang ở trong một Flow và bot đang chờ phản hồi (ví dụ: bot hỏi \"Bạn tên là gì?\").\n\nNếu người dùng không trả lời tên mà lại hỏi một câu hỏi Q&A (ví dụ: \"Giờ làm việc của bạn là bao lâu?\").\n\nBotpress, theo mặc định, sẽ luôn kiểm tra Q&A trước khi xử lý bất kỳ logic nào trong Flow hiện tại.\n\nNếu Q&A khớp và độ tin cậy cao: Bot sẽ trả lời câu hỏi Q&A đó.\n\nSau khi Q&A trả lời:\n\nNếu Q&A đó không có Redirection đến bất kỳ đâu, bot sẽ quay lại Flow ban đầu và tiếp tục chờ phản hồi cho câu hỏi trước đó (\"Bạn tên là gì?\").\n\nNếu Q&A đó có Redirection đến một Flow/Node khác, bot sẽ chuyển đến Flow/Node đó thay vì quay lại Flow ban đầu.\n\nKhông phải là một liên kết mà bạn thiết lập từ Flow: Bạn không thêm một \"nút\" trong Flow để \"chuyển sang Q&A\". Q&A hoạt động như một lớp xử lý đầu vào ưu tiên, luôn \"lắng nghe\" các câu hỏi, ngay cả khi bot đang ở trong một Flow.\n\nTóm lại:\n\nQ&A -> Flow: Bạn thiết lập liên kết/chuyển hướng một cách tường minh trong cài đặt của Q&A.\n\nFlow -> Q&A: Botpress tự động kiểm tra Q&A dựa trên mỗi đầu vào của người dùng như một phần của pipeline xử lý tin nhắn của nó, bất kể bot đang ở trong Flow nào."
+      ]
+    },
+    "questions": {
+      "en": [
+        "chuyển đổi qua lại giữa flow và q&a",
+        "làm sao chuyển đổi flow",
+        "cách chuyển Q&A sang flow"
+      ]
+    },
+    "redirectFlow": "test-change-flow-to-qa.flow.json",
+    "redirectNode": ""
+  }
+}

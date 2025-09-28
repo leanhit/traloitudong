@@ -1,0 +1,24 @@
+[
+  {
+    "id": "builtin_text-gJq9iQ",
+    "formData": {
+      "text$en": "bên em có gói miễn phí ...",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-29T15:53:34.233Z",
+    "modifiedOn": "2025-08-29T15:53:34.233Z"
+  },
+  {
+    "id": "builtin_text-vppOS-",
+    "formData": {
+      "text$en": "\"Xin chào 👋, bạn đang quan tâm đến dịch vụ chatbot đúng không?  Mình sẽ giúp bạn hiểu nhanh nhất.\"",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-29T16:00:36.751Z",
+    "modifiedOn": "2025-08-29T16:00:36.751Z"
+  }
+]

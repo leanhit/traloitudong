@@ -1,0 +1,66 @@
+{
+  "name": "ban_busy",
+  "utterances": {
+    "en": [
+      "đang bận",
+      "tôi đang bận",
+      "mai gọi lại nhé",
+      "đang họp",
+      "d﻿ang hop",
+      "lát gọi",
+      "để lát gọi lại",
+      "bận tí nữa gọi",
+      "tí nữa nói chuyện",
+      "đang dở tay",
+      "bận quá",
+      "chút nữa gọi lại",
+      "bận rồi",
+      "đang có việc",
+      "đang nghe máy khác",
+      "lát nhắn",
+      "tí nữa liên hệ",
+      "để chiều gọi",
+      "để mai liên lạc",
+      "dang ban",
+      "toi dang ban",
+      "mai goi lai nhe",
+      "dang lai xe",
+      "dang hop",
+      "lat goi",
+      "de lat goi lai",
+      "ban ti nua goi",
+      "ti nua noi chuyen",
+      "dang do tay",
+      "dang tren duong",
+      "ban qua",
+      "chut nua goi lai",
+      "ban roi",
+      "dang co viec",
+      "dang nghe may khac",
+      "lat nhan",
+      "ti nua lien he",
+      "de chieu goi",
+      "de mai lien lac",
+      "t﻿ôi, chị, c, anh đang họp",
+      "t﻿oi, chị, c, anh dang hop",
+      "Mình rảnh lúc",
+      "minh ranh luc",
+      "g﻿ọi cho mình lúc",
+      "g﻿oi cho minh luc",
+      "t﻿ư vấn cho mình lúc"
+    ]
+  },
+  "slots": [
+    {
+      "id": "J-1hIT4oHAnS85zunXsHy",
+      "name": "tinh_trang",
+      "entities": [
+        "tinh_trang_hien_tai"
+      ],
+      "color": 1
+    }
+  ],
+  "contexts": [
+    "global"
+  ]
+}

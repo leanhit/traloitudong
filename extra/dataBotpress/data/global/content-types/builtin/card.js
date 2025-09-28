@@ -1,9 +1,8 @@
-//CHECKSUM:84c41d34a8e3e6d8b2cbfcd73580c08543a4b261c77792b1f51036e583861722
-const base = require('./_base')
+//CHECKSUM:207b8c140537cdce08f2465d755f372c2cfe37234230e834f12c7d43b64e1b13
 const ActionButton = require('./action_button')
 const utils = require('./_utils')
 
-const Card = {
+module.exports = {
   id: 'builtin_card',
   group: 'Built-in Messages',
   title: 'card',
@@ -31,8 +30,7 @@ const Card = {
         type: 'array',
         title: 'module.builtin.actionButton',
         items: ActionButton.jsonSchema
-      },
-      ...base.useMarkdown
+      }
     }
   },
 
@@ -43,7 +41,3 @@ const Card = {
     return utils.extractPayload('card', data)
   }
 }
-
-Card.jsonSchema.properties.markdown.default = false
-
-module.exports = Card

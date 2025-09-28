@@ -2,23 +2,133 @@
   {
     "id": "builtin_text-gJq9iQ",
     "formData": {
-      "text$en": "bên em có gói miễn phí ...",
+      "text$en": "Chào Anh/chị 👋\nCảm ơn Anh đã quan tâm đến bottraloitudong – nền tảng bán hàng tự động đa kênh dành cho doanh nghiệp\n\nBottraloitudong giúp tích hợp và quản lý toàn bộ tin nhắn từ Messenger, Zalo OA, Zalo cá nhân, website trong 1 cửa sổ",
       "markdown$en": false,
       "typing$en": true
     },
     "createdBy": "admin",
     "createdOn": "2025-08-29T15:53:34.233Z",
-    "modifiedOn": "2025-08-29T15:53:34.233Z"
+    "modifiedOn": "2025-09-06T08:55:31.947Z"
   },
   {
     "id": "builtin_text-vppOS-",
     "formData": {
-      "text$en": "\"Xin chào 👋, bạn đang quan tâm đến dịch vụ chatbot đúng không?  Mình sẽ giúp bạn hiểu nhanh nhất.\"",
+      "text$en": "Ngoài ra, hệ thống còn: \n✅Tự động trả lời & gợi ý sản phẩm ngay khi khách nhắn   \n✅ Gửi giỏ hàng, mã giảm giá, tạo đơn – ngay trong khung chat   \n✅Báo cáo tập trung: số lượng hội thoại, đơn hàng, doanh số   ✅Phân quyền nhân viên, hỗ trợ đa ngôn ngữ khi tích hợp AI tư vấn ( NEW ), bạn đang quan tâm đến dịch vụ chatbot đúng không?  Mình sẽ giúp bạn hiểu nhanh nhất.\"",
       "markdown$en": false,
       "typing$en": true
     },
     "createdBy": "admin",
     "createdOn": "2025-08-29T16:00:36.751Z",
-    "modifiedOn": "2025-08-29T16:00:36.751Z"
+    "modifiedOn": "2025-09-06T09:51:57.676Z"
+  },
+  {
+    "id": "builtin_text-Ji2pqo",
+    "formData": {
+      "text$en": "Cảm ơn Anh/Chị quan tâm chatbot tự động. Em hỏi nhanh vài câu để tư vấn đúng nhu cầu ạ",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-06T09:01:51.948Z",
+    "modifiedOn": "2025-09-09T08:56:55.967Z"
+  },
+  {
+    "id": "builtin_text-AG9PUB",
+    "formData": {
+      "text$en": "Giá ...",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-06T09:53:01.282Z",
+    "modifiedOn": "2025-09-06T09:53:01.282Z"
+  },
+  {
+    "id": "builtin_text-quG3mt",
+    "formData": {
+      "text$en": "Chào Anh/chị 👋\nCảm ơn Anh đã quan tâm đến bottraloitudong – nền tảng bán hàng tự động đa kênh dành cho doanh nghiệp\n\nBottraloitudong giúp tích hợp và quản lý toàn bộ tin nhắn từ Messenger, Zalo OA, Zalo cá nhân, website trong 1 cửa sổ",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-06T09:54:39.660Z",
+    "modifiedOn": "2025-09-06T09:54:39.660Z"
+  },
+  {
+    "id": "builtin_text-9q98_T",
+    "formData": {
+      "text$en": "Ngoài ra, hệ thống còn:  ✅Tự động trả lời & gợi ý sản phẩm ngay khi khách nhắn    ✅ Gửi giỏ hàng, mã giảm giá, tạo đơn – ngay trong khung chat    ✅Báo cáo tập trung: số lượng hội thoại, đơn hàng, doanh số   ✅Phân quyền nhân viên, hỗ trợ đa ngôn ngữ khi tích hợp AI tư vấn ( NEW ), bạn đang quan tâm đến dịch vụ chatbot đúng không?  Mình sẽ giúp bạn hiểu nhanh nhất.\"",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-06T09:55:00.132Z",
+    "modifiedOn": "2025-09-06T09:55:00.132Z"
+  },
+  {
+    "id": "builtin_text-CXm7aN",
+    "formData": {
+      "text$en": "Anh chị đang kinh doanh mặt hàng gì vậy ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-06T10:20:10.779Z",
+    "modifiedOn": "2025-09-06T10:20:10.779Z"
+  },
+  {
+    "id": "builtin_text-IqPIrg",
+    "formData": {
+      "text$en": "traloitudong  xin giới thiệu qua một chút tổng quan về các tính năng bên em:  🔗 Kết nối đa kênh: Quản lý tin nhắn từ Messenger, Zalo cá nhân, Zalo OA Website trên cùng 1 cửa sổ 🤖 Trợ lý AI (ChatGPT): Trả lời tự nhiên, thông minh như người thật 24/7 ✅ Tự động trả lời: Bot phản hồi khách hàng bất kể thời gian 🛒 Giỏ hàng trên Messenger: Khách xem, chọn và đặt mua ngay trong khung chat 📦 Quản lý đơn & khách: Theo dõi lịch sử chat, đơn hàng, thông tin khách rõ ràng 📢 Gửi tin hàng loạt: Thông báo khuyến mãi cho toàn bộ khách đã từng inbox 🎁 Tạo khuyến mãi & mã giảm giá: Thu hút khách mua nhanh, tăng tỉ lệ chốt đơn 📊 Báo cáo bán hàng: Xem nhanh số đơn, doanh thu, hiệu quả mỗi ngày 🏷️ Gắn thẻ & phân loại khách: Chăm sóc đúng nhóm khách, dễ upsell lại",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-08T03:31:57.862Z",
+    "modifiedOn": "2025-09-08T03:31:57.862Z"
+  },
+  {
+    "id": "builtin_text-uQkKFO",
+    "formData": {
+      "text$en": "Chào Anh/Chị 👋",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-12T10:06:28.067Z",
+    "modifiedOn": "2025-09-12T10:06:28.067Z"
+  },
+  {
+    "id": "builtin_text-AKSDPO",
+    "formData": {
+      "text$en": "Cảm ơn Anh/Chị đã quan tâm đến Traloitudong.com – nền tảng chatbot hỗ trợ bán hàng & CSKH đa kênh.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-12T10:07:50.024Z",
+    "modifiedOn": "2025-09-12T10:07:50.024Z"
+  },
+  {
+    "id": "builtin_text-XpKs-L",
+    "formData": {
+      "text$en": "✨ TÍNH NĂNG CHÍNH\n\n✅ Tự động trả lời & gợi ý sản phẩm theo kịch bản\n\n✅ Gửi chiến dịch – nhắc giỏ hàng, giảm giá, đơn hàng\n\n✅ Báo cáo tập trung: hội thoại, đơn, doanh số\n\n✅ Phân quyền nhiều nhân sự, hợp nhất inbox\n\n✅ AI tư vấn bám mục tiêu chốt sales",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-12T10:25:10.610Z",
+    "modifiedOn": "2025-09-12T10:25:10.610Z"
+  },
+  {
+    "id": "builtin_text-KM7FV4",
+    "formData": {
+      "text$en": "anh chị cho em xin họ tên sdt hoặc zalo nhé ạ, nhân viên CSKH sẽ liên hệ anh/chị trong ít phút ạ",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-13T08:13:35.339Z",
+    "modifiedOn": "2025-09-13T08:16:35.889Z"
   }
 ]

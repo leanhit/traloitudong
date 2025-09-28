@@ -1,0 +1,25 @@
+{
+  "name": "ban_hang",
+  "utterances": {
+    "en": [
+      "b﻿án hàng",
+      "b﻿an hang",
+      "b﻿an hàng",
+      "b﻿án hang",
+      "ban hàng ạ",
+      "để bán hàng",
+      "de bán hàng",
+      "d﻿e ban hang",
+      "b﻿án hàng online",
+      "b﻿an hang online",
+      "b﻿án hàng ạ",
+      "h﻿ọc để bán hàng",
+      "h﻿ọc bán hàng",
+      "h﻿oc ban hang"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

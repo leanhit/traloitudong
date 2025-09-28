@@ -1,0 +1,10 @@
+{
+  "id": "thanh_toan_pay",
+  "name": "thanh_toan_pay",
+  "type": "list",
+  "occurrences": [],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

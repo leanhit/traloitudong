@@ -1,0 +1,17 @@
+{
+  "name": "san_pham_dich_vu",
+  "utterances": {
+    "en": [
+      "bạn có sản phẩm chưa",
+      "đã có sản phẩm chưa",
+      "có hàng chưa",
+      "bên mình có sản phẩm không",
+      "đã có hàng chưa",
+      "sản phẩm đã sẵn sàng chưa"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "ylt22sopz4",
+    "contentId": "builtin_single-choice-peB2ib",
+    "invalidContentId": "",
+    "keywords": {
+      "gia_price": [
+        "gia_price",
+        "Bảng giá"
+      ],
+      "cskh": [
+        "cskh",
+        "Gặp CSKH"
+      ],
+      "dung-thu": [
+        "dung-thu",
+        "dùng thử"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-invalid-count-ylt22sopz4\",\"value\": 0}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-valid-ylt22sopz4\",\"value\": null}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-ret-ylt22sopz4\",\"value\": null}",
+        "say #!builtin_single-choice-peB2ib {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "905869"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"ylt22sopz4\",\"contentId\":\"builtin_single-choice-peB2ib\",\"invalidContentId\":\"\",\"keywords\":{\"gia_price\":[\"gia_price\",\"Bảng giá\"],\"cskh\":[\"cskh\",\"Gặp CSKH\"],\"dung-thu\":[\"dung-thu\",\"dùng thử\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-ylt22sopz4'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "612857"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"ylt22sopz4\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-ylt22sopz4']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "002704"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "676070"
+    }
+  ]
+}

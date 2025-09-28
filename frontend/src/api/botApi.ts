@@ -112,8 +112,6 @@ export const botApi = {
         return axios.get(`/bots/templates`).catch(handleApiError);
     },
 
-    
-
     /**
      * Lấy token botpress mới
      * Maps to: GET /api/admin/refresh-token
@@ -121,5 +119,82 @@ export const botApi = {
     getToken() {
         // ✅ Đã sửa: Gọi endpoint nghiệp vụ chính
         return axios.post(`/admin/refresh-token`).catch(handleApiError);
+    },
+
+    /**
+     * Lấy danh sách bot trong workspace mặc định.
+     * Maps to: GET /api/botpress/workspaces/default/bots
+     */
+    getBotsInDefaultWorkspace() {
+        return axios.get(`/bots/botpress/workspaces/default/bots`).catch(handleApiError);
+    },
+
+    /**
+     * Lấy danh sách tất cả bot từ Botpress (không phân biệt workspace).
+     * Maps to: GET /api/botpress/bots
+     */
+    getBotsFromBotpress() {
+        return axios.get(`/bots/botpress/bots`).catch(handleApiError);
+    },
+
+
+    /**
+     * Lấy tất cả workspace từ Botpress.
+     * Maps to: GET /api/botpress/workspaces
+     */
+    getWorkspacesFromBotpress() {
+        console.log("Fetching workspaces from Botpress...");
+        return axios
+            .get("/bots/botpress/workspaces")
+            .then((res) => res.data)   // dữ liệu JSON từ backend
+            .catch(handleApiError);
+    },
+
+    /**
+ * Lấy danh sách tất cả bots từ Botpress
+ * Maps to: GET /api/bots/botpress
+ */
+    getAllBotsFromBotpress() {
+        console.log("Fetching all bots from Botpress...");
+        return axios
+            .get("/api/bots/botpress")
+            .then((res) => res.data)
+            .catch(handleApiError);
+    },
+
+    /**
+     * Lấy thông tin chi tiết 1 bot theo botId
+     * Maps to: GET /api/bots/botpress/{botId}
+     */
+    getBotInfoFromBotpress(botId) {
+        console.log(`Fetching bot info for botId=${botId} from Botpress...`);
+        return axios
+            .get(`/bots/botpress/${botId}`)
+            .then((res) => res.data)
+            .catch(handleApiError);
+    },
+
+    /**
+     * Archive bot theo botId
+     * Maps to: POST /api/bots/botpress/{botId}/archive
+     */
+    archiveBot(botId) {
+        console.log(`Archiving bot: ${botId}`);
+        return axios
+            .post(`/bots/botpress/${botId}/archive`)
+            .then((res) => res.data)
+            .catch(handleApiError);
+    },
+
+    /**
+     * Unarchive bot theo botId
+     * Maps to: POST /api/bots/botpress/{botId}/unarchive
+     */
+    unarchiveBot(botId) {
+        console.log(`Unarchiving bot: ${botId}`);
+        return axios
+            .post(`/bots/botpress/${botId}/unarchive`)
+            .then((res) => res.data)
+            .catch(handleApiError);
     },
 };

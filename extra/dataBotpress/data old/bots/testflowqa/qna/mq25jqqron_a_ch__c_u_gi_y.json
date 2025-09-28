@@ -1,0 +1,26 @@
+{
+  "id": "mq25jqqron_a_ch__c_u_gi_y",
+  "data": {
+    "action": "text",
+    "contexts": [
+      "global"
+    ],
+    "enabled": true,
+    "answers": {
+      "en": [
+        "Cơ sở Cầu Giấy: A5D6 Dịch Vọng, Cầu Giấy.  Gửi số Zalo, Bên em gửi vị trí chính xác cho anh/chị dễ tìm ạ."
+      ]
+    },
+    "questions": {
+      "en": [
+        "địa chỉ cầu giấy",
+        "dia chi cau giay",
+        "cau giay",
+        "cầu giấy",
+        "xin địa chỉ cầu giấy"
+      ]
+    },
+    "redirectFlow": "",
+    "redirectNode": ""
+  }
+}

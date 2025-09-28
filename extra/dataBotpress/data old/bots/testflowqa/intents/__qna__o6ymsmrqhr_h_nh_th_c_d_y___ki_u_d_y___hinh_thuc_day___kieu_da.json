@@ -1,0 +1,21 @@
+{
+  "name": "__qna__o6ymsmrqhr_h_nh_th_c_d_y___ki_u_d_y___hinh_thuc_day___kieu_da",
+  "entities": [],
+  "contexts": [
+    "global"
+  ],
+  "utterances": {
+    "en": [
+      "hình thức dạy ?",
+      "kiểu dạy ?",
+      "hinh thuc day ?",
+      "kieu day ?",
+      "kiểu day ?",
+      "kieu dậy",
+      "Có dạy trực tiếp không?",
+      "Có dạy off không?",
+      "Học trực tiếp hay học onl ạ"
+    ]
+  },
+  "slots": []
+}

@@ -1,0 +1,14 @@
+{
+  "name": "wifi",
+  "utterances": {
+    "en": [
+      "m﻿ạng internet",
+      "i﻿nternet",
+      "wifi"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

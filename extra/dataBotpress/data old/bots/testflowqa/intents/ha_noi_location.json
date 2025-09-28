@@ -1,0 +1,10 @@
+{
+  "name": "ha_noi_location",
+  "utterances": {
+    "en": []
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

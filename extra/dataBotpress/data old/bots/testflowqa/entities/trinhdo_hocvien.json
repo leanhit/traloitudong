@@ -1,0 +1,15 @@
+{
+  "id": "trinhdo_hocvien",
+  "name": "trinhdo_hocvien",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "trình độ/trinh do/trình do/trinh độ/",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

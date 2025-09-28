@@ -1,0 +1,14 @@
+{
+  "name": "hoc_rieng_le",
+  "utterances": {
+    "en": [
+      "h﻿ọc riêng lẻ",
+      "h﻿ọc rieng",
+      "h﻿ọc rieng lẻ"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

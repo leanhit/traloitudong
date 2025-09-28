@@ -1,0 +1,35 @@
+{
+  "id": "tinh_o_xa",
+  "name": "tinh_o_xa",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "An Giang, Bà Rịa - Vũng Tàu, Bạc Liêu, Bắc Giang, Bắc Kạn, Bắc Ninh, Bến Tre, Bình Dương, Bình Định, Bình Phước, Bình Thuận, Cà Mau, Cao Bằng, Cần Thơ, Đà Nẵng, Đắk Lắk, Đắk Nông, Điện Biên, Đồng Nai, Đồng Tháp, Gia Lai, Hà Giang, Hà Nam, Hà Nội, Hà Tĩnh, Hải Dương, Hải Phòng, Hậu Giang, Hòa Bình, Hưng Yên, Khánh Hòa, Kiên Giang, Kon Tum, Lai Châu, Lâm Đồng, Lạng Sơn, Lào Cai, Long An, Nam Định, Nghệ An, Ninh Bình, Ninh Thuận, Phú Thọ, Phú Yên, Quảng Bình, Quảng Nam, Quảng Ngãi, Quảng Ninh, Quảng Trị, Sóc Trăng, Sơn La, Tây Ninh, Thái Bình, Thái Nguyên, Thanh Hóa, Thừa Thiên - Huế, Tiền Giang, TP Hồ Chí Minh, Trà Vinh, Tuyên Quang, Vĩnh Long, Vĩnh Phúc, Yên Bái",
+      "synonyms": []
+    },
+    {
+      "name": "An Giang, an giang, Bà Rịa - Vũng Tàu, ba ria vung tau, Bạc Liêu, bac lieu, Bắc Giang, bac giang, Bắc Kạn, bac kan, Bắc Ninh, bac ninh, Bến Tre, ben tre, Bình Dương, binh duong, Bình Định, binh dinh, Bình Phước, binh phuoc, Bình Thuận, binh thuan, Cà Mau, ca mau, Cao Bằng, cao bang, Cần Thơ, can tho, Đà Nẵng, da nang, Đắk Lắk, dak lak, Đắk Nông, dak nong, Điện Biên, dien bien, Đồng Nai, dong nai, Đồng Tháp, dong thap, Gia Lai, gia lai, Hà Giang, ha giang, Hà Nam, ha nam, Hà Nội, ha noi, Hà Tĩnh, ha tinh, Hải Dương, hai duong, Hải Phòng,",
+      "synonyms": []
+    },
+    {
+      "name": "AG, BRVT, BL, BG, BK, BN, BT, BD, BĐ, BP, BTh, CM, CB, CT, ĐN, DL, DN, ĐB, DNA, ĐT, GL, HG, HN, HNI, HT, HD, HP, HGg, HB, HY, KH, KG, KT, LC, LĐ, LS, LCA, LA, ND, NA, NB, NT, PT, PY, QB, QNA, QNg, QNI, QT, ST, SL, TN, TB, TNg, TH, TTH, TG, HCM, TV, TQ, VL, VP, YB",
+      "synonyms": []
+    },
+    {
+      "name": "An Giang, Ba Ria Vung Tau, Bac Giang, Bac Kan, Bac Lieu, Bac Ninh, Ben Tre, Binh Dinh, Binh Duong, Binh Phuoc, Binh Thuan, Ca Mau, Can Tho, Cao Bang, Da Nang, Dak Lak, Dak Nong, Dien Bien, Dong Nai, Dong Thap, Gia Lai, Ha Giang, Ha Nam, Ha Noi, Ha Tinh, Hai Duong, Hai Phong, Hau Giang, Hoa Binh, Hung Yen, Khanh Hoa, Kien Giang, Kon Tum, Lai Chau, Lam Dong, Lang Son, Lao Cai, Long An, Nam Dinh, Nghe An, Ninh Binh, Ninh Thuan, Phu Tho, Phu Yen, Quang Binh, Quang Nam, Quang Ngai, Quang Ninh, Quang Tri, Soc Trang, Son La, Tay Ninh, Thai Binh, Thai Nguyen, Thanh Hoa, Thua Thien Hue, Tien Giang, TP Ho Chi Minh, Tra Vinh, Tuyen Quang, Vinh Long, Vinh Phuc, Yen Bai.",
+      "synonyms": []
+    },
+    {
+      "name": "sài gòn",
+      "synonyms": []
+    },
+    {
+      "name": "sai gon, sài gòn, sài gon, sai gòn, sg",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

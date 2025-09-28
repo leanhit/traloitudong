@@ -1,0 +1,44 @@
+{
+  "name": "hinh-thuc_kieu-day",
+  "utterances": {
+    "en": [
+      "Trung tâm có dạy online không?",
+      "Có lớp học trực tiếp không?",
+      "Học ở đâu vậy?",
+      "Có được học tại nhà không?",
+      "Có dạy 1 kèm 1 không?",
+      "Có lớp học offline không bạn?",
+      "Học theo hình thức nào vậy?",
+      "Dạy trực tiếp hay qua mạng?",
+      "Có mở lớp tại trung tâm không?",
+      "Học qua Zoom hay Google Meet?",
+      "Có thể học từ xa không?",
+      "Trung tâm có hỗ trợ học offline không?",
+      "Dạy ở địa điểm nào thế?",
+      "Có đến tận nơi dạy được không?",
+      "Mình muốn học offline thì có được không?",
+      "Học ở trung tâm hay online?",
+      "Có dạy học sinh ở nhà không?",
+      "Có hỗ trợ dạy tại nhà không?",
+      "Dạy theo nhóm hay cá nhân vậy?",
+      "Có lớp học truyền thống không?",
+      "Có được chọn hình thức học không?",
+      "Bên mình có lớp dạy thử trực tiếp không?",
+      "Có nhận học viên đến học không?",
+      "Học tại trung tâm hay học online?",
+      "Có lớp dạy tại văn phòng không?",
+      "Lớp này học qua mạng đúng không?",
+      "Học bằng video quay sẵn hay học live?",
+      "Bên mình có lớp học gặp mặt không?",
+      "Có được học giáo viên tới tận nơi không?",
+      "Em muốn học trực tiếp, được không?",
+      "tôi ở xa",
+      "Học trực tiếp hay học onl ạ",
+      "h﻿oc truc tiep hay onl"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

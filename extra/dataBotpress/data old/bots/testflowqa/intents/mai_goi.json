@@ -1,0 +1,13 @@
+{
+  "name": "mai_goi",
+  "utterances": {
+    "en": [
+      "m﻿ai gọi",
+      "m﻿ai goi"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "shopee",
+  "utterances": {
+    "en": [
+      "shopee",
+      "so pi",
+      "sope",
+      "sopee",
+      "shop pi",
+      "shoppe",
+      "shopi",
+      "shope",
+      "sopi",
+      "sopy",
+      "shoppi",
+      "shoppee",
+      "shopie",
+      "shoppii",
+      "shopiee",
+      "shopy",
+      "shoppey",
+      "shoppey",
+      "shopiey",
+      "shopeey"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

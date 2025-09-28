@@ -1,0 +1,36 @@
+{
+  "name": "giangvien_thayco",
+  "utterances": {
+    "en": [
+      "Giảng viên của khóa học là ai",
+      "Thầy cô có kinh nghiệm trong ngành không",
+      "Giảng viên có từng chạy quảng cáo thực tế chưa",
+      "Ai sẽ trực tiếp giảng dạy khóa học này",
+      "Có thể biết trước profile của giảng viên không",
+      "Giảng viên có hỗ trợ học viên sau khóa học không",
+      "Thầy cô có từng làm việc với doanh nghiệp lớn chưa",
+      "Giảng viên có dạy dễ hiểu không",
+      "Có thể chọn giảng viên khi đăng ký khóa học không",
+      "Có được học với người có kinh nghiệm thực chiến không",
+      "Thầy cô có hỗ trợ giải đáp bài tập không",
+      "Giảng viên có phải là chuyên gia trong ngành không",
+      "Giảng viên có từng dạy ở trung tâm nào chưa",
+      "Có được học thử để biết cách giảng không",
+      "Giảng viên có dạy tận tâm không",
+      "Mỗi lớp học bao nhiêu học viên để giảng viên kèm sát",
+      "Thầy cô có từng chạy Facebook Ads hoặc TikTok Ads thực tế chưa",
+      "Có thể hỏi giảng viên ngoài giờ học không",
+      "Có thể gọi video với giảng viên nếu học online không",
+      "Giảng viên có cập nhật xu hướng mới không",
+      "Có được đổi giảng viên nếu không phù hợp không",
+      "Thầy cô có chia sẻ tài liệu riêng không",
+      "Có thể xem lớp học mẫu của giảng viên không",
+      "Thầy cô có phản hồi học viên nhanh không",
+      "Giảng viên có chia sẻ case study thực tế không"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

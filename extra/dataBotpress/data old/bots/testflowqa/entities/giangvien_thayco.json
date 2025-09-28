@@ -1,0 +1,19 @@
+{
+  "id": "giangvien_thayco",
+  "name": "giangvien_thayco",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "giảng viên",
+      "synonyms": []
+    },
+    {
+      "name": "giang vien, giáo viên, giao viên, thầy cô, thày, cô, giao vien, giáo vien",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

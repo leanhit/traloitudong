@@ -1,0 +1,54 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "event.nlu.intent.name === ''",
+        "conditionType": "intent",
+        "node": "15-dt-zalo.flow.json"
+      },
+      {
+        "condition": "!event.nlu || !event.nlu.intent || event.nlu.intent.name === 'none'",
+        "conditionType": "raw",
+        "node": "Fallback-khong_hieu_y.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'gia'",
+        "conditionType": "intent",
+        "node": "8-gia.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'dia-chi-chi-nhanh'",
+        "conditionType": "intent",
+        "node": "2-diachi_chinhanh.flow.json"
+      }
+    ]
+  },
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "b43afdf2b6",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-5Q3gmW",
+        "say #!builtin_text-crZymH"
+      ],
+      "onReceive": [],
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'online'",
+          "conditionType": "intent",
+          "node": "5-online.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'offline'",
+          "conditionType": "intent",
+          "node": "13-Off-line.flow.json"
+        }
+      ],
+      "type": "standard"
+    }
+  ]
+}

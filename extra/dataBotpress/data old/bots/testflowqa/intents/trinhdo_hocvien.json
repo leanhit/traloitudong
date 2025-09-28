@@ -1,0 +1,51 @@
+{
+  "name": "trinhdo_hocvien",
+  "utterances": {
+    "en": [
+      "Bạn đã từng chạy quảng cáo Facebook hoặc TikTok chưa",
+      "Trình độ hiện tại của bạn là mới bắt đầu hay đã từng học rồi",
+      "Bạn đang tự chạy quảng cáo hay có ai hỗ trợ",
+      "Mức độ hiểu về quảng cáo online của bạn đang ở mức nào",
+      "Bạn có biết tạo chiến dịch quảng cáo cơ bản không",
+      "Bạn đã từng học qua khóa nào về marketing chưa",
+      "Bạn có gặp khó khăn gì khi chạy quảng cáo không",
+      "Bạn đang muốn học từ đầu hay nâng cao kỹ năng sẵn có",
+      "Bạn từng chạy quảng cáo được bao lâu rồi",
+      "Bạn cần hỗ trợ nhiều ở phần nào nhất: viết bài, target hay phân tích số liệu",
+      "Ban da tung chay quang cao Facebook hoac TikTok chua",
+      "Trinh do hien tai cua ban la moi bat dau hay da tung hoc roi",
+      "Ban dang tu chay quang cao hay co ai ho tro",
+      "Muc do hieu ve quang cao online cua ban dang o muc nao",
+      "Ban co biet tao chien dich quang cao co ban khong",
+      "Ban da tung hoc qua khoa nao ve marketing chua",
+      "Ban co gap kho khan gi khi chay quang cao khong",
+      "Ban dang muon hoc tu dau hay nang cao ky nang san co",
+      "Ban tung chay quang cao duoc bao lau roi",
+      "Ban can ho tro nhieu o phan nao nhat: viet bai, target hay phan tich so lieu",
+      "Anh/chi da co kinh nghiem chay quang cao chua a, hay dang tim hieu tu dau?",
+      "Minh da tung chay quang cao Facebook hay TikTok chua a?",
+      "Truoc gio anh/chi co tung hoc hay tu chay quang cao chua?",
+      "Minh da co nen tang quang cao roi, hay muon hoc tu co ban a?",
+      "Anh/chi dang muon hoc nang cao hay moi bat dau tim hieu a?",
+      "Truoc day minh co tung chay thu chien dich nao chua a?",
+      "Minh da tung hoc qua khoa nao ve quang cao chua a?",
+      "Anh/chi da tung chay ads cho san pham cua minh chua a?",
+      "Trinh do hien tai cua minh la moi bat dau hay da co kinh nghiem roi a?",
+      "Minh da biet chut ve ads, hay muon hoc tu A den Z luon a?",
+      "Anh/chị đã có kinh nghiệm chạy quảng cáo chưa ạ, hay đang tìm hiểu từ đầu?",
+      "Mình đã từng chạy quảng cáo Facebook hay TikTok chưa ạ?",
+      "Trước giờ anh/chị có từng học hay tự chạy quảng cáo chưa?",
+      "Mình đã có nền tảng quảng cáo rồi, hay muốn học từ cơ bản ạ?",
+      "Anh/chị đang muốn học nâng cao hay mới bắt đầu tìm hiểu ạ?",
+      "Trước đây mình có từng chạy thử chiến dịch nào chưa ạ?",
+      "Mình đã từng học qua khóa nào về quảng cáo chưa ạ?",
+      "Anh/chị đã từng chạy ads cho sản phẩm của mình chưa ạ?",
+      "Trình độ hiện tại của mình là mới bắt đầu hay đã có kinh nghiệm rồi ạ?",
+      "Mình đã biết chút về ads, hay muốn học từ A đến Z luôn ạ?"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

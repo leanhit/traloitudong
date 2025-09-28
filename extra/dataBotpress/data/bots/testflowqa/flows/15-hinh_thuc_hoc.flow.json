@@ -22,6 +22,11 @@
         "condition": "event.nlu.intent.name === 'dia-chi-chi-nhanh'",
         "conditionType": "intent",
         "node": "2-diachi_chinhanh.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === ''",
+        "conditionType": "intent",
+        "node": "1-trinhdo_hocvien.flow.json"
       }
     ]
   },

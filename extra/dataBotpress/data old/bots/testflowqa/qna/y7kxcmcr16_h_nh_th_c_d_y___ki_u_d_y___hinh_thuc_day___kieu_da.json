@@ -1,0 +1,31 @@
+{
+  "id": "y7kxcmcr16_h_nh_th_c_d_y___ki_u_d_y___hinh_thuc_day___kieu_da",
+  "data": {
+    "action": "text",
+    "contexts": [
+      "global"
+    ],
+    "enabled": true,
+    "answers": {
+      "en": [
+        "Ở Hà Nội Bên em có cơ sở ở Quận Hà Đông, Cầu Giấy, Đống Đa, Nam Từ Liêm. Ngoài ra bên em nhận tại nhà, tại địa điểm gần Anh Chị. Anh chị đang ở khu vực nào vậy ?"
+      ]
+    },
+    "questions": {
+      "en": [
+        "Học ở đâu vậy ạ",
+        "Có học trực tiếp không bạn",
+        "Mình muốn học trực tiếp, địa chỉ ở đâu",
+        "Học offline thì đến chỗ nào vậy",
+        "Cho mình xin địa chỉ trung tâm với\n",
+        "Có lớp học tại trung tâm không",
+        "Địa điểm học như thế nào vậy bạn",
+        "Học trực tiếp thì ở đâu ạ",
+        "Có cơ sở đào tạo không bạn",
+        "Trung tâm ở đâu vậy bạn"
+      ]
+    },
+    "redirectFlow": "",
+    "redirectNode": ""
+  }
+}

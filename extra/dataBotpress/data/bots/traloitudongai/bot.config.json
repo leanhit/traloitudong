@@ -12,7 +12,7 @@
     "coverPictureUrl": ""
   },
   "$schema": "../../bot.config.schema.json",
-  "description": "",
+  "description": "Bot danh cho dịch vụ Trả lời tự động ....",
   "active": true,
   "version": "12.31.10",
   "author": "Botpress, Inc.",

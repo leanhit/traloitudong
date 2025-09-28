@@ -1,0 +1,53 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "event.nlu.intent.name === 'dt-zalo'",
+        "conditionType": "intent",
+        "node": "15-dt-zalo.flow.json"
+      },
+      {
+        "condition": "!event.nlu || !event.nlu.intent || event.nlu.intent.name === 'none'",
+        "conditionType": "raw",
+        "node": "Fallback-khong_hieu_y.flow.json"
+      }
+    ]
+  },
+  "startNode": "ban_busy",
+  "description": "",
+  "nodes": [
+    {
+      "id": "2d3eb1e478",
+      "name": "ban_busy",
+      "onEnter": [
+        "say #!builtin_text-f0cX5y"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "event.nlu.entities.some(e => e.name === 'busy_reason' && e.data['lái xe'])",
+          "conditionType": "raw",
+          "node": "node-8850"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "7ffc6586ab",
+      "name": "node-8850",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-IAHeDJ"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

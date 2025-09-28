@@ -1,0 +1,11 @@
+{
+  "id": "busy_reason",
+  "name": "busy_reason",
+  "type": "pattern",
+  "occurrences": [],
+  "sensitive": true,
+  "fuzzy": 0.8,
+  "examples": [],
+  "pattern": "{   \"lái xe\": [\"đang lái xe\", \"tôi đang chạy xe\", \"đang điều khiển\", \"xe đang chạy\"],   \"họp\": [\"đang họp\", \"họp rồi\", \"tôi đang trong cuộc họp\"],   \"ngủ\": [\"đang ngủ\", \"tôi đang ngủ\", \"ngủ rồi\"],   \"ăn\": [\"đang ăn\", \"tôi ăn rồi\", \"đang dùng bữa\"],   \"bận việc\": [\"đang bận\", \"bận tí\", \"chưa rảnh\"] }",
+  "matchCase": false
+}

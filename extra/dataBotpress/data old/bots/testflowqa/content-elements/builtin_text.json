@@ -1,0 +1,1270 @@
+[
+  {
+    "id": "builtin_text-aUnLPJ",
+    "formData": {
+      "text$en": "Bạn từng cảm thấy rung động, yêu thích ai chưa?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T09:12:38.249Z",
+    "modifiedOn": "2025-07-22T09:12:38.249Z"
+  },
+  {
+    "id": "builtin_text-I5EJmO",
+    "formData": {
+      "text$en": "Người bạn rung động đó là..",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T09:18:16.482Z",
+    "modifiedOn": "2025-07-22T09:18:16.482Z"
+  },
+  {
+    "id": "builtin_text-fGnnLJ",
+    "formData": {
+      "text$en": "Bạn có từng bị thu hút về mặt tình dục hoặc tình cảm với ai không?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T09:20:01.510Z",
+    "modifiedOn": "2025-07-22T09:20:01.510Z"
+  },
+  {
+    "id": "builtin_text-x8TIbm",
+    "formData": {
+      "text$en": " Bạn cảm thấy mình bị thu hút bởi cả nam và nữ với mức độ nào?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T09:21:43.693Z",
+    "modifiedOn": "2025-07-22T09:21:43.693Z"
+  },
+  {
+    "id": "builtin_text-7T_Zfh",
+    "formData": {
+      "text$en": "Bạn có từng bị hấp dẫn bởi người khác giới?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T09:22:52.426Z",
+    "modifiedOn": "2025-07-22T09:22:52.426Z"
+  },
+  {
+    "id": "builtin_text-Eu9TiQ",
+    "formData": {
+      "text$en": "Bạn có từng thấy hấp dẫn hoặc tò mò về người cùng giới?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T09:23:49.091Z",
+    "modifiedOn": "2025-07-22T09:23:49.091Z"
+  },
+  {
+    "id": "builtin_text-XJIYER",
+    "formData": {
+      "text$en": "Chào bạn! Bạn có từng rung động với ai chưa? (Có / Không)",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T10:00:15.953Z",
+    "modifiedOn": "2025-07-22T10:00:15.953Z"
+  },
+  {
+    "id": "builtin_text-w4irTA",
+    "formData": {
+      "text$en": "Người bạn rung động đó là? (Khác giới / Cùng giới / Cả hai)",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T10:01:12.440Z",
+    "modifiedOn": "2025-07-22T10:01:12.440Z"
+  },
+  {
+    "id": "builtin_text--VQUDk",
+    "formData": {
+      "text$en": "Bạn có từng tò mò hoặc thấy hấp dẫn người cùng giới? (Không bao giờ / Tò mò / Thường xuyên)",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T10:01:59.250Z",
+    "modifiedOn": "2025-07-22T10:01:59.250Z"
+  },
+  {
+    "id": "builtin_text-j-_8DK",
+    "formData": {
+      "text$en": "Bạn có từng bị hấp dẫn bởi người khác giới? (Không bao giờ / Có đôi lần)",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T10:02:46.630Z",
+    "modifiedOn": "2025-07-22T10:02:46.630Z"
+  },
+  {
+    "id": "builtin_text-pq8TwC",
+    "formData": {
+      "text$en": "Bạn bị thu hút bởi cả hai giới ở mức độ nào? (Cả hai như nhau / Một bên mạnh hơn / Thay đổi theo thời gian)",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T10:04:24.167Z",
+    "modifiedOn": "2025-07-22T10:04:24.167Z"
+  },
+  {
+    "id": "builtin_text-zq_oX7",
+    "formData": {
+      "text$en": "Bạn có từng bị thu hút tình cảm hay tình dục với ai không? (Không bao giờ / Hiếm / Khi có kết nối cảm xúc)",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T10:05:07.649Z",
+    "modifiedOn": "2025-07-22T10:05:07.649Z"
+  },
+  {
+    "id": "builtin_text-Ym12C8",
+    "formData": {
+      "text$en": "Gợi ý: Có thể bạn là *Dị tính luyến ái (Heterosexual)*.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T11:25:07.036Z",
+    "modifiedOn": "2025-07-22T11:25:07.036Z"
+  },
+  {
+    "id": "builtin_text-GCJ4bk",
+    "formData": {
+      "text$en": "Gợi ý: Có thể bạn là *Đồng tính luyến ái (Homosexual)*.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T11:26:53.476Z",
+    "modifiedOn": "2025-07-22T11:26:53.476Z"
+  },
+  {
+    "id": "builtin_text-Fb2eVM",
+    "formData": {
+      "text$en": "Gợi ý: Có thể bạn là *Song tính (Bisexual)*.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T11:27:50.992Z",
+    "modifiedOn": "2025-07-22T11:27:50.992Z"
+  },
+  {
+    "id": "builtin_text--UUQtc",
+    "formData": {
+      "text$en": " Gợi ý: Bạn có thể thuộc *phổ song tính linh hoạt*",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T11:28:49.434Z",
+    "modifiedOn": "2025-07-22T11:28:49.434Z"
+  },
+  {
+    "id": "builtin_text-d74GB8",
+    "formData": {
+      "text$en": "Gợi ý: Bạn có thể là *Toàn tính (Pansexual)*.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T11:29:50.561Z",
+    "modifiedOn": "2025-07-22T11:29:50.561Z"
+  },
+  {
+    "id": "builtin_text-8bkDwp",
+    "formData": {
+      "text$en": "Gợi ý: Bạn có thể nằm trong *phổ xám tính (Gray-Asexual)*.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T11:31:01.739Z",
+    "modifiedOn": "2025-07-22T11:31:01.739Z"
+  },
+  {
+    "id": "builtin_text-i6tnA9",
+    "formData": {
+      "text$en": "Gợi ý: Bạn có thể đang *trong quá trình khám phá (Questioning)* – điều đó hoàn toàn bình thường.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T11:34:01.580Z",
+    "modifiedOn": "2025-07-22T11:34:01.580Z"
+  },
+  {
+    "id": "builtin_text-z7NbVG",
+    "formData": {
+      "text$en": "Gợi ý: Bạn có thể là *Demisexual* – chỉ bị thu hút khi có kết nối cảm xúc.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T11:34:52.426Z",
+    "modifiedOn": "2025-07-22T11:34:52.426Z"
+  },
+  {
+    "id": "builtin_text-LgnKnn",
+    "formData": {
+      "text$en": "",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-22T11:36:00.805Z",
+    "modifiedOn": "2025-07-23T02:46:50.081Z"
+  },
+  {
+    "id": "builtin_text-BCn4oE",
+    "formData": {
+      "text$en": "Cảm ơn bạn đã quan tâm đến khóa học Facebook! Cho mình hỏi thêm một chút, bạn đang muốn học về chạy quảng cáo Facebook, xây dựng Fanpage, bán hàng hay một nội dung cụ thể nào khác để mình tư vấn đúng khóa học phù hợp nhất nhé?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-23T03:04:22.572Z",
+    "modifiedOn": "2025-07-23T04:09:41.335Z"
+  },
+  {
+    "id": "builtin_text-axy5-v",
+    "formData": {
+      "text$en": "Bên Em có kiểu dạy trực tiếp Off hoặc Online, 1 KÈM 1, chỉ từng bước kiểu cầm tay chỉ việc.\nỞ Hà Nội Bên em có cơ sở ở Quận Hà Đông, Cầu Giấy, Đống Đa, Nam Từ Liêm. Ngoài ra bên em nhận tại nhà, tại địa điểm gần Anh Chị.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-25T04:10:33.831Z",
+    "modifiedOn": "2025-07-25T06:03:46.384Z"
+  },
+  {
+    "id": "builtin_text-D6ydgt",
+    "formData": {
+      "text$en": "Thày cô nhiều kinh nghiệm ...",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-25T04:39:03.093Z",
+    "modifiedOn": "2025-07-29T05:50:03.227Z"
+  },
+  {
+    "id": "builtin_text-gH7HnN",
+    "formData": {
+      "text$en": "Bên em có cơ sở ở Quận Hà Đông, Cầu Giấy, Đống Đa, Nam Từ Liêm. Ngoài ra bên em nhận tại nhà, tại địa điểm gần Anh Chị.\nAnh/Chị ở khu vực nào Hà Nội ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-25T04:39:54.904Z",
+    "modifiedOn": "2025-07-25T06:04:52.333Z"
+  },
+  {
+    "id": "builtin_text-VxU8Qe",
+    "formData": {
+      "text$en": "Bên em dạy trực tiếp, 1 KÈM 1, chỉ từng bước kiểu cầm tay chỉ việc ạ. ",
+      "markdown$en": false,
+      "typing$en": true,
+      "variations$en": [
+        ""
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-25T05:05:30.869Z",
+    "modifiedOn": "2025-08-18T14:03:39.486Z"
+  },
+  {
+    "id": "builtin_text-jWZvnP",
+    "formData": {
+      "text$en": "Khóa học thường kéo dài 6 buổi hoặc 3 ngày. Thời gian học linh hoạt, có thể sắp xếp vào buổi sáng từ 9h, buổi chiều từ 14h, buổi tối  từ 19h.  Gửi số Zalo, Bên Em tư vấn chuyên sâu cho Anh/Chị",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-25T08:43:59.804Z",
+    "modifiedOn": "2025-07-25T08:43:59.804Z"
+  },
+  {
+    "id": "builtin_text-A3qrgn",
+    "formData": {
+      "text$en": "Khóa học thường kéo dài 6 buổi hoặc 3 ngày. Thời gian học linh hoạt, có thể sắp xếp vào buổi sáng từ 9h, buổi chiều từ 14h, buổi tối  từ 19h. \n\n",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-25T09:01:25.123Z",
+    "modifiedOn": "2025-08-20T03:11:04.532Z"
+  },
+  {
+    "id": "builtin_text-KHadf5",
+    "formData": {
+      "text$en": "Ở Hà Nội Bên em có cơ sở ở Quận Hà Đông, Cầu Giấy, Đống Đa, Nam Từ Liêm. Ngoài ra bên em nhận tại nhà, tại địa điểm gần Anh Chị. ",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-25T10:27:08.900Z",
+    "modifiedOn": "2025-08-19T06:10:00.123Z"
+  },
+  {
+    "id": "builtin_text-YKekM-",
+    "formData": {
+      "text$en": "Dạ, bên Em nhận được số điện thoại rồi ạ. Bên Em sẽ liên hệ sớm nhất để tư vấn cho Anh/Chị . Cảm ơn Anh/Chị đã nhắn tin cho bên Em! ",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-25T11:39:08.628Z",
+    "modifiedOn": "2025-07-25T11:39:08.628Z"
+  },
+  {
+    "id": "builtin_text-tmvbeO",
+    "formData": {
+      "text$en": "Dạ, chào Anh/Chị ! Mình quan tâm đến FB, TikTok hay AI ạ ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-25T11:50:08.580Z",
+    "modifiedOn": "2025-07-25T12:10:27.990Z"
+  },
+  {
+    "id": "builtin_text-nGmE0b",
+    "formData": {
+      "text$en": "Khóa học thấp nhất bên Em là 999k. Khóa học chuyên sâu có giá từ 1999K. Anh/Chị đã từng chạy quảng cáo hay chưa?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-25T13:56:36.031Z",
+    "modifiedOn": "2025-07-25T14:18:16.637Z"
+  },
+  {
+    "id": "builtin_text-qDRnGa",
+    "formData": {
+      "text$en": "Anh/Chị đã từng chạy quảng cáo chưa hay mới bắt đầu ạ ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-25T15:00:16.858Z",
+    "modifiedOn": "2025-07-26T02:45:14.736Z"
+  },
+  {
+    "id": "builtin_text-GNMoVL",
+    "formData": {
+      "text$en": "Dạ, Không sao ạ, bên Em sẽ hướng dẫn chi tiết cho Anh/Chị từ những kiến thức cơ bản nhất, đến nâng cao. Anh/Chị sẽ thực hành trên sản phẩm của mình trong quá trình học. ",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-26T04:44:46.924Z",
+    "modifiedOn": "2025-08-10T13:40:18.284Z"
+  },
+  {
+    "id": "builtin_text-xPqd6b",
+    "formData": {
+      "text$en": "Chào Anh/Chị, bạn quan tâm học Facebook hay TikTok?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-26T08:04:12.736Z",
+    "modifiedOn": "2025-07-26T08:04:12.736Z"
+  },
+  {
+    "id": "builtin_text-4n5Ttr",
+    "formData": {
+      "text$en": "Xin Chào! Bên em dạy trực tiếp, 1 kèm 1, chỉ từng bước kiểu cầm tay chỉ việc ạ.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-26T08:19:13.779Z",
+    "modifiedOn": "2025-08-08T06:35:00.805Z"
+  },
+  {
+    "id": "builtin_text-7SHG1y",
+    "formData": {
+      "text$en": "Bạn đã từng chạy quảng cáo Facebook hoặc TikTok chưa",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-26T08:41:35.589Z",
+    "modifiedOn": "2025-07-26T08:41:35.589Z"
+  },
+  {
+    "id": "builtin_text-vvdjj_",
+    "formData": {
+      "text$en": "tot qua",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-26T08:44:28.373Z",
+    "modifiedOn": "2025-07-26T08:44:28.373Z"
+  },
+  {
+    "id": "builtin_text-u3-AmB",
+    "formData": {
+      "text$en": "buon",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-26T08:44:46.118Z",
+    "modifiedOn": "2025-07-26T08:44:46.118Z"
+  },
+  {
+    "id": "builtin_text--RcfXZ",
+    "formData": {
+      "text$en": "nội dung",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-26T08:46:41.984Z",
+    "modifiedOn": "2025-07-26T08:46:41.984Z"
+  },
+  {
+    "id": "builtin_text-pn8vpt",
+    "formData": {
+      "text$en": "Dạ, bên em đã nhận được số điện thoại của Anh/Chị rồi ạ. Bên em sẽ liên hệ sớm nhất để tư vấn thêm cho Anh/Chị về khóa học! Cảm ơn Anh/Chị đã nhắn tin cho bên Em!\n",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-26T10:25:58.622Z",
+    "modifiedOn": "2025-07-28T07:23:48.459Z"
+  },
+  {
+    "id": "builtin_text-21pGCV",
+    "formData": {
+      "text$en": "Facebook, Tittok là 2 nền tảng bán hàng hiệu quả nhất. Anh /chị muốn học FB hay Tiktok ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-26T15:41:52.740Z",
+    "modifiedOn": "2025-07-28T04:16:29.651Z"
+  },
+  {
+    "id": "builtin_text-3OrJ7j",
+    "formData": {
+      "text$en": "Tiktok là nền tảng bán hàng top đầu hiện nay.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-26T15:42:51.137Z",
+    "modifiedOn": "2025-08-21T06:08:00.102Z"
+  },
+  {
+    "id": "builtin_text-LmnGcK",
+    "formData": {
+      "text$en": "Dạ, bên em sẽ đào tạo chuyên sâu và thực chiến, đảm bảo giúp Anh/Chị ra tin nhắn, ra đơn nhanh nhất có thể.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-26T16:00:17.618Z",
+    "modifiedOn": "2025-08-18T14:11:49.443Z"
+  },
+  {
+    "id": "builtin_text-LW1DsB",
+    "formData": {
+      "text$en": "HI, trình độ",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-28T04:57:49.795Z",
+    "modifiedOn": "2025-07-28T04:57:49.795Z"
+  },
+  {
+    "id": "builtin_text-_8wyb5",
+    "formData": {
+      "text$en": "Anh/chị muốn học FB hay Tiktok ạ ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-28T06:10:19.417Z",
+    "modifiedOn": "2025-09-03T17:30:39.755Z"
+  },
+  {
+    "id": "builtin_text-dqe4qP",
+    "formData": {
+      "text$en": "Anh muốn học fb hay tiktok ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-28T06:14:25.921Z",
+    "modifiedOn": "2025-07-28T06:14:25.921Z"
+  },
+  {
+    "id": "builtin_text-xy1hWt",
+    "formData": {
+      "text$en": "Khóa học thấp nhất 999k. Khóa học chuyên sâu có giá từ 1999K. ",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-28T07:01:47.551Z",
+    "modifiedOn": "2025-08-18T14:30:54.039Z"
+  },
+  {
+    "id": "builtin_text-fKaZzt",
+    "formData": {
+      "text$en": "1. Tạo nick, fanpage, setup tài khoản quảng cáo, bảo mật...\n2. Phân tích sản phẩm, chọn đối tượng khác hàng\n3. Tạo chiến dịch: Các loại quảng cáo, thiết lập ngân sách.\n4. Viết content & thiết kế ảnh/video ... áp dụng AI \n5. Tối ưu quảng cáo: Giảm chi phí, tăng hiệu quả.\n6. Đo lường & báo cáo: Đọc số liệu, cải thiện liên tục.\n7.  Nhắn tin tư vấn khách, chốt đơn ... Áp dụng AI",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-28T11:01:55.669Z",
+    "modifiedOn": "2025-08-20T03:17:58.917Z"
+  },
+  {
+    "id": "builtin_text-1ibfXp",
+    "formData": {
+      "text$en": "Tiktok",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-28T11:02:27.687Z",
+    "modifiedOn": "2025-07-28T11:02:27.687Z"
+  },
+  {
+    "id": "builtin_text-0PHZQ-",
+    "formData": {
+      "text$en": "Shoppee",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-28T11:02:43.259Z",
+    "modifiedOn": "2025-07-28T11:02:43.259Z"
+  },
+  {
+    "id": "builtin_text-fyZG4l",
+    "formData": {
+      "text$en": "Google",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-28T11:03:04.498Z",
+    "modifiedOn": "2025-07-28T11:03:04.498Z"
+  },
+  {
+    "id": "builtin_text-iFZoUp",
+    "formData": {
+      "text$en": "Zalo",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-28T11:03:17.442Z",
+    "modifiedOn": "2025-07-28T11:03:17.442Z"
+  },
+  {
+    "id": "builtin_text-CZPdDN",
+    "formData": {
+      "text$en": " Anh/chị đã từng chạy quảng cáo chưa, hay mình mới bắt đầu ạ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-28T11:10:58.860Z",
+    "modifiedOn": "2025-08-10T11:55:57.000Z"
+  },
+  {
+    "id": "builtin_text-f1phcB",
+    "formData": {
+      "text$en": "Anh/chị muốn hỏi nội dung học fb, tiktok hay gì ạ ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-28T11:16:12.937Z",
+    "modifiedOn": "2025-08-01T16:47:46.371Z"
+  },
+  {
+    "id": "builtin_text-aHKaF_",
+    "formData": {
+      "text$en": "Anh/chị học quảng cáo để bán hàng, quản lý nhân viên hay phát triển nghề nghiệp ạ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-28T11:22:44.425Z",
+    "modifiedOn": "2025-08-25T15:33:27.231Z"
+  },
+  {
+    "id": "builtin_text-y-wuLq",
+    "formData": {
+      "text$en": "Dạ.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-28T11:45:25.837Z",
+    "modifiedOn": "2025-07-28T12:02:22.475Z"
+  },
+  {
+    "id": "builtin_text-3HT5Ew",
+    "formData": {
+      "text$en": "mai bên gọi",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-28T12:02:41.700Z",
+    "modifiedOn": "2025-07-28T12:02:41.700Z"
+  },
+  {
+    "id": "builtin_text-svR6fO",
+    "formData": {
+      "text$en": "mai gọi",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-28T12:09:02.684Z",
+    "modifiedOn": "2025-07-28T12:09:02.684Z"
+  },
+  {
+    "id": "builtin_text-v5rkjj",
+    "formData": {
+      "text$en": "Cơ sở Hà Đông: 54 Lý Thường Kiệt, Văn Phú\n\nGửi số Zalo, Bên em gửi vị trí chính xác cho anh/chị dễ tìm ạ.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-28T15:30:49.428Z",
+    "modifiedOn": "2025-08-08T16:40:57.113Z"
+  },
+  {
+    "id": "builtin_text-YExZxU",
+    "formData": {
+      "text$en": "Giáo viên, giảng viên....",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-29T05:47:30.293Z",
+    "modifiedOn": "2025-07-29T05:47:30.293Z"
+  },
+  {
+    "id": "builtin_text-vnmO2w",
+    "formData": {
+      "text$en": "Học viên được hỗ trợ trọn đời qua nhóm Zalo riêng – được giải đáp thắc mắc, cập nhật kiến thức mới và đồng hành khi triển khai thực tế. Khi cần ôn tập, học viên có thể đến trung tâm để được ôn lại và hỗ trợ hoàn toàn miễn phí.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-29T06:52:43.545Z",
+    "modifiedOn": "2025-08-19T15:48:39.372Z"
+  },
+  {
+    "id": "builtin_text-maHvEx",
+    "formData": {
+      "text$en": "Ở Hà Nội, bên Em có cơ sở ở Hà Đông, Cầu Giấy, Đống Đa, Nam Từ Liêm. Ngoài ra, bên Em nhận tại nhà, tại địa điểm gần Anh/Chị. Anh chị đang ở khu vực nào vậy ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-07-31T16:33:49.874Z",
+    "modifiedOn": "2025-07-31T16:38:16.741Z"
+  },
+  {
+    "id": "builtin_text-uqKBRN",
+    "formData": {
+      "text$en": "Bên em dạy trực tiếp, 1 KÈM 1, chỉ từng bước kiểu như cầm tay chỉ việc luôn ạ.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-01T15:00:34.631Z",
+    "modifiedOn": "2025-08-01T15:00:34.631Z"
+  },
+  {
+    "id": "builtin_text-d25p_f",
+    "formData": {
+      "text$en": "Em hiểu rồi, {{session.tinh_trang_hien_tai}} an toàn nha!",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-04T16:42:43.879Z",
+    "modifiedOn": "2025-08-04T16:53:25.214Z"
+  },
+  {
+    "id": "builtin_text-LpnTNE",
+    "formData": {
+      "text$en": "lái xe",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-05T09:16:33.613Z",
+    "modifiedOn": "2025-08-05T09:16:33.613Z"
+  },
+  {
+    "id": "builtin_text-IAHeDJ",
+    "formData": {
+      "text$en": "lái xe",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-05T09:16:33.857Z",
+    "modifiedOn": "2025-08-05T09:16:33.857Z"
+  },
+  {
+    "id": "builtin_text-f0cX5y",
+    "formData": {
+      "text$en": "👍 Dạ vâng, anh/chị cứ làm việc nhé, lát nữa rảnh mình trao đổi tiếp ạ!",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-05T09:17:59.746Z",
+    "modifiedOn": "2025-08-06T13:34:30.625Z"
+  },
+  {
+    "id": "builtin_text-EzglGV",
+    "formData": {
+      "text$en": "Dạ, Không sao ạ, bên Em sẽ hướng dẫn chi tiết cho Anh/Chị từ những kiến thức cơ bản nhất, đến nâng cao. Anh/Chị sẽ thực hành trên sản phẩm của mình trong quá trình học. \n\n Gửi số Zalo, bên Em tư vấn chuyên sâu nhé !",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-07T02:42:33.994Z",
+    "modifiedOn": "2025-08-08T05:30:25.964Z"
+  },
+  {
+    "id": "builtin_text-va6A4o",
+    "formData": {
+      "text$en": "Anh/chị từng chạy cho sản phẩm/dịch vụ gì vậy? tự chạy hay có ai hướng dẫn ạ ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-07T02:48:54.047Z",
+    "modifiedOn": "2025-08-07T02:53:08.820Z"
+  },
+  {
+    "id": "builtin_text-6hkrgg",
+    "formData": {
+      "text$en": "FB, Tiktok kết hợp trí tuệ nhân tạo AI bán rất hiệu quả. \n\nAnh chị đã từng chạy quảng cáo bao giờ chưa ? hay mới bắt đầu ạ ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-07T06:29:07.935Z",
+    "modifiedOn": "2025-08-10T11:16:13.106Z"
+  },
+  {
+    "id": "builtin_text-EtctaF",
+    "formData": {
+      "text$en": "Dạ, bên em đã nhận được số điện thoại {{session.slots.dt-zalo.value}} rồi ạ. Bên em sẽ liên hệ sớm nhất để tư vấn thêm cho Anh/Chị .  ",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-07T08:05:46.539Z",
+    "modifiedOn": "2025-08-18T14:09:43.411Z"
+  },
+  {
+    "id": "builtin_text-ry1e96",
+    "formData": {
+      "text$en": "Dạ có ạ! Bên em có hỗ trợ học qua điện thoại, tuy nhiên học trên máy tính sẽ thuận tiện và dễ theo dõi hơn. Anh/chị vui lòng để lại số điện thoại để bên em liên hệ tư vấn thêm nhé.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-07T13:07:33.061Z",
+    "modifiedOn": "2025-08-07T13:07:33.061Z"
+  },
+  {
+    "id": "builtin_text-wJGEyN",
+    "formData": {
+      "text$en": "Dạ, bên em hỗ trợ học tại nhà qua điện thoại hoặc máy tính ạ. Được hướng dẫn thao tác trực tiếp như học tại lớp luôn anh/chị nhé.\n\nGửi số zalo, bên em tư vấn chuyên sâu nhé  !",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-07T14:03:47.696Z",
+    "modifiedOn": "2025-08-08T06:44:25.800Z"
+  },
+  {
+    "id": "builtin_text-Xpb4Ek",
+    "formData": {
+      "text$en": "xin chào",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-07T16:03:07.233Z",
+    "modifiedOn": "2025-08-07T16:03:07.233Z"
+  },
+  {
+    "id": "builtin_text-zdbxI0",
+    "formData": {
+      "text$en": "Dạ, Anh/chị ở khu vực nào của {{session.slots.tinh_slot.value}} ạ ? bên em hỗ trợ học tại nhà qua điện thoại hoặc máy tính ạ. Được hướng dẫn thao tác trực tiếp như học tại lớp luôn anh/chị nhé.\n\nGửi số zalo, bên em tư vấn chuyên sâu nhé  !",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-08T04:07:09.503Z",
+    "modifiedOn": "2025-08-13T17:28:32.363Z"
+  },
+  {
+    "id": "builtin_text-5MK0wG",
+    "formData": {
+      "text$en": "maigoi",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-08T15:23:09.624Z",
+    "modifiedOn": "2025-08-08T15:23:09.624Z"
+  },
+  {
+    "id": "builtin_text-5Q3gmW",
+    "formData": {
+      "text$en": "Bên em hiện đang triển khai cả hai hình thức học: offline (tại trung tâm hoặc tại nhà) và online linh hoạt, phù hợp với từng nhu cầu\n",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-08T16:20:23.755Z",
+    "modifiedOn": "2025-08-19T15:47:04.460Z"
+  },
+  {
+    "id": "builtin_text-kLUeJN",
+    "formData": {
+      "text$en": "Cơ sở Cầu Giấy: A5D6 Dịch Vọng, Cầu Giấy.  \n\nGửi số Zalo, Bên em gửi vị trí chính xác cho anh/chị dễ tìm ạ.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-08T16:40:38.830Z",
+    "modifiedOn": "2025-08-08T16:40:38.830Z"
+  },
+  {
+    "id": "builtin_text-FWtxXC",
+    "formData": {
+      "text$en": "tỉnh ...",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-09T05:14:57.742Z",
+    "modifiedOn": "2025-08-09T05:14:57.742Z"
+  },
+  {
+    "id": "builtin_text-3GbNCS",
+    "formData": {
+      "text$en": "Dạ, Em giúp gì được Anh/chị ạ ?\n",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-10T11:07:10.120Z",
+    "modifiedOn": "2025-08-25T01:07:07.249Z"
+  },
+  {
+    "id": "builtin_text-w8qTUn",
+    "formData": {
+      "text$en": "Ai ... Anh/chị đã từng tìm hiểu về AI chưa ? hay mình mới bắt đầu ạ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-10T11:31:51.126Z",
+    "modifiedOn": "2025-08-10T11:52:30.127Z"
+  },
+  {
+    "id": "builtin_text-gdngjS",
+    "formData": {
+      "text$en": "shopee",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-10T11:32:03.769Z",
+    "modifiedOn": "2025-08-10T11:32:03.769Z"
+  },
+  {
+    "id": "builtin_text-eWtK4M",
+    "formData": {
+      "text$en": " Anh/chị đã từng bán hàng trên Shopee chưa, hay mình mới bắt đầu ạ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-10T11:56:30.606Z",
+    "modifiedOn": "2025-08-10T11:56:49.567Z"
+  },
+  {
+    "id": "builtin_text-DLQZC_",
+    "formData": {
+      "text$en": "Anh/chị có sản phẩm, dịch vụ để thực hành khi học chưa ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-10T12:06:04.844Z",
+    "modifiedOn": "2025-08-11T03:07:52.835Z"
+  },
+  {
+    "id": "builtin_text-Bqcppy",
+    "formData": {
+      "text$en": "Tốt quá, em sẽ tư vấn chiến dịch quảng cáo phù hợp nhất với sản phẩm của Anh/chị. ",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-10T13:01:37.752Z",
+    "modifiedOn": "2025-08-18T15:34:29.687Z"
+  },
+  {
+    "id": "builtin_text-dyZIx6",
+    "formData": {
+      "text$en": "Không sao, trong khóa học bên em sẽ tư vấn từ khâu lên ý tưởng và chọn sản phẩm.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-10T13:02:38.530Z",
+    "modifiedOn": "2025-09-03T17:56:28.991Z"
+  },
+  {
+    "id": "builtin_text-OND-FK",
+    "formData": {
+      "text$en": "Anh có sản phẩm để thực hành khi chạy quảng cáo chưa ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-10T13:04:12.167Z",
+    "modifiedOn": "2025-08-10T13:04:12.167Z"
+  },
+  {
+    "id": "builtin_text-BUF0fo",
+    "formData": {
+      "text$en": "Gửi số zalo, bên em tư vấn chuyên sâu nhá !",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-10T13:56:23.812Z",
+    "modifiedOn": "2025-08-10T13:56:23.812Z"
+  },
+  {
+    "id": "builtin_text-gNZEhg",
+    "formData": {
+      "text$en": "1. Tổng quan về TikTok & xu hướng\n2. Xây dựng tài khoản & thương hiệu\n3. Hiểu thuật toán TikTok\n4. Sản xuất nội dung ngắn\n5. Phát triển & tăng trưởng kênh\n6. Quảng cáo TikTok (TikTok Ads)\n7. Bán hàng & kiếm tiền trên TikTok (TikTok Shop, Livestream, Affiliate)\n8. Phân tích & tối ưu kênh\n9. Chiến lược phát triển dài hạn",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-13T15:16:09.462Z",
+    "modifiedOn": "2025-08-20T03:26:48.004Z"
+  },
+  {
+    "id": "builtin_text-9MRPRB",
+    "formData": {
+      "text$en": "Nôi dung shopee ...",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-13T15:25:57.736Z",
+    "modifiedOn": "2025-08-13T15:25:57.736Z"
+  },
+  {
+    "id": "builtin_text-yb1gRa",
+    "formData": {
+      "text$en": "Zalo ...",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-13T15:26:15.862Z",
+    "modifiedOn": "2025-08-13T15:26:15.862Z"
+  },
+  {
+    "id": "builtin_text-h2yK3y",
+    "formData": {
+      "text$en": "AI ...",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-13T15:28:12.912Z",
+    "modifiedOn": "2025-08-13T15:28:12.912Z"
+  },
+  {
+    "id": "builtin_text-pQUI9E",
+    "formData": {
+      "text$en": "Dạ, trong quá trình học bên em sẽ hướng dẫn Anh/ chị xử lý vấn đề đó ạ.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-14T09:31:08.598Z",
+    "modifiedOn": "2025-08-18T14:28:30.238Z"
+  },
+  {
+    "id": "builtin_text-SW5GCf",
+    "formData": {
+      "text$en": "Mặt hàng",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-14T10:14:43.352Z",
+    "modifiedOn": "2025-08-14T10:14:43.352Z"
+  },
+  {
+    "id": "builtin_text-kAKtO5",
+    "formData": {
+      "text$en": "Dạ, bên em sẽ hướng dẫn chạy quảng cáo {{session.slots.product_service_slot.value}} theo đúng tệp khách hàng, giúp ra đơn nhanh và hiệu quả hơn ạ.\n",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-14T10:40:07.165Z",
+    "modifiedOn": "2025-08-18T14:08:55.661Z"
+  },
+  {
+    "id": "builtin_text-taXkKd",
+    "formData": {
+      "text$en": "Anh/chị học thử một buổi trước, cảm thấy hài lòng thì thanh toán cho bên em ạ.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-14T13:17:08.387Z",
+    "modifiedOn": "2025-08-18T14:39:27.041Z"
+  },
+  {
+    "id": "builtin_text-q6ZAcS",
+    "formData": {
+      "text$en": "Dạ, bên em sẽ hướng dẫn chạy quảng cáo {{session.slots.product_service_slot.value}} theo đúng tệp khách hàng, giúp ra đơn nhanh và hiệu quả hơn ạ. ",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-15T06:22:16.734Z",
+    "modifiedOn": "2025-08-18T14:29:16.881Z"
+  },
+  {
+    "id": "builtin_text-XRYldY",
+    "formData": {
+      "text$en": "Anh chị mới bắt đầu học hay đã có kinh nghiệm quảng cáo rồi ạ ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-18T14:03:49.560Z",
+    "modifiedOn": "2025-08-18T14:03:49.560Z"
+  },
+  {
+    "id": "builtin_text-CoGj35",
+    "formData": {
+      "text$en": "Gửi số Zalo, bên em tư vấn chuyên sau nhá.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-18T14:09:08.640Z",
+    "modifiedOn": "2025-08-18T14:09:08.640Z"
+  },
+  {
+    "id": "builtin_text-ZuuhSh",
+    "formData": {
+      "text$en": "Cảm ơn Anh/Chị đã nhắn tin cho bên Em!",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-18T14:09:54.189Z",
+    "modifiedOn": "2025-08-18T14:09:54.189Z"
+  },
+  {
+    "id": "builtin_text-64x7d6",
+    "formData": {
+      "text$en": "Anh/chị gặp khó khăn gì khi chạy quảng cáo không ạ? ",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-18T14:11:58.966Z",
+    "modifiedOn": "2025-08-18T14:11:58.966Z"
+  },
+  {
+    "id": "builtin_text-spAXIE",
+    "formData": {
+      "text$en": "Anh/chị đang bán hoặc dự định bán mặt hàng gì vậy ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-18T14:28:39.374Z",
+    "modifiedOn": "2025-08-18T14:28:39.374Z"
+  },
+  {
+    "id": "builtin_text-UDjkf8",
+    "formData": {
+      "text$en": " Gửi số Zalo, bên em tư vấn chuyên sau nhá.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-18T14:29:24.688Z",
+    "modifiedOn": "2025-08-18T14:29:24.688Z"
+  },
+  {
+    "id": "builtin_text-pvDKfT",
+    "formData": {
+      "text$en": "Anh có sản phẩm để thực hành khi học chạy quảng cáo chưa ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-18T14:31:05.652Z",
+    "modifiedOn": "2025-08-18T14:31:05.652Z"
+  },
+  {
+    "id": "builtin_text-GSo2mw",
+    "formData": {
+      "text$en": "Gửi số zalo, bên em tư vấn chuyên sâu.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-18T14:38:28.245Z",
+    "modifiedOn": "2025-08-18T14:38:28.245Z"
+  },
+  {
+    "id": "builtin_text-DfEcf-",
+    "formData": {
+      "text$en": "Sản phẩm, dịch vụ bên mình là gì vậy ạ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-18T15:34:38.870Z",
+    "modifiedOn": "2025-08-18T15:34:38.870Z"
+  },
+  {
+    "id": "builtin_text-GiFG7u",
+    "formData": {
+      "text$en": "Anh chị đang ở khu vực nào vậy ạ ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-19T06:10:13.781Z",
+    "modifiedOn": "2025-08-19T06:10:13.781Z"
+  },
+  {
+    "id": "builtin_text-crZymH",
+    "formData": {
+      "text$en": "Anh/Chị muốn học online hay offline ạ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-19T15:47:13.119Z",
+    "modifiedOn": "2025-08-19T15:47:13.119Z"
+  },
+  {
+    "id": "builtin_text-vfxkKi",
+    "formData": {
+      "text$en": "FB, Tiktok là 2 nền tảng bán hàng top đầu hiện nay.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-19T16:28:04.712Z",
+    "modifiedOn": "2025-08-19T16:28:04.712Z"
+  },
+  {
+    "id": "builtin_text-AScs_F",
+    "formData": {
+      "text$en": "Gửi số Zalo, bên Em tư vấn chuyên sâu cho Anh/Chị nhé !",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-20T03:11:22.630Z",
+    "modifiedOn": "2025-08-20T03:11:22.630Z"
+  },
+  {
+    "id": "builtin_text-AMUdvQ",
+    "formData": {
+      "text$en": "Facebook là nền tảng bán hàng top đầu hiện nay.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-21T06:08:27.456Z",
+    "modifiedOn": "2025-08-21T06:08:27.456Z"
+  },
+  {
+    "id": "builtin_text-CFlj-H",
+    "formData": {
+      "text$en": "Dạ em hiểu ạ, nhiều học viên ban đầu cũng lo lắng như vậy",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-25T14:23:22.302Z",
+    "modifiedOn": "2025-08-25T14:23:22.302Z"
+  },
+  {
+    "id": "builtin_text-nieyQY",
+    "formData": {
+      "text$en": "Bên em dạy 1 Kèm 1,  chỉ từng bước, rất dễ hiểu ạ. Ai cũng học được.",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-25T15:08:30.749Z",
+    "modifiedOn": "2025-08-25T15:09:10.927Z"
+  },
+  {
+    "id": "builtin_text-heZVWv",
+    "formData": {
+      "text$en": "Anh/Chị có muốn học thử để cảm nhận học rất dễ ? Gửi số zalo, bên em tư vấn thêm ạ?",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-08-25T15:13:04.582Z",
+    "modifiedOn": "2025-08-25T15:13:04.582Z"
+  }
+]

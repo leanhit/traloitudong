@@ -1,0 +1,21 @@
+{
+  "name": "cv-ho-so",
+  "utterances": {
+    "en": [
+      "can nop nhung gi de ung tuyen",
+      "co can cv khong",
+      "ho so bao gom nhung gi",
+      "co can bang cap gi khong",
+      "chi can so yeu ly lich duoc khong",
+      "nop qua email hay truc tiep",
+      "co can anh the khong",
+      "co can giay kham suc khoe khong",
+      "can nop cv bang tieng viet hay tieng anh",
+      "nop file pdf hay word duoc"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

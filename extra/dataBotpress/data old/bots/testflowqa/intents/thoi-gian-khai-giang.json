@@ -1,0 +1,44 @@
+{
+  "name": "thoi-gian-khai-giang",
+  "utterances": {
+    "en": [
+      "Khoa hoc khi nao khai giang vay a",
+      "Khi nao bat dau lop hoc vay",
+      "Cho minh hoi thoi gian bat dau khoa hoc voi",
+      "Lop nay sap khai giang chua a",
+      "Hoc trong bao lau thi xong vay a",
+      "Khoa nay keo dai bao lau vay",
+      "Moi khoa hoc thuong bat dau vao luc nao",
+      "Lich hoc cu the la nhu the nao a",
+      "Thoi gian hoc la bao nhieu buoi vay",
+      "Bao gio co lop moi vay aKhóa học khi nào khai giảng vậy ạ",
+      "Khi nào bắt đầu lớp học vậy",
+      "Cho mình hỏi thời gian bắt đầu khóa học với",
+      "Lớp này sắp khai giảng chưa ạ",
+      "Học trong bao lâu thì xong vậy ạ",
+      "Khóa này kéo dài bao lâu vậy",
+      "Mỗi khóa học thường bắt đầu vào lúc nào",
+      "Lịch học cụ thể là như thế nào ạ",
+      "Thời gian học là bao nhiêu buổi vậy",
+      "Bao giờ có lớp mới vậy ạ",
+      "thoi gian hoc",
+      "l﻿ich hoc",
+      "l﻿ịch học như thế nào",
+      "l﻿ịch học",
+      "l﻿ich học",
+      "l﻿ịch hoc",
+      "m﻿ấy buổi",
+      "h﻿ọc mấy buổi",
+      "m﻿ay buoi",
+      "h﻿oc may buoi",
+      "Thời gian có lâu không em",
+      "t\rhoi gian co lau khong em",
+      "t﻿hời gian bao lâu",
+      "t﻿hoi gian bao lau"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

@@ -9,5 +9,36 @@
     "createdBy": "admin",
     "createdOn": "2025-08-08T09:51:37.751Z",
     "modifiedOn": "2025-08-08T10:18:47.214Z"
+  },
+  {
+    "id": "builtin_image-Va5TEO",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/tingbox/media/ldjlaas9ssbf7ww201kg-vt_khoi.jpg"
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-10T03:15:13.356Z",
+    "modifiedOn": "2025-09-10T03:15:13.356Z"
+  },
+  {
+    "id": "builtin_image-WRCalj",
+    "formData": {
+      "typing$en": true,
+      "title$en": "fdsfsfsd",
+      "image$en": "https://photo.znews.vn/w960/Uploaded/mdf_eioxrd/2021_07_06/1q.jpg"
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-10T03:25:24.283Z",
+    "modifiedOn": "2025-09-10T03:25:24.283Z"
+  },
+  {
+    "id": "builtin_image-swdtVk",
+    "formData": {
+      "typing$en": true,
+      "image$en": "https://image.traloitudong.com/botpress/2025-09-10T03-14-39.435694825_a38d2c0b-701b-41f0-b3bf-ca317c2adf30_vt_khoi.jpg"
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-09-10T03:47:14.530Z",
+    "modifiedOn": "2025-09-10T03:47:14.530Z"
   }
 ]

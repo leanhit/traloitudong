@@ -1,0 +1,16 @@
+{
+  "name": "dia-chi-chi-nhanh",
+  "utterances": {
+    "en": [
+      "địa chỉ",
+      "d﻿ia chi",
+      "c﻿hi nhanh",
+      "c﻿hi nhánh",
+      "c﻿ơ sở"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

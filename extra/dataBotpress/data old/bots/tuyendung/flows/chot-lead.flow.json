@@ -1,0 +1,24 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "218ffbb0f4",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-KhT36K"
+      ],
+      "onReceive": [],
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "nhan_dt_cam_on.flow.json"
+        }
+      ],
+      "type": "standard"
+    }
+  ]
+}

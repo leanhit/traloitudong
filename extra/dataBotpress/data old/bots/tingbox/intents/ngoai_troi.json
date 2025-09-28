@@ -1,0 +1,25 @@
+{
+  "name": "ngoai_troi",
+  "utterances": {
+    "en": [
+      "l﻿ề đường",
+      "l﻿e đường",
+      "l﻿ề duong",
+      "l﻿e duong",
+      "v﻿ỉa hè",
+      "v﻿ia he",
+      "v﻿ỉa he",
+      "v﻿ia hè",
+      "c﻿hợ",
+      "c﻿ho",
+      "n﻿goài chợ",
+      "n﻿goai cho",
+      "n﻿goài cho",
+      "n﻿goai chợ"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

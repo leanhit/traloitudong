@@ -1,0 +1,16 @@
+{
+  "name": "gia_price",
+  "utterances": {
+    "en": [
+      "g﻿iá bao nhiêu",
+      "g﻿iá",
+      "g﻿ia bao nhieu",
+      "x﻿in giá",
+      "x﻿in gia"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

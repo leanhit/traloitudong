@@ -1,0 +1,64 @@
+{
+  "name": "product_service_intent",
+  "utterances": {
+    "en": [
+      "Bên mình làm [bất động sả](product_service_slot)n",
+      "Mình bán [thời trang nữ](product_service_slot)",
+      "Shop mình [chuyên mỹ phẩm](product_service_slot)",
+      "Mình đang kinh doanh [cà phê](product_service_slot)",
+      "Bên em mở nhà hàng [hải sản](product_service_slot)",
+      "Công ty mình làm [phần mềm kế toán](product_service_slot)",
+      "Mình bán đồ [decor nhà cửa](product_service_slot)",
+      "Em kinh doanh [tour du lịch](product_service_slot)",
+      "Mình đang bán [giày dép nữ](product_service_slot)",
+      "Bên mình cung cấp [dịch vụ spa](product_service_slot)",
+      "Shop mình chuyên [skincare và makeup](product_service_slot)",
+      "Mình làm bđs c[ăn hộ cao cấp](product_service_slot)",
+      "Mình bán [đồ ăn nhanh](product_service_slot)",
+      "Công ty em [đào tạo tiếng Anh](product_service_slot)",
+      "Bên mình kinh doanh laptop và điện thoại",
+      "Mình bán bảo hiểm nhân thọ",
+      "Mình cho thuê homestay",
+      "Shop mình bán túi xách hàng hiệu",
+      "Mình làm dịch vụ marketing online",
+      "Mình đang bán thực phẩm chức năng",
+      "Mình bán quần áo trẻ em",
+      "Em đang kinh doanh trà sữa",
+      "Mình mở quán ăn vặt",
+      "Mình cung cấp dịch vụ chụp ảnh cưới",
+      "Shop mình bán đồ gia dụng",
+      "Công ty mình tổ chức sự kiện",
+      "Mình bán camera an ninh",
+      "Bên mình làm nha khoa",
+      "Mình đang mở tiệm nail",
+      "Mình bán sản phẩm thủ công mỹ nghệ",
+      "Mình bán {product_service=thời trang}",
+      "Bên mình làm {product_service=bất động sản}",
+      "Shop mình chuyên {product_service=mỹ phẩm}",
+      "kinh doanh {product_service=cà phê}",
+      "Bên mình cung cấp dịch vụ {product_service=spa}",
+      "{xung_ho} kinh doanh {product_service}",
+      "{xung_ho} bán {product_service}",
+      "[{product_service}](product_service_slot)",
+      "[B﻿ất động sản](product_service_slot)",
+      "[b﻿at dong san](product_service_slot)",
+      "[b﻿ds](product_service_slot)",
+      "[T﻿hời trang](product_service_slot)",
+      "[t﻿hoi trang](product_service_slot)",
+      "[t﻿hời trang](product_service_slot)"
+    ]
+  },
+  "slots": [
+    {
+      "id": "nO9xOLtHgeKf8oY4XuyEp",
+      "name": "product_service_slot",
+      "entities": [
+        "product_service"
+      ],
+      "color": 1
+    }
+  ],
+  "contexts": [
+    "global"
+  ]
+}

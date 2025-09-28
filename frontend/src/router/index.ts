@@ -28,12 +28,6 @@ const routes = [
                 meta: { requiresAuth: true },
             },
             {
-                path: 'create-bot',
-                name: 'create-bot',
-                component: () => import('@/views/create-bot/Index.vue'),
-                meta: { requiresAuth: true },
-            },
-            {
                 path: 'create-fb-connection',
                 name: 'create-connection',
                 component: () => import('@/views/create-connection/Index.vue'),
@@ -77,6 +71,28 @@ const routes = [
                         name: 'categories',
                         component: () => import('@/views/image-manager/category/Index.vue'),
                         meta: { requiresAuth: true, title: 'Category List' },
+                    },
+                ],
+            },
+            {
+                // Route cha cho bot Manager
+                path: 'bot-manager',
+                name: 'bot-manager',
+                redirect: { name: 'images' }, // Tự động chuyển hướng đến route con đầu tiên
+                component: () => import('@/views/bot-manager/BotManagerLayout.vue'), // Tạo một layout cha
+                meta: { requiresAuth: true },
+                children: [
+                    {
+                        path: 'create-bot',
+                        name: 'create-bot',
+                        component: () => import('@/views/bot-manager/create-bot/Index.vue'),
+                        meta: { requiresAuth: true, title: 'Midleware Bot List' },
+                    },
+                    {
+                        path: 'bot-botpress',
+                        name: 'bot-botpress',
+                        component: () => import('@/views/bot-manager/bot-botpress/Index.vue'),
+                        meta: { requiresAuth: true, title: 'Botpress Bot List' },
                     },
                 ],
             },

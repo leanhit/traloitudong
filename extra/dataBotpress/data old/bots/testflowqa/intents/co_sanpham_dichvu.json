@@ -1,0 +1,27 @@
+{
+  "name": "co_sanpham_dichvu",
+  "utterances": {
+    "en": [
+      "có rồi",
+      "c﻿o roi",
+      "r﻿oi",
+      "rồi",
+      "đã có",
+      "d﻿a co",
+      "d﻿a có",
+      "có",
+      "xong rồi",
+      "hoàn thành rồi",
+      "d﻿a có",
+      "t﻿ôi có sản phẩm rồi",
+      "c﻿ó sản phẩm",
+      "c﻿o san pham",
+      "c﻿ó dịch vụ",
+      "c﻿o dich vu"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

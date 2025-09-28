@@ -27,6 +27,11 @@
         "condition": "event.nlu.intent.name === ''",
         "conditionType": "intent",
         "node": "3-noidung_khoahoc.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'trinhdo_hocvien'",
+        "conditionType": "intent",
+        "node": "1-trinhdo_hocvien.flow.json"
       }
     ]
   },

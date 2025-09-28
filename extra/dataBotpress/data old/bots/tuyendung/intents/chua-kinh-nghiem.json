@@ -1,0 +1,14 @@
+{
+  "name": "chua-kinh-nghiem",
+  "utterances": {
+    "en": [
+      "c﻿hưa có kinh nghiệm",
+      "c﻿hưa kinh nghiệm",
+      "c﻿hua kinh nghiem"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

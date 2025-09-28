@@ -1,0 +1,69 @@
+version: '3.8'
+
+services:
+  # Botpress
+  botpress:
+    image: botpress/server:v12_28_0
+    container_name: botpress
+    restart: always
+    user: root
+    ports:
+      - "3001:3000"
+    environment:
+      # Production-specific environment variables
+      - NODE_ENV=production
+      - DATABASE=postgres
+      - DATABASE_URL=postgres://<botpress_user>:<botpress_password>@db:5432/botpress
+      - BP_PRO_ENABLED=true # Enable Botpress Pro features
+      - BP_S3_ENABLED=true
+      - BP_S3_REGION=<your_s3_region> # e.g., us-east-1
+      - BP_S3_ENDPOINT=http://minio:9000
+      - BP_S3_ACCESS_KEY=<minio_access_key>
+      - BP_S3_SECRET_KEY=<minio_secret_key>
+      - BP_S3_BUCKET=botpress
+    volumes:
+      - ./data:/botpress/data
+    depends_on:
+      - db
+      - minio
+    networks:
+      - internal
+
+  # Shared PostgreSQL with pgvector
+  db:
+    image: ankane/pgvector:latest
+    container_name: botpress_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: botpress
+      POSTGRES_USER: <botpress_user>
+      POSTGRES_PASSWORD: <botpress_password>
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - internal
+  
+  # MinIO
+  minio:
+    image: quay.io/minio/minio
+    container_name: minio
+    restart: always
+    environment:
+      MINIO_ROOT_USER: <minio_access_key>
+      MINIO_ROOT_PASSWORD: <minio_secret_key>
+    command: server /data --console-address ":9090"
+    ports:
+      - "9000:9000"
+      - "9090:9090"
+    volumes:
+      - minio_data:/data
+    networks:
+      - internal
+
+volumes:
+  postgres_data:
+  minio_data:
+
+networks:
+  internal:
+    driver: bridge

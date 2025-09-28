@@ -1,0 +1,42 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "event.nlu.intent.name === ''",
+        "conditionType": "intent",
+        "node": "10_ban_busy.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'dt-zalo'",
+        "conditionType": "intent",
+        "node": "15-dt-zalo.flow.json"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'gia'",
+        "conditionType": "intent",
+        "node": "8-gia.flow.json"
+      },
+      {
+        "condition": "!event.nlu || !event.nlu.intent || event.nlu.intent.name === 'none'",
+        "conditionType": "raw",
+        "node": "Fallback-khong_hieu_y.flow.json"
+      }
+    ]
+  },
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "001010c2be",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-aHKaF_"
+      ],
+      "onReceive": [],
+      "next": [],
+      "type": "standard"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "dangky_chotdon",
+  "name": "dangky_chotdon",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "ĐĂNG KÝ HỌC / CHỐT ĐƠN\t/DANG KY/ ĐĂNG KÝ/CHOT DON/",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

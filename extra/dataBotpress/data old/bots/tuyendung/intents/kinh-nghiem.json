@@ -1,0 +1,22 @@
+{
+  "name": "kinh-nghiem",
+  "utterances": {
+    "en": [
+      "E trước đây đã chạy qc",
+      "vi tri nay can bao nhieu nam kinh nghiem",
+      "co nhan nguoi chua co kinh nghiem khong",
+      "can kinh nghiem lam viec bao lau",
+      "co can kinh nghiem truoc khong",
+      "sinh vien moi ra truong co ung tuyen duoc khong",
+      "em moi tot nghiep co lam duoc khong",
+      "can kinh nghiem o linh vuc nao",
+      "neu chua tung lam thi co duoc dao tao khong",
+      "co nhan thuc tap sinh khong",
+      "co ho tro huong dan cho nguoi moi khong"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

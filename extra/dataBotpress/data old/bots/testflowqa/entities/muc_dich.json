@@ -1,0 +1,35 @@
+{
+  "id": "muc_dich",
+  "name": "muc_dich",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "kinh doanh",
+      "synonyms": []
+    },
+    {
+      "name": "xin việc",
+      "synonyms": []
+    },
+    {
+      "name": "freelancer",
+      "synonyms": []
+    },
+    {
+      "name": "tăng đơn hàng",
+      "synonyms": []
+    },
+    {
+      "name": "tiết kiệm chi phí",
+      "synonyms": []
+    },
+    {
+      "name": "kỹ năng cá nhân",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

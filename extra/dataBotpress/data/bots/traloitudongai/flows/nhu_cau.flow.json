@@ -1,0 +1,59 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "99c79c9921",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-CXm7aN"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "skill-f0fd95",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-f0fd95",
+      "flow": "skills/choice-f0fd95.flow.json",
+      "next": [
+        {
+          "caption": "User picked [tinh_na...]",
+          "condition": "temp['skill-choice-ret-nwlbsjrvkf'] == \"tinh_nang\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [gia_pri...]",
+          "condition": "temp['skill-choice-ret-nwlbsjrvkf'] == \"gia_price\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [nhan_ti...]",
+          "condition": "temp['skill-choice-ret-nwlbsjrvkf'] == \"nhan_tin_moi\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [cskh]",
+          "condition": "temp['skill-choice-ret-nwlbsjrvkf'] == \"cskh\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    }
+  ]
+}

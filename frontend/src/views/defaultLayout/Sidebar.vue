@@ -25,37 +25,19 @@
                 <ul>
                     <li class="menu-title">
                         <strong>{{ t('Tool') }}</strong>
-                    </li>
-                    <li class="has_sub">
-                        <router-link to="/create-bot">
-                            <i class="mdi mdi-food-variant"></i>
-                            <span>
-                                <strong>{{ t('Crete Bot') }}</strong>
-                            </span>
-                            <span class="float-right"></span>
-                        </router-link>
-                    </li>                    
+                    </li>         
                     <li class="has_sub">
                         <router-link to="/auto-connect">
-                            <i class="mdi mdi-food-variant"></i>
+                            <i class="mdi mdi-link-variant"></i>
                             <span>
-                                <strong>{{ t('Auto Connect') }}</strong>
+                                <strong>{{ t('Connection Manager') }}</strong>
                             </span>
                             <span class="float-right"></span>
                         </router-link>
                     </li>
-                    <!-- <li class="has_sub">
-                        <router-link to="/create-fb-connection">
-                            <i class="mdi mdi-food-variant"></i>
-                            <span>
-                                <strong>{{ t('Crete Fb connection') }}</strong>
-                            </span>
-                            <span class="float-right"></span>
-                        </router-link>
-                    </li>-->
                     <li class="has_sub">
                         <router-link to="/generate-embed-code">
-                            <i class="mdi mdi-seat-recline-normal"></i>
+                            <i class="mdi mdi-code-tags"></i>
                             <span>
                                 <strong>{{ t('Generate Embed Code') }}</strong>
                             </span>
@@ -69,17 +51,39 @@
                         </a>
                         <ul class="list-unstyled">
                             <li class="ml-5">
-                            <router-link to="/image-manager/images">
-                                <span>{{ t('Images') }}</span>
-                            </router-link>
+                                <router-link to="/image-manager/images">
+                                    <i class="mdi mdi-image"></i> 
+                                    <span>{{ t('Images') }}</span>
+                                </router-link>
                             </li>
                             <li class="ml-5">
-                            <router-link to="/image-manager/categories">
-                                <span>{{ t('Categories') }}</span>
-                            </router-link>
+                                <router-link to="/image-manager/categories">
+                                    <i class="mdi mdi-folder-multiple-image"></i> 
+                                    <span>{{ t('Categories') }}</span>
+                                </router-link>
                             </li>
                         </ul>
-                        </li>
+                    </li>
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect">
+                            <i class="mdi mdi-settings"></i> <span>{{ t('Bot Manager') }}</span>
+                            <span class="menu-arrow float-right"><i class="mdi mdi-chevron-right"></i></span>
+                        </a>
+                        <ul class="list-unstyled">
+                            <li class="ml-5">
+                                <router-link to="/bot-manager/create-bot">
+                                    <i class="mdi mdi-image"></i> 
+                                    <span>{{ t('Create Bot') }}</span>
+                                </router-link>
+                            </li>
+                            <li class="ml-5">
+                                <router-link to="/bot-manager/bot-botpress">
+                                    <i class="mdi mdi-folder-multiple-image"></i> 
+                                    <span>{{ t('Bot Botpress') }}</span>
+                                </router-link>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <div class="clearfix"></div>

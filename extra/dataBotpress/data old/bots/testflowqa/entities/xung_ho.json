@@ -1,0 +1,19 @@
+{
+  "id": "xung_ho",
+  "name": "xung_ho",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "tôi, toi, t, mình, minh, m, tụi mình, tui minh, tao, tớ, to, ta, chúng tôi, chung toi, chúng ta, chung ta, bọn tôi, bon toi, bọn tao, bon tao, tụi tôi, tui toi, tụi tao, tui tao, bạn, ban, b, ông, ong, o, bà, ba, chị, chi, em, e, con, cháu, chau, cậu, cau, mày, may, mi, mình ơi, minh oi, m oi, bạn ơi, ban oi, b oi, anh, a, anh ơi, a oi, chị ơi, chi oi, em ơi, e oi, cậu ơi, cau oi, ông ơi, ong oi, o oi, bà ơi, ba oi, bác, bac, bác ơi, bac oi, chú, chu, chú ơi, chu oi, cô, co, cô ơi, co oi, thầy, thay, thầy ơi, thay oi, trò, tro, trò ơi, tro oi, con ơi, con oi, cháu ơi, chau oi, mình à, minh a, m a, bạn à, ban a, b a, anh à, a a, chị à, chi a, em à, e a, cậu à, cau a, ông à, ong a, o a, bà à, ba a, bác à, bac a, chú à, chu a, cô à, co a, thầy à, thay a, trò à, tro a, con à, con a, cháu à, chau a, mình ạ, minh a, m a, bạn ạ, ban a, b a, anh ạ, a a, chị ạ, chi a, em ạ, e a, cậu ạ, cau a, ông ạ, ong a, o a, bà ạ, ba a, bác ạ, bac a, chú ạ, chu a, cô ạ, co a, thầy ạ, thay a, trò ạ, tro a, con ạ, con a, cháu ạ, chau a, dạ anh, da anh, da a, dạ chị, da chi, dạ em, da em, dạ cậu, da cau, dạ ông, da ong, dạ bà, da ba, dạ bác, da bac, dạ chú, da chu, dạ cô, da co, dạ thầy, da thay",
+      "synonyms": []
+    },
+    {
+      "name": "to_, tớ_",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

@@ -1,0 +1,51 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "1b10fc17ea",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-bMSTH_"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-c3427f"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "skill-c3427f",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-c3427f",
+      "flow": "skills/choice-c3427f.flow.json",
+      "next": [
+        {
+          "caption": "User picked [gia_pri...]",
+          "condition": "temp['skill-choice-ret-p7bnxjuyrg'] == \"gia_price\"",
+          "conditionType": "raw",
+          "node": "gia-ca.flow.json"
+        },
+        {
+          "caption": "User picked [cskh]",
+          "condition": "temp['skill-choice-ret-p7bnxjuyrg'] == \"cskh\"",
+          "conditionType": "raw",
+          "node": "gap-CSKH.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    }
+  ]
+}

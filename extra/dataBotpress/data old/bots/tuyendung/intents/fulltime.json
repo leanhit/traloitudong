@@ -1,0 +1,23 @@
+{
+  "name": "fulltime",
+  "utterances": {
+    "en": [
+      "f﻿ull",
+      "f﻿ulltime",
+      "t﻿oàn thời gian",
+      "t﻿oan thoi gian",
+      "tôi muốn làm full",
+      "E muốn làm fulltime ạ",
+      "e\rm muon lam full",
+      "e﻿m muốn làm fulltime",
+      "m﻿ình muốn làm fulltime",
+      "m﻿inh muon lam fulltime",
+      "f﻿ull time",
+      "f﻿ull-time"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

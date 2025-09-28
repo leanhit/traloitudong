@@ -1,0 +1,13 @@
+{
+  "name": "gui_anh",
+  "utterances": {
+    "en": [
+      "g﻿ửi ảnh",
+      "g﻿ui anh"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

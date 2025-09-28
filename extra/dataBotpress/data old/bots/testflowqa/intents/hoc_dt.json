@@ -1,0 +1,10 @@
+{
+  "name": "hoc_dt",
+  "utterances": {
+    "en": []
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

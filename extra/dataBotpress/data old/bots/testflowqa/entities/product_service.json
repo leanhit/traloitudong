@@ -1,0 +1,31 @@
+{
+  "id": "product_service",
+  "name": "product_service",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "bất động sản, bđs, bds, nhà đất, căn hộ, đất nền, nhà phố xây dựng, công trình, thi công, xây nhà, xây sửa vật liệu xây dựng, xi măng, gạch, sắt thép, cát đá nội thất, đồ nội thất, bàn ghế, tủ bếp, giường ngủ ngoại thất, sân vườn, tiểu cảnh, bàn ghế ngoài trời thời trang nam, quần áo nam, đồ nam, fashion nam, shop nam thời trang nữ, quần áo nữ, đồ nữ, fashion nữ, shop nữ thời trang trẻ em, quần áo trẻ em, đồ trẻ em, đồ bé, đồ kid giày dép, giày, dép, sneaker, cao gót, sandal túi xách, balo, túi thời trang, cặp phụ kiện, phụ kiện thời trang, vòng cổ, dây chuyền, nhẫn, khuyên tai mỹ phẩm, skincare, makeup, son môi, kem dưỡng, phấn trang điểm spa, chăm sóc da, massage, trị liệu, làm đẹp salon tóc, cắt tóc, uốn tóc, nhuộm tóc, duỗi tóc nail, làm móng, sơn móng, vẽ móng nhà hàng, quán ăn, ăn uống, food, ẩm thực cà phê, coffee, cafe, quán cafe, quán cà phê đồ uống, thức uống, nước giải khát, nước ép, sinh tố trà sữa, milk tea, bubble tea thực phẩm tươi sống, hải sản tươi, rau củ, thịt cá thực phẩm chế biến sẵn, đồ hộp, đồ ăn nhanh, thức ăn nhanh trung tâm ngoại ngữ, học tiếng anh, học ngoại ngữ, trung tâm tiếng anh đào tạo kỹ năng, huấn luyện kỹ năng, training đào tạo nghề nghiệp, học nghề, dạy nghề luyện thi, ôn thi, luyện thi đại học, luyện thi IELTS gia sư, dạy kèm, giáo viên tại nhà khóa học online, học online, học trực tuyến khóa học offline, học offline, học trực tiếp phòng khám, clinic, cơ sở y tế bệnh viện, hospital nha khoa, phòng khám răng, dentist dược phẩm, thuốc, thuốc tây, thuốc nam, thuốc bắc thực phẩm chức năng, supplement, vitamin, thực phẩm bổ sung dịch vụ chăm sóc sức khỏe tại nhà, chăm sóc sức khỏe, y tế tại nhà điện thoại, smartphone, iphone, android laptop, máy tính xách tay tablet, ipad, máy tính bảng đồ điện tử, thiết bị điện tử điện gia dụng, thiết bị gia dụng phần mềm, software, app, ứng dụng giải pháp công nghệ, công nghệ, tech, solution camera, máy quay an ninh, camera giám sát thiết bị an ninh, hệ thống an ninh tour du lịch, tour, du lịch, travel, chuyến đi vé máy bay, flight ticket, vé máy bay giá rẻ khách sạn, hotel, nhà nghỉ homestay, nhà thuê, chỗ ở du lịch cho thuê xe, thuê xe, thuê ô tô, thuê xe máy tổ chức sự kiện, event, tổ chức tiệc, hội nghị, hội thảo đồ trang trí nhà cửa, đồ decor, decor nhà, trang trí đồ dùng nhà bếp, dụng cụ nhà bếp, đồ bếp vật dụng gia đình, đồ gia đình, đồ dùng sinh hoạt sản phẩm thủ công mỹ nghệ, thủ công, đồ handmade dịch vụ tài chính, tài chính, dịch vụ tiền tệ ngân hàng, bank bảo hiểm, insurance marketing, tiếp thị quảng cáo, ads, quảng bá chụp ảnh, nhiếp ảnh, photography quay phim, videography, làm video",
+      "synonyms": []
+    },
+    {
+      "name": "bán máy tính, máy tính, ban máy tính, máy tính, bán điện thoại, ban dien thoai, bán đt, ban đt",
+      "synonyms": []
+    },
+    {
+      "name": "hàng tiêu dùng, hang tieu dung, hàng tieu dung, hàng tiêu dung, hàng tieu dùng",
+      "synonyms": []
+    },
+    {
+      "name": "đồng hồ, dong ho, đồng ho, dong ho",
+      "synonyms": []
+    },
+    {
+      "name": "ô tô, o to, ô to, o tô, xe may, xe máy, xe đạp, xe dap, phụ tùng ô tô, phụ tùng xe máy, phụ tùng xe đạp",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

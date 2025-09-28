@@ -1,0 +1,33 @@
+{
+  "name": "__qna__rcqv55iebi_em_c__c_n_mang_laptop_kh_ng",
+  "entities": [],
+  "contexts": [
+    "global"
+  ],
+  "utterances": {
+    "en": [
+      "Em có cần mang laptop không",
+      "Học có bắt buộc phải có laptop không",
+      "Không có máy tính có học được không",
+      "Có thể học bằng điện thoại được không",
+      "Dùng điện thoại thay laptop được không",
+      "Có yêu cầu phải dùng laptop không",
+      "Học khóa này có cần thiết bị gì không",
+      "Nếu chưa có laptop thì sao",
+      "Em chỉ có máy tính bảng thì học được không",
+      "Chưa có laptop thì học được chứ",
+      "chua co laptop",
+      "Em co can mang laptop khong",
+      "Hoc co bat buoc phai co laptop khong",
+      "Khong co may tinh co hoc duoc khong",
+      "Chua co laptop thi hoc duoc chu",
+      "Co the hoc bang dien thoai duoc khong",
+      "Dung dien thoai thay laptop duoc khong",
+      "Co yeu cau phai dung laptop khong",
+      "Hoc khoa nay co can thiet bi gi khong",
+      "Neu chua co laptop thi sao",
+      "Em chi co may tinh bang thi hoc duoc khong"
+    ]
+  },
+  "slots": []
+}

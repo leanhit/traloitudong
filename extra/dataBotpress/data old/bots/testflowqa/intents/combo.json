@@ -1,0 +1,15 @@
+{
+  "name": "combo",
+  "utterances": {
+    "en": [
+      "c﻿ả 2",
+      "c﻿a 2",
+      "c﻿ombo",
+      "h﻿ọc combo"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

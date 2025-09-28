@@ -3,10 +3,55 @@
     {
       "id": "fbfdc25e39",
       "position": {
-        "x": -95,
-        "y": 40
+        "x": -165,
+        "y": 0
+      }
+    },
+    {
+      "id": "95c2b7e46f",
+      "position": {
+        "x": 95,
+        "y": -40
+      }
+    },
+    {
+      "id": "08246076ed",
+      "position": {
+        "x": 80,
+        "y": 140
       }
     }
   ],
-  "links": []
+  "links": [
+    {
+      "source": "fbfdc25e39",
+      "sourcePort": "out1",
+      "target": "08246076ed",
+      "points": [
+        {
+          "x": 35,
+          "y": 170
+        },
+        {
+          "x": 81,
+          "y": 158
+        }
+      ]
+    },
+    {
+      "source": "fbfdc25e39",
+      "sourcePort": "out0",
+      "target": "95c2b7e46f",
+      "points": [
+        {
+          "x": 35,
+          "y": 144
+        },
+        {
+          "x": 96,
+          "y": -22
+        }
+      ]
+    }
+  ]
 }

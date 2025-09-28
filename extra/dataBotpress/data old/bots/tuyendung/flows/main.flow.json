@@ -1,0 +1,65 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "bat-dau",
+  "nodes": [
+    {
+      "id": "df052970ef",
+      "name": "bat-dau",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'parttime'",
+          "conditionType": "intent",
+          "node": "part-time.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'fulltime'",
+          "conditionType": "intent",
+          "node": "full-time.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'dia-chi-chi-nhanh'",
+          "conditionType": "intent",
+          "node": "dia-chi-chi-nhanh.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'kinh-nghiem'",
+          "conditionType": "intent",
+          "node": "kinh-nghiem.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'chot-lead'",
+          "conditionType": "intent",
+          "node": "chot-lead.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'chao-hoi-hello'",
+          "conditionType": "intent",
+          "node": "Chao-hoi"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'digital-marketing'",
+          "conditionType": "intent",
+          "node": "Digital-Marketing.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "5330bac644",
+      "name": "Chao-hoi",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-lbs0Re"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

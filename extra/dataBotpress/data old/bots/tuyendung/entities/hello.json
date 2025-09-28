@@ -1,0 +1,10 @@
+{
+  "id": "hello",
+  "name": "hello",
+  "type": "list",
+  "occurrences": [],
+  "sensitive": false,
+  "fuzzy": 0.65,
+  "examples": [],
+  "pattern": ""
+}

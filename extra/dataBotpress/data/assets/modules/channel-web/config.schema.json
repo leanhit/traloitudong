@@ -1,10 +1,6 @@
 {
   "type": "object",
   "properties": {
-    "uploadsFileUploadedTextContentElement": {
-      "description": "Specify a builtin_text contentElement to be sent to the user after a file upload\nexample: #!builtin_text-OzpN5X (only builtin_text contentElements are supported)\n\nVariables available:\n storage: 'local' or 's3'\n url: URL where the file has been uploaded\n originalName: Name that the file had on the user's computer\n mime: mime type of the file, example: 'image/gif'\n size: size from the file in bytes\n\nUser variables are also available at 'event.state.user' (only user variables are supported)",
-      "type": "string"
-    },
     "uploadsUseS3": {
       "default": false,
       "type": "boolean"
@@ -32,11 +28,6 @@
     "recentConversationLifetime": {
       "default": "6 hours",
       "type": "string"
-    },
-    "alwaysScrollDownOnMessages": {
-      "description": "In case of news messages, even if the scrollbar is not at the bottom,\nthe chat will scroll down to show the new message",
-      "default": false,
-      "type": "boolean"
     },
     "maxMessageLength": {
       "default": 360,

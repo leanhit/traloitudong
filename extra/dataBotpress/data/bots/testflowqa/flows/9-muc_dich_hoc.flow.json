@@ -25,17 +25,82 @@
       }
     ]
   },
-  "startNode": "entry",
+  "startNode": "muc-dich-hoc",
   "description": "",
   "nodes": [
     {
       "id": "001010c2be",
-      "name": "entry",
+      "name": "muc-dich-hoc",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'ban_hang'",
+          "conditionType": "intent",
+          "node": "ban-hang"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'hoc_nghe'",
+          "conditionType": "intent",
+          "node": "hoc-nghe"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'quan_ly_nhan_vien'",
+          "conditionType": "intent",
+          "node": "quan-ly-nhan-vien"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "b38b3a2d98",
+      "name": "ban-hang",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "21-san-pham-dich-vu.flow.json"
+        }
+      ],
       "onEnter": [
-        "say #!builtin_text-aHKaF_"
+        "say #!builtin_text-hhnHEE",
+        "say #!builtin_text-_3TKYH"
       ],
       "onReceive": [],
-      "next": [],
+      "type": "standard"
+    },
+    {
+      "id": "3a7ad7b7d8",
+      "name": "hoc-nghe",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "21-san-pham-dich-vu.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-6GH_be",
+        "say #!builtin_text-5OKmpl"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "f99a78f484",
+      "name": "quan-ly-nhan-vien",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "product_service.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Q4XmUO",
+        "say #!builtin_text-88r2pC"
+      ],
+      "onReceive": [],
       "type": "standard"
     }
   ]

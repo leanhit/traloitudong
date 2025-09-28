@@ -38,11 +38,49 @@
       "onReceive": [],
       "next": [
         {
-          "condition": "true",
-          "conditionType": "always",
-          "node": "21-san-pham-dich-vu.flow.json"
+          "condition": "event.nlu.intent.name === 'combo'",
+          "conditionType": "intent",
+          "node": "combo"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'hoc_rieng_le'",
+          "conditionType": "intent",
+          "node": "rieng-le"
         }
       ],
+      "type": "standard"
+    },
+    {
+      "id": "95c2b7e46f",
+      "name": "combo",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "15-dt-zalo.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-3FHC0v",
+        "say #!builtin_text-hU7mRW"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "08246076ed",
+      "name": "rieng-le",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-6y3OuX",
+        "say #!builtin_text-hU7mRW"
+      ],
+      "onReceive": null,
       "type": "standard"
     }
   ]

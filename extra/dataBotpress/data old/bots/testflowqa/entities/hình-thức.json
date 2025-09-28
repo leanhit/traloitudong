@@ -1,0 +1,35 @@
+{
+  "id": "hình-thức",
+  "name": "hình thức",
+  "type": "list",
+  "occurrences": [
+    {
+      "name": "online",
+      "synonyms": []
+    },
+    {
+      "name": "offline",
+      "synonyms": []
+    },
+    {
+      "name": "1 kèm 1",
+      "synonyms": []
+    },
+    {
+      "name": "học nhóm",
+      "synonyms": []
+    },
+    {
+      "name": "online/offline/1_kèm_1/tại_nhà",
+      "synonyms": []
+    },
+    {
+      "name": "trực tiếp/truc tiep/trực tiep/truc tiếp",
+      "synonyms": []
+    }
+  ],
+  "sensitive": false,
+  "fuzzy": 0.8,
+  "examples": [],
+  "pattern": ""
+}
